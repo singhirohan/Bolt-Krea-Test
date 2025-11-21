@@ -8,12 +8,100 @@ import { Trophy, Target, Users, Calendar, MapPin, Award, ChevronRight, Sparkles,
 const LandingPage = () => {
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
+  const [selectedPopup, setSelectedPopup] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const popupContent = {
+    vision: {
+      title: "Our Vision",
+      content: `At BOLT 2026, we envision creating more than just a sports festival – we aim to build a legacy of excellence, sportsmanship, and community spirit that resonates throughout South India.
+
+Our vision is to establish BOLT as the premier intercollegiate sports platform that:
+
+• Fosters Holistic Development: We believe sports transcend physical competition. Through BOLT, we nurture critical thinking, creativity, communication, and real-world problem-solving skills in our participants.
+
+• Champions Diversity & Inclusion: We welcome athletes from diverse backgrounds, creating a melting pot of talent, culture, and perspectives that enriches the sporting experience for everyone.
+
+• Drives Social Impact: Beyond trophies and medals, we aspire to use sports as a catalyst for positive social change, building bridges between institutions and inspiring the next generation of leaders.
+
+• Sets New Standards: By combining world-class facilities at Krea University with innovative event management, we're redefining what an intercollegiate sports festival can achieve.
+
+• Creates Lasting Memories: Every participant leaves with not just experiences, but lifelong friendships, networks, and stories that shape their personal and professional journeys.
+
+BOLT isn't just about winning – it's about participating, learning, growing, and becoming part of something bigger than yourself.`
+    },
+    experience: {
+      title: "The BOLT Experience",
+      content: `BOLT 2026 offers an unparalleled two-day journey that combines intense competition with unforgettable experiences:
+
+🏆 COMPETITIVE EXCELLENCE
+Six premier sports leagues featuring the best collegiate athletes across Cricket, Basketball, Football, Badminton, Tennis, and Volleyball. Every match is a showcase of skill, strategy, and sportsmanship.
+
+🌟 WORLD-CLASS INFRASTRUCTURE
+Krea University's state-of-the-art sports facilities provide the perfect stage for athletic excellence. Located in Sri City – a 7,500-acre integrated business hub – our venue offers professional-grade equipment and amenities.
+
+🤝 NETWORKING OPPORTUNITIES
+Connect with 1,500+ participants from premier universities across India. Build lasting friendships, create professional networks, and exchange ideas with like-minded sports enthusiasts.
+
+🎭 CULTURAL CELEBRATIONS
+Beyond sports, immerse yourself in cultural events, entertainment nights, and social gatherings that celebrate the diversity and talent of our participants.
+
+📸 SOCIAL MEDIA AMPLIFICATION
+With an expected reach of 50,000+ across social platforms, your achievements and experiences will be captured and shared, building your personal brand and athletic profile.
+
+🏅 RECOGNITION & REWARDS
+Winners receive prestigious trophies, certificates, and recognition that add value to your academic and athletic portfolios.
+
+💼 PROFESSIONAL GROWTH
+Interact with distinguished guests, alumni, and industry leaders who share insights on balancing sports with academic and professional success.
+
+🎯 HOLISTIC DEVELOPMENT
+Through workshops, leadership sessions, and team-building activities, develop skills that extend far beyond the playing field.
+
+Join us for two days that will challenge you, inspire you, and transform you. BOLT 2026 – where champions are made and legends begin.`
+    },
+    location: {
+      title: "Location - Krea University, Sri City",
+      content: `🏛️ ABOUT KREA UNIVERSITY
+Krea University stands as one of India's most innovative private universities, pioneering a unique educational model that seamlessly integrates liberal arts, sciences, and professional studies.
+
+📍 SRI CITY - A GLOBAL HUB
+Located in the heart of Sri City, a thriving 7,500-acre integrated business hub that houses over 185 global companies from 27 countries. This strategic location provides:
+
+• Easy Connectivity: Well-connected by road and rail, approximately 55 km from Chennai and 35 km from Tirupati
+• International Exposure: Surrounded by multinational corporations, offering unique networking opportunities
+• Modern Infrastructure: World-class facilities and amenities in a planned township
+
+🏟️ SPORTS FACILITIES
+Our campus boasts cutting-edge sports infrastructure designed to international standards:
+
+• Professional Cricket Ground with modern pavilion
+• Regulation-size Basketball and Volleyball Courts
+• Full-size Football Field with natural turf
+• Indoor Badminton Courts with professional lighting
+• Tennis Courts meeting ITF specifications
+• Modern Gymnasium and Training Facilities
+• Sports Medicine and Physiotherapy Center
+
+🏘️ ACCOMMODATION & AMENITIES
+• Comfortable on-campus accommodation options
+• Multiple dining facilities offering diverse cuisines
+• 24/7 security and medical support
+• High-speed internet connectivity
+• Recreation and relaxation zones
+• Spectator areas with excellent viewing angles
+
+🌳 CAMPUS ENVIRONMENT
+Set in a serene, eco-friendly environment, our campus combines academic excellence with natural beauty, providing the perfect backdrop for a memorable sporting experience.
+
+The unique location of Krea University in Sri City offers participants not just a venue, but an experience of being part of a global community dedicated to excellence.`
+    }
+  };
 
   const sports = [
     { name: 'Cricket', icon: '🏏', color: '#FFC20A' },
