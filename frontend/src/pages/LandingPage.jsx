@@ -149,28 +149,28 @@ const LandingPage = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white/5 backdrop-blur-md border-[#5B88B2]/20 p-8 hover-lift" data-testid="vision-card">
+            <Card className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 p-8 hover-lift hover:border-[#FFC20A] transition-all" data-testid="vision-card">
               <Target className="w-12 h-12 text-[#FFC20A] mb-4" />
               <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
-              <p className="text-[#FBF9E3]/80 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 To be a flagship sports festival that reflects impactful performance, ambition, and community spirit. 
                 Fostering creativity, critical thinking, and real-world implementation through sports.
               </p>
             </Card>
             
-            <Card className="bg-white/5 backdrop-blur-md border-[#5B88B2]/20 p-8 hover-lift" data-testid="location-card">
+            <Card className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 p-8 hover-lift hover:border-[#FFC20A] transition-all" data-testid="location-card">
               <MapPin className="w-12 h-12 text-[#FFC20A] mb-4" />
               <h3 className="text-2xl font-bold text-white mb-4">Location</h3>
-              <p className="text-[#FBF9E3]/80 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Krea University, Sri City - A 7,500-acre integrated business hub housing 185+ global companies. 
                 State-of-the-art sports facilities and world-class infrastructure.
               </p>
             </Card>
             
-            <Card className="bg-white/5 backdrop-blur-md border-[#5B88B2]/20 p-8 hover-lift" data-testid="experience-card">
+            <Card className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 p-8 hover-lift hover:border-[#FFC20A] transition-all" data-testid="experience-card">
               <Award className="w-12 h-12 text-[#FFC20A] mb-4" />
               <h3 className="text-2xl font-bold text-white mb-4">The Experience</h3>
-              <p className="text-[#FBF9E3]/80 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Two days of intense competition, networking opportunities, cultural events, and memories that last a lifetime. 
                 Be part of history as we debut our first intercollegiate fest.
               </p>
