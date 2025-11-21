@@ -401,6 +401,28 @@ The unique location of Krea University in Sri City offers participants not just 
           <p className="text-gray-600 text-sm">© 2026 BOLT - All Rights Reserved | Organized by SIAS Sports Club</p>
         </div>
       </footer>
+
+      {/* Popup Dialog */}
+      <Dialog open={selectedPopup !== null} onOpenChange={() => setSelectedPopup(null)}>
+        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#FFC20A]">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-white flex items-center justify-between">
+              {selectedPopup && popupContent[selectedPopup]?.title}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setSelectedPopup(null)}
+                className="text-gray-400 hover:text-white"
+              >
+                <X className="w-5 h-5" />
+              </Button>
+            </DialogTitle>
+          </DialogHeader>
+          <DialogDescription className="text-gray-300 text-base leading-relaxed whitespace-pre-line mt-4">
+            {selectedPopup && popupContent[selectedPopup]?.content}
+          </DialogDescription>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
