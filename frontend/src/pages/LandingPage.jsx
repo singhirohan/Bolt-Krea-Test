@@ -94,7 +94,7 @@ const LandingPage = () => {
             
             <p className="text-lg sm:text-xl text-[#FBF9E3]/80 max-w-3xl mx-auto mb-12 leading-relaxed">
               Join us for the first-ever intercollegiate sports festival at Krea University. 
-              Three days of intense competition, sportsmanship, and unforgettable memories.
+              Two days of intense competition, sportsmanship, and unforgettable memories.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
