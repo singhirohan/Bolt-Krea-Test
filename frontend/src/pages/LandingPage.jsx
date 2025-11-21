@@ -88,7 +88,7 @@ const LandingPage = () => {
               BOLT <span className="text-[#FFC20A]">2026</span>
             </h1>
             
-            <p className="text-3xl sm:text-4xl font-bold text-[#5B88B2] mb-4">
+            <p className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#FFC20A] via-[#FF8C00] to-[#FF6B35] bg-clip-text text-transparent mb-4">
               Bigger. Better. Bolder.
             </p>
             
