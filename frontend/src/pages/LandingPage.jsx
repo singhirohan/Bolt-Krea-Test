@@ -220,8 +220,8 @@ The unique location of Krea University in Sri City offers participants not just 
             {stats.map((stat, idx) => {
               const Icon = stat.icon;
               return (
-                <Card key={idx} className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 p-6 text-center hover-lift hover:border-[#FFC20A] transition-all" data-testid={`stat-card-${idx}`}>
-                  <Icon className="w-10 h-10 text-[#FFC20A] mx-auto mb-4" />
+                <Card key={idx} className={`bg-gradient-to-br ${idx % 2 === 0 ? 'from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#122C4F]/60 hover:border-[#122C4F]' : 'from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 hover:border-[#FFC20A]'} p-6 text-center hover-lift transition-all`} data-testid={`stat-card-${idx}`}>
+                  <Icon className={`w-10 h-10 ${idx % 2 === 0 ? 'text-[#122C4F]' : 'text-[#FFC20A]'} mx-auto mb-4`} />
                   <h3 className="text-4xl font-bold text-white mb-2">{stat.value}</h3>
                   <p className="text-gray-300 text-sm">{stat.label}</p>
                 </Card>
