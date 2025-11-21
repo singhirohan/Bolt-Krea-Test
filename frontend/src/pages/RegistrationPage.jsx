@@ -358,7 +358,7 @@ const RegistrationPage = () => {
         {step === 3 && (
           <div className="space-y-6 animate-fadeIn">
             {formData.selectedSports.map((sport, sportIdx) => (
-              <Card key={sport} className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
+              <Card key={sport} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
                 <h3 className="text-xl font-bold text-white mb-4">{sport} Team</h3>
                 <div className="space-y-4">
                   {formData.teams[sport]?.map((member, idx) => (
