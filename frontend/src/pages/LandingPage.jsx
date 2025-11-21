@@ -180,7 +180,7 @@ const LandingPage = () => {
       </section>
 
       {/* Sports Section */}
-      <section id="sports" className="py-20 px-4 bg-white/5">
+      <section id="sports" className="py-20 px-4 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Six Sports Leagues</h2>
