@@ -213,7 +213,7 @@ const AdminDashboard = () => {
         </div>
 
         {/* Filters and Actions */}
-        <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 mb-6">
+        <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 mb-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#FBF9E3]/50" />
