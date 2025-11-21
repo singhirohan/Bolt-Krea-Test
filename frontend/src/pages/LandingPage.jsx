@@ -104,13 +104,18 @@ The unique location of Krea University in Sri City offers participants not just 
   };
 
   const sports = [
-    { name: 'Cricket', icon: '🏏', color: '#FFC20A' },
-    { name: 'Basketball', icon: '🏀', color: '#5B88B2' },
-    { name: 'Football', icon: '⚽', color: '#FFC20A' },
-    { name: 'Badminton', icon: '🏸', color: '#5B88B2' },
-    { name: 'Tennis', icon: '🎾', color: '#FFC20A' },
-    { name: 'Volleyball', icon: '🏐', color: '#5B88B2' }
+    { name: 'Cricket', icon: '🏏', pdf: '/cricket-rules.pdf' },
+    { name: 'Basketball', icon: '🏀', pdf: '/basketball-rules.pdf' },
+    { name: 'Football', icon: '⚽', pdf: '/football-rules.pdf' },
+    { name: 'Badminton', icon: '🏸', pdf: '/badminton-rules.pdf' },
+    { name: 'Tennis', icon: '🎾', pdf: '/tennis-rules.pdf' },
+    { name: 'Volleyball', icon: '🏐', pdf: '/volleyball-rules.pdf' }
   ];
+
+  const handleSportClick = (sport) => {
+    // For now, show alert. You can replace with actual PDF links
+    alert(`${sport.name} rules PDF will be available soon. PDF path: ${sport.pdf}`);
+  };
 
   const timeline = [
     { year: '2022', title: 'Inception', desc: '750+ participants across 20+ sports' },
