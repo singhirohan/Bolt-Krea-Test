@@ -44,9 +44,11 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#FFC20A] to-[#FF8C00] rounded-lg flex items-center justify-center font-bold text-[#122C4F] text-xl">
-                B
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
+                alt="BOLT Logo" 
+                className="h-12 w-auto"
+              />
               <div>
                 <h1 className="text-2xl font-bold text-white">BOLT 2026</h1>
                 <p className="text-xs text-[#FFC20A]">Bigger. Better. Bolder.</p>
