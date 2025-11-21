@@ -192,8 +192,7 @@ const LandingPage = () => {
             {sports.map((sport, idx) => (
               <Card 
                 key={idx} 
-                className="sport-card bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border-[#FFC20A]/20 p-8 text-center cursor-pointer"
-                style={{ borderColor: sport.color }}
+                className="sport-card bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8 text-center cursor-pointer hover:border-[#FFC20A] hover:shadow-lg hover:shadow-[#FFC20A]/20 transition-all"
                 data-testid={`sport-card-${sport.name.toLowerCase()}`}
               >
                 <div className="text-6xl mb-4">{sport.icon}</div>
