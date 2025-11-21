@@ -219,10 +219,10 @@ const LandingPage = () => {
               {timeline.map((item, idx) => (
                 <div key={idx} className={`flex items-center ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`} data-testid={`timeline-${item.year}`}>
                   <div className={`w-1/2 ${idx % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
-                    <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 hover-lift inline-block">
+                    <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover-lift hover:border-[#FFC20A] transition-all inline-block">
                       <span className="text-[#FFC20A] font-bold text-2xl">{item.year}</span>
                       <h3 className="text-2xl font-bold text-white mt-2 mb-3">{item.title}</h3>
-                      <p className="text-[#FBF9E3]/80">{item.desc}</p>
+                      <p className="text-gray-300">{item.desc}</p>
                     </Card>
                   </div>
                   <div className="w-6 h-6 bg-[#FFC20A] rounded-full border-4 border-[#122C4F] z-10"></div>
