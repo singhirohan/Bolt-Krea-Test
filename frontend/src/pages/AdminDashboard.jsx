@@ -343,7 +343,8 @@ const AdminDashboard = () => {
                   </details>
                 </div>
               </Card>
-            ))
+              );
+            })
           )}
         </div>
       </div>
