@@ -255,8 +255,8 @@ const AdminDashboard = () => {
         {/* Registrations List */}
         <div className="space-y-4">
           {filteredRegistrations.length === 0 ? (
-            <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-12 text-center">
-              <p className="text-[#FBF9E3]/70 text-lg">No registrations found</p>
+            <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-12 text-center">
+              <p className="text-gray-400 text-lg">No registrations found</p>
             </Card>
           ) : (
             filteredRegistrations.map((reg, idx) => {
