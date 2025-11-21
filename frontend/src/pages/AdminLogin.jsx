@@ -65,7 +65,7 @@ const AdminLogin = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
               alt="BOLT Logo" 
-              className="h-16 w-auto mx-auto mb-4"
+              className="h-24 w-auto mx-auto mb-4"
             />
             <h1 className="text-3xl font-bold text-white mb-2">Admin Portal</h1>
             <p className="text-[#FBF9E3]/70">Sign in to access the dashboard</p>
