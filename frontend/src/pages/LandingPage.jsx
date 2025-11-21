@@ -260,20 +260,20 @@ The unique location of Krea University in Sri City offers participants not just 
             </Card>
             
             <Card 
-              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#122C4F]/60 p-8 hover-lift hover:border-[#122C4F] transition-all cursor-pointer group" 
+              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#FFC20A]/40 p-8 hover-lift hover:border-[#FFC20A] transition-all cursor-pointer group" 
               data-testid="location-card"
               onClick={() => setSelectedPopup('location')}
             >
-              <MapPin className="w-12 h-12 text-[#122C4F] mb-4 group-hover:scale-110 transition-transform" />
+              <MapPin className="w-12 h-12 text-[#FFC20A] mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-between">
                 Location
-                <ChevronRight className="w-5 h-5 text-[#122C4F] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ChevronRight className="w-5 h-5 text-[#FFC20A] opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Krea University, Sri City - A 7,500-acre integrated business hub housing 185+ global companies. 
                 State-of-the-art sports facilities and world-class infrastructure.
               </p>
-              <p className="text-[#122C4F] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-[#FFC20A] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                 Click to read more →
               </p>
             </Card>
