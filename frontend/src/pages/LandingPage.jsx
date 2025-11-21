@@ -162,6 +162,17 @@ The unique location of Krea University in Sri City offers participants not just 
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/wpwggyzw_DSC09591.JPG" 
+            alt="BOLT Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+        </div>
+        
+        {/* Glow Effects */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#FFC20A] rounded-full blur-3xl opacity-20"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#122C4F] rounded-full blur-3xl opacity-30"></div>
