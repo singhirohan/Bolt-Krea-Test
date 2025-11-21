@@ -129,10 +129,10 @@ const LandingPage = () => {
             {stats.map((stat, idx) => {
               const Icon = stat.icon;
               return (
-                <Card key={idx} className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 text-center hover-lift" data-testid={`stat-card-${idx}`}>
+                <Card key={idx} className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] border-[#FFC20A]/40 p-6 text-center hover-lift hover:border-[#FFC20A] transition-all" data-testid={`stat-card-${idx}`}>
                   <Icon className="w-10 h-10 text-[#FFC20A] mx-auto mb-4" />
                   <h3 className="text-4xl font-bold text-white mb-2">{stat.value}</h3>
-                  <p className="text-[#FBF9E3]/70 text-sm">{stat.label}</p>
+                  <p className="text-gray-300 text-sm">{stat.label}</p>
                 </Card>
               );
             })}
