@@ -134,7 +134,7 @@ The unique location of Krea University in Sri City offers participants not just 
   return (
     <div className="min-h-screen bg-black">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-lg border-b border-[#FFC20A]/30">
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-black via-[#122C4F]/10 to-black backdrop-blur-lg border-b border-[#FFC20A]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
