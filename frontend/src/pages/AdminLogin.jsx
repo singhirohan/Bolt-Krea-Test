@@ -48,7 +48,7 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#122C4F] via-[#1a3a5f] to-[#122C4F] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-black flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <Button
           variant="ghost"
