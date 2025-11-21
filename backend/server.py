@@ -162,6 +162,16 @@ async def verify_payment(payment_data: Dict):
         "message": "Payment verified successfully"
     }
 
+@api_router.delete("/registrations/{registration_id}")
+async def delete_registration(registration_id: str):
+    result = await db.registrations.delete_one({"id": registration_id})
+    
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="Registration not found")
+    
+    logging.info(f"Registration deleted: {registration_id}")
+    return {"success": True, "message": "Registration deleted successfully"}
+
 # Include the router in the main app
 app.include_router(api_router)
 
