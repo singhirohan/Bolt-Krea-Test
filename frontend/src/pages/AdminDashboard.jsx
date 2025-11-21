@@ -259,46 +259,64 @@ const AdminDashboard = () => {
               <p className="text-[#FBF9E3]/70 text-lg">No registrations found</p>
             </Card>
           ) : (
-            filteredRegistrations.map((reg, idx) => (
-              <Card key={reg.id} className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 hover:border-[#FFC20A]/40 transition-all" data-testid={`registration-card-${idx}`}>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-3 mb-3">
-                      <h3 className="text-xl font-bold text-white">{reg.collegeName}</h3>
-                      <Badge className="bg-[#FFC20A]/20 text-[#FFC20A] border-[#FFC20A]/40">
-                        {reg.paymentStatus}
-                      </Badge>
-                    </div>
-                    
-                    <div className="grid md:grid-cols-2 gap-3 text-[#FBF9E3]/80 text-sm">
-                      <div>
-                        <span className="font-medium">Sports:</span> {reg.sports.join(', ')}
+            filteredRegistrations.map((reg, idx) => {
+              const { dateStr, timeStr } = formatDateTime(reg.timestamp);
+              return (
+                <Card key={reg.id} className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 hover:border-[#FFC20A]/40 transition-all" data-testid={`registration-card-${idx}`}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-3 mb-3">
+                        <h3 className="text-xl font-bold text-white">{reg.collegeName}</h3>
+                        <Badge className="bg-[#FFC20A]/20 text-[#FFC20A] border-[#FFC20A]/40">
+                          {reg.paymentStatus}
+                        </Badge>
                       </div>
-                      <div>
-                        <span className="font-medium">Total Members:</span> {reg.teams.reduce((sum, team) => sum + team.members.length, 0)}
-                      </div>
-                      <div>
-                        <span className="font-medium">Registration Fee:</span> ₹{reg.registrationFee.toLocaleString()}
-                      </div>
-                      {reg.accommodationFee > 0 && (
+                      
+                      <div className="grid md:grid-cols-2 gap-3 text-[#FBF9E3]/80 text-sm">
                         <div>
-                          <span className="font-medium">Accommodation Fee:</span> ₹{reg.accommodationFee.toLocaleString()}
+                          <span className="font-medium">Sports:</span> {reg.sports.join(', ')}
                         </div>
-                      )}
+                        <div>
+                          <span className="font-medium">Total Members:</span> {reg.teams.reduce((sum, team) => sum + team.members.length, 0)}
+                        </div>
+                        <div>
+                          <span className="font-medium">Registration Fee:</span> ₹{reg.registrationFee.toLocaleString()}
+                        </div>
+                        {reg.accommodationFee > 0 && (
+                          <div>
+                            <span className="font-medium">Accommodation Fee:</span> ₹{reg.accommodationFee.toLocaleString()}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="text-right">
-                    <div className="flex items-center justify-end text-2xl font-bold text-[#FFC20A] mb-2">
-                      <IndianRupee className="w-5 h-5" />
-                      {reg.totalAmount.toLocaleString()}
-                    </div>
-                    <div className="flex items-center text-[#FBF9E3]/60 text-sm">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {new Date(reg.timestamp).toLocaleDateString()}
+                    <div className="text-right">
+                      <div className="flex items-center justify-end text-2xl font-bold text-[#FFC20A] mb-2">
+                        <IndianRupee className="w-5 h-5" />
+                        {reg.totalAmount.toLocaleString()}
+                      </div>
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-end text-[#FBF9E3]/60 text-sm">
+                          <Calendar className="w-4 h-4 mr-1" />
+                          {dateStr}
+                        </div>
+                        <div className="flex items-center justify-end text-[#FBF9E3]/50 text-xs">
+                          <Clock className="w-3 h-3 mr-1" />
+                          {timeStr}
+                        </div>
+                      </div>
+                      <Button
+                        onClick={() => handleDelete(reg.id, reg.collegeName)}
+                        variant="ghost"
+                        size="sm"
+                        className="mt-2 text-red-400 hover:text-red-300 hover:bg-red-400/10"
+                        data-testid={`delete-registration-btn-${idx}`}
+                      >
+                        <Trash2 className="w-4 h-4 mr-1" />
+                        Delete
+                      </Button>
                     </div>
                   </div>
-                </div>
 
                 {/* Teams Details */}
                 <div className="mt-4 pt-4 border-t border-white/10">
