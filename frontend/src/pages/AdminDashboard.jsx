@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
-import { ArrowLeft, Search, Download, Users, Trophy, IndianRupee, Calendar } from 'lucide-react';
+import { ArrowLeft, Search, Download, Users, Trophy, IndianRupee, Calendar, Trash2, Clock } from 'lucide-react';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
