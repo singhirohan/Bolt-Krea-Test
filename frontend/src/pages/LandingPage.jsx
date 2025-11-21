@@ -258,7 +258,7 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0a1929] py-12 px-4 border-t border-[#FFC20A]/20">
+      <footer className="bg-black py-12 px-4 border-t border-[#FFC20A]/40">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <img 
