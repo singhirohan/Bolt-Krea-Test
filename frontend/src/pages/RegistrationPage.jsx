@@ -551,7 +551,7 @@ const RegistrationPage = () => {
 
         {/* Step 5: Payment Summary */}
         {step === 5 && (
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-8 animate-fadeIn" data-testid="step-payment">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8 animate-fadeIn" data-testid="step-payment">
             <h2 className="text-2xl font-bold text-white mb-6">Payment Summary</h2>
             <div className="space-y-4 mb-6">
               <div className="bg-white/5 rounded-lg p-6 border border-white/10">
