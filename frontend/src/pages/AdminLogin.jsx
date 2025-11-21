@@ -62,9 +62,11 @@ const AdminLogin = () => {
 
         <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-8">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-[#FFC20A] to-[#FF8C00] rounded-full flex items-center justify-center mx-auto mb-4">
-              <Lock className="w-8 h-8 text-[#122C4F]" />
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
+              alt="BOLT Logo" 
+              className="h-16 w-auto mx-auto mb-4"
+            />
             <h1 className="text-3xl font-bold text-white mb-2">Admin Portal</h1>
             <p className="text-[#FBF9E3]/70">Sign in to access the dashboard</p>
           </div>
