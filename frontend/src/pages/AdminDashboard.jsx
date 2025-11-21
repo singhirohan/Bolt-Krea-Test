@@ -72,6 +72,36 @@ const AdminDashboard = () => {
     navigate('/admin');
   };
 
+  const handleDelete = async (registrationId, collegeName) => {
+    if (!window.confirm(`Are you sure you want to delete the registration for ${collegeName}?`)) {
+      return;
+    }
+
+    try {
+      await axios.delete(`${API}/registrations/${registrationId}`);
+      toast.success('Registration deleted successfully');
+      fetchRegistrations(); // Refresh the list
+    } catch (error) {
+      console.error('Error deleting registration:', error);
+      toast.error('Failed to delete registration');
+    }
+  };
+
+  const formatDateTime = (timestamp) => {
+    const date = new Date(timestamp);
+    const dateStr = date.toLocaleDateString('en-IN', { 
+      day: '2-digit', 
+      month: 'short', 
+      year: 'numeric' 
+    });
+    const timeStr = date.toLocaleTimeString('en-IN', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: true 
+    });
+    return { dateStr, timeStr };
+  };
+
   const exportToCSV = () => {
     if (filteredRegistrations.length === 0) {
       toast.error('No data to export');
