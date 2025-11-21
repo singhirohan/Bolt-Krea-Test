@@ -209,7 +209,7 @@ const LandingPage = () => {
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Journey</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] mx-auto mb-6"></div>
-            <p className="text-[#FBF9E3]/70 text-lg">From inception to intercollegiate excellence</p>
+            <p className="text-gray-400 text-lg">From inception to intercollegiate excellence</p>
           </div>
           
           <div className="relative">
