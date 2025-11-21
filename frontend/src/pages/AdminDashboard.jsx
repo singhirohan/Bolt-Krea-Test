@@ -262,7 +262,7 @@ const AdminDashboard = () => {
             filteredRegistrations.map((reg, idx) => {
               const { dateStr, timeStr } = formatDateTime(reg.timestamp);
               return (
-                <Card key={reg.id} className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6 hover:border-[#FFC20A]/40 transition-all" data-testid={`registration-card-${idx}`}>
+                <Card key={reg.id} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover:border-[#FFC20A] hover:shadow-lg hover:shadow-[#FFC20A]/20 transition-all" data-testid={`registration-card-${idx}`}>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="flex-1">
                       <div className="flex items-center space-x-3 mb-3">
