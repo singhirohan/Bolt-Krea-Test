@@ -187,28 +187,28 @@ const AdminDashboard = () => {
 
         {/* Stats Cards */}
         <div className="grid md:grid-cols-4 gap-6 mb-8">
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6" data-testid="stat-total-registrations">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover:border-[#FFC20A] transition-all" data-testid="stat-total-registrations">
             <Users className="w-10 h-10 text-[#FFC20A] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{filteredRegistrations.length}</h3>
-            <p className="text-[#FBF9E3]/70 text-sm">Total Registrations</p>
+            <p className="text-gray-300 text-sm">Total Registrations</p>
           </Card>
 
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6" data-testid="stat-total-colleges">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover:border-[#FFC20A] transition-all" data-testid="stat-total-colleges">
             <Trophy className="w-10 h-10 text-[#FFC20A] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{stats.totalColleges}</h3>
-            <p className="text-[#FBF9E3]/70 text-sm">Colleges Registered</p>
+            <p className="text-gray-300 text-sm">Colleges Registered</p>
           </Card>
 
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6" data-testid="stat-total-participants">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover:border-[#FFC20A] transition-all" data-testid="stat-total-participants">
             <Users className="w-10 h-10 text-[#FFC20A] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{stats.totalParticipants}</h3>
-            <p className="text-[#FBF9E3]/70 text-sm">Total Participants</p>
+            <p className="text-gray-300 text-sm">Total Participants</p>
           </Card>
 
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-6" data-testid="stat-total-revenue">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-6 hover:border-[#FFC20A] transition-all" data-testid="stat-total-revenue">
             <IndianRupee className="w-10 h-10 text-[#FFC20A] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">₹{stats.totalRevenue.toLocaleString()}</h3>
-            <p className="text-[#FBF9E3]/70 text-sm">Total Revenue</p>
+            <p className="text-gray-300 text-sm">Total Revenue</p>
           </Card>
         </div>
 
