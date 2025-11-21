@@ -313,11 +313,16 @@ The unique location of Krea University in Sri City offers participants not just 
             {sports.map((sport, idx) => (
               <Card 
                 key={idx} 
-                className="sport-card bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8 text-center cursor-pointer hover:border-[#FFC20A] hover:shadow-lg hover:shadow-[#FFC20A]/20 transition-all"
+                className="sport-card bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-black border-[#FFC20A]/40 p-8 text-center cursor-pointer hover:border-[#FFC20A] hover:shadow-lg hover:shadow-[#FFC20A]/20 transition-all group"
                 data-testid={`sport-card-${sport.name.toLowerCase()}`}
+                onClick={() => handleSportClick(sport)}
               >
-                <div className="text-6xl mb-4">{sport.icon}</div>
-                <h3 className="text-2xl font-bold text-white">{sport.name}</h3>
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">{sport.icon}</div>
+                <h3 className="text-2xl font-bold text-white mb-2">{sport.name}</h3>
+                <div className="flex items-center justify-center text-[#FFC20A] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ExternalLink className="w-4 h-4 mr-1" />
+                  View Rules
+                </div>
               </Card>
             ))}
           </div>
