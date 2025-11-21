@@ -171,7 +171,7 @@ const LandingPage = () => {
               <Award className="w-12 h-12 text-[#FFC20A] mb-4" />
               <h3 className="text-2xl font-bold text-white mb-4">The Experience</h3>
               <p className="text-[#FBF9E3]/80 leading-relaxed">
-                Three days of intense competition, networking opportunities, cultural events, and memories that last a lifetime. 
+                Two days of intense competition, networking opportunities, cultural events, and memories that last a lifetime. 
                 Be part of history as we debut our first intercollegiate fest.
               </p>
             </Card>
