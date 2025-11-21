@@ -308,7 +308,7 @@ const RegistrationPage = () => {
 
         {/* Step 2: Sports Selection */}
         {step === 2 && (
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-8 animate-fadeIn" data-testid="step-sports">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8 animate-fadeIn" data-testid="step-sports">
             <h2 className="text-2xl font-bold text-white mb-6">Select Sports (Multiple Allowed)</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               {SPORTS.map(sport => (
