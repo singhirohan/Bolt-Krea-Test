@@ -47,7 +47,7 @@ const LandingPage = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
                 alt="BOLT Logo" 
-                className="h-20 w-auto"
+                className="h-40 w-auto"
               />
               <div>
                 <h1 className="text-2xl font-bold text-white">BOLT 2026</h1>
