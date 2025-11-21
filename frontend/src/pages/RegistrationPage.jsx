@@ -452,7 +452,7 @@ const RegistrationPage = () => {
 
         {/* Step 4: Accommodation */}
         {step === 4 && (
-          <Card className="bg-white/5 backdrop-blur-md border-[#FFC20A]/20 p-8 animate-fadeIn" data-testid="step-accommodation">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8 animate-fadeIn" data-testid="step-accommodation">
             <h2 className="text-2xl font-bold text-white mb-6">Accommodation</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-3">
