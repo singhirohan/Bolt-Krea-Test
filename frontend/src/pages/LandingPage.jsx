@@ -34,7 +34,7 @@ const LandingPage = () => {
     { value: '1500+', label: 'Expected Participants', icon: Users },
     { value: '50,000+', label: 'Social Media Reach', icon: Target },
     { value: '6', label: 'Sports Leagues', icon: Trophy },
-    { value: '3', label: 'Days of Action', icon: Calendar }
+    { value: '2', label: 'Days of Action', icon: Calendar }
   ];
 
   return (
