@@ -271,8 +271,8 @@ const LandingPage = () => {
               <p className="text-xs text-[#FFC20A]">Bigger. Better. Bolder.</p>
             </div>
           </div>
-          <p className="text-[#FBF9E3]/60 mb-4">Krea University's Flagship Sports Festival</p>
-          <p className="text-[#FBF9E3]/40 text-sm">© 2026 BOLT - All Rights Reserved | Organized by SIAS Sports Club</p>
+          <p className="text-gray-400 mb-4">Krea University's Flagship Sports Festival</p>
+          <p className="text-gray-600 text-sm">© 2026 BOLT - All Rights Reserved | Organized by SIAS Sports Club</p>
         </div>
       </footer>
     </div>
