@@ -43,16 +43,12 @@ const LandingPage = () => {
       <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-lg border-b border-[#FFC20A]/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center">
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
                 alt="BOLT Logo" 
                 className="h-[200px] w-auto"
               />
-              <div>
-                <h1 className="text-2xl font-bold text-white">BOLT 2026</h1>
-                <p className="text-xs text-[#FFC20A]">Bigger. Better. Bolder.</p>
-              </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium">About</a>
