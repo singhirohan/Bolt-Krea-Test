@@ -237,10 +237,10 @@ const LandingPage = () => {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Card className="bg-gradient-to-br from-[#FFC20A]/20 to-[#5B88B2]/20 backdrop-blur-md border-[#FFC20A]/40 p-12">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A] p-12 shadow-2xl shadow-[#FFC20A]/20">
             <Trophy className="w-20 h-20 text-[#FFC20A] mx-auto mb-6" />
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to Compete?</h2>
-            <p className="text-[#FBF9E3]/80 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
               Register your college team now and be part of the biggest intercollegiate sports festival in South India. 
               Limited slots available!
             </p>
