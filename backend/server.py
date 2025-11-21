@@ -1,15 +1,14 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException, Depends
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict
-from typing import List
+from pydantic import BaseModel, Field, ConfigDict, EmailStr
+from typing import List, Optional, Dict
 import uuid
 from datetime import datetime, timezone
-
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -25,46 +24,143 @@ app = FastAPI()
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
+# Models
+class TeamMember(BaseModel):
+    name: str
+    email: Optional[str] = None
+    phone: str
 
-# Define Models
-class StatusCheck(BaseModel):
-    model_config = ConfigDict(extra="ignore")  # Ignore MongoDB's _id field
+class SportTeam(BaseModel):
+    sport: str
+    members: List[TeamMember]
+
+class AccommodationDetails(BaseModel):
+    required: bool
+    numberOfPeople: Optional[int] = 0
+    numberOfNights: Optional[int] = 0
+    preferences: Optional[str] = ""
+
+class RegistrationCreate(BaseModel):
+    collegeName: str
+    sports: List[str]
+    teams: List[SportTeam]
+    accommodation: AccommodationDetails
+    totalAmount: float
+    registrationFee: float
+    accommodationFee: float
+    paymentId: Optional[str] = None
+    paymentStatus: str = "pending"
+
+class Registration(BaseModel):
+    model_config = ConfigDict(extra="ignore")
     
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    client_name: str
+    collegeName: str
+    sports: List[str]
+    teams: List[SportTeam]
+    accommodation: AccommodationDetails
+    totalAmount: float
+    registrationFee: float
+    accommodationFee: float
+    paymentId: Optional[str] = None
+    paymentStatus: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
-class StatusCheckCreate(BaseModel):
-    client_name: str
+class AdminLogin(BaseModel):
+    username: str
+    password: str
 
-# Add your routes to the router instead of directly to app
+class AdminLoginResponse(BaseModel):
+    success: bool
+    token: Optional[str] = None
+    message: str
+
+# Routes
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "BOLT 2026 API"}
 
-@api_router.post("/status", response_model=StatusCheck)
-async def create_status_check(input: StatusCheckCreate):
-    status_dict = input.model_dump()
-    status_obj = StatusCheck(**status_dict)
+@api_router.post("/registrations", response_model=Registration)
+async def create_registration(input: RegistrationCreate):
+    registration_obj = Registration(**input.model_dump())
     
     # Convert to dict and serialize datetime to ISO string for MongoDB
-    doc = status_obj.model_dump()
+    doc = registration_obj.model_dump()
     doc['timestamp'] = doc['timestamp'].isoformat()
     
-    _ = await db.status_checks.insert_one(doc)
-    return status_obj
+    _ = await db.registrations.insert_one(doc)
+    
+    # Mock email confirmation
+    logging.info(f"[MOCKED] Email confirmation sent to college: {registration_obj.collegeName}")
+    
+    return registration_obj
 
-@api_router.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
+@api_router.get("/registrations", response_model=List[Registration])
+async def get_registrations():
+    registrations = await db.registrations.find({}, {"_id": 0}).to_list(1000)
     
     # Convert ISO string timestamps back to datetime objects
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
+    for reg in registrations:
+        if isinstance(reg['timestamp'], str):
+            reg['timestamp'] = datetime.fromisoformat(reg['timestamp'])
     
-    return status_checks
+    return registrations
+
+@api_router.get("/registrations/{registration_id}", response_model=Registration)
+async def get_registration(registration_id: str):
+    registration = await db.registrations.find_one({"id": registration_id}, {"_id": 0})
+    
+    if not registration:
+        raise HTTPException(status_code=404, detail="Registration not found")
+    
+    if isinstance(registration['timestamp'], str):
+        registration['timestamp'] = datetime.fromisoformat(registration['timestamp'])
+    
+    return registration
+
+@api_router.post("/admin/login", response_model=AdminLoginResponse)
+async def admin_login(credentials: AdminLogin):
+    # Hardcoded admin credentials
+    ADMIN_USERNAME = "Bolt_2026"
+    ADMIN_PASSWORD = "Bolt@krea2026"
+    
+    if credentials.username == ADMIN_USERNAME and credentials.password == ADMIN_PASSWORD:
+        # In production, use proper JWT tokens
+        token = f"mock_token_{uuid.uuid4()}"
+        return AdminLoginResponse(
+            success=True,
+            token=token,
+            message="Login successful"
+        )
+    else:
+        return AdminLoginResponse(
+            success=False,
+            message="Invalid credentials"
+        )
+
+@api_router.post("/payment/create-order")
+async def create_razorpay_order(amount: Dict):
+    # Mock Razorpay order creation
+    order_id = f"order_mock_{uuid.uuid4().hex[:10]}"
+    logging.info(f"[MOCKED] Razorpay order created: {order_id} for amount: {amount['amount']}")
+    
+    return {
+        "id": order_id,
+        "amount": amount['amount'],
+        "currency": "INR",
+        "status": "created"
+    }
+
+@api_router.post("/payment/verify")
+async def verify_payment(payment_data: Dict):
+    # Mock payment verification
+    logging.info(f"[MOCKED] Payment verified: {payment_data}")
+    
+    return {
+        "success": True,
+        "paymentId": payment_data.get('razorpay_payment_id', f"pay_mock_{uuid.uuid4().hex[:10]}"),
+        "message": "Payment verified successfully"
+    }
 
 # Include the router in the main app
 app.include_router(api_router)
