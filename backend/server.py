@@ -36,9 +36,8 @@ class SportTeam(BaseModel):
 
 class AccommodationDetails(BaseModel):
     required: bool
+    package: Optional[str] = None  # 'package1' or 'package2'
     numberOfPeople: Optional[int] = 0
-    numberOfNights: Optional[int] = 0
-    preferences: Optional[str] = ""
 
 class RegistrationCreate(BaseModel):
     collegeName: str
