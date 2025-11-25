@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { Trophy, Target, Users, Calendar, MapPin, Award, ChevronRight, Sparkles, ExternalLink, X } from 'lucide-react';
+import { Trophy, Target, Users, Calendar, MapPin, Award, ChevronRight, Sparkles, ExternalLink, X, Download } from 'lucide-react';
 
 const LandingPage = () => {
   const navigate = useNavigate();
