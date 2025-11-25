@@ -767,7 +767,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
   return (
     <div className="min-h-screen bg-[#122C4F]">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[#122C4F] via-[#122C4F]/95 to-[#122C4F] backdrop-blur-lg border-b border-[#21A7A0]/40">
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[#122C4F] via-[#122C4F]/95 to-[#122C4F] backdrop-blur-lg border-b border-[#5B88B2]/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
@@ -778,11 +778,11 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               />
             </div>
             <div className="flex items-center space-x-4 md:space-x-8">
-              <a href="#about" className="text-[#FAF7DB] hover:text-[#21A7A0] transition-colors font-medium text-xs md:text-base">About</a>
-              <a href="#sports" className="text-[#FAF7DB] hover:text-[#21A7A0] transition-colors font-medium text-xs md:text-base">Sports</a>
+              <a href="#about" className="text-[#FAF7DB] hover:text-[#5B88B2] transition-colors font-medium text-xs md:text-base">About</a>
+              <a href="#sports" className="text-[#FAF7DB] hover:text-[#5B88B2] transition-colors font-medium text-xs md:text-base">Sports</a>
               <Button 
                 onClick={() => navigate('/register')}
-                className="bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-white font-bold hover:shadow-lg hover:shadow-[#21A7A0]/50 transition-all text-xs md:text-base px-3 py-2 md:px-4 md:py-2"
+                className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-white font-bold hover:shadow-lg hover:shadow-[#5B88B2]/50 transition-all text-xs md:text-base px-3 py-2 md:px-4 md:py-2"
                 data-testid="nav-register-btn"
               >
                 Register
@@ -806,23 +806,23 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         
         {/* Glow Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#21A7A0] rounded-full blur-3xl opacity-25"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#5B88B2] rounded-full blur-3xl opacity-25"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#6F9BC2] rounded-full blur-3xl opacity-30"></div>
           <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#FAD713] rounded-full blur-3xl opacity-20"></div>
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fadeIn">
-            <div className="inline-flex items-center space-x-2 bg-[#21A7A0]/20 border border-[#21A7A0]/50 rounded-full px-6 py-2 mb-8">
-              <Sparkles className="w-5 h-5 text-[#21A7A0]" />
+            <div className="inline-flex items-center space-x-2 bg-[#5B88B2]/20 border border-[#5B88B2]/50 rounded-full px-6 py-2 mb-8">
+              <Sparkles className="w-5 h-5 text-[#5B88B2]" />
               <span className="text-[#FAF7DB] font-medium">Krea University's Premier Sports Festival</span>
             </div>
             
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6" style={{ transform: `translateY(${scrollY * 0.3}px)` }}>
-              BOLT <span className="text-[#21A7A0]">2026</span>
+              BOLT <span className="text-[#5B88B2]">2026</span>
             </h1>
             
-            <p className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] bg-clip-text text-transparent mb-3 sm:mb-4">
+            <p className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] bg-clip-text text-transparent mb-3 sm:mb-4">
               Bigger. Better. Bolder.
             </p>
             
@@ -835,7 +835,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <Button 
                 onClick={() => navigate('/register')}
                 size="lg"
-                className="bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-white font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 hover:shadow-2xl hover:shadow-[#21A7A0]/50 transition-all hover:scale-105 w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-white font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 hover:shadow-2xl hover:shadow-[#5B88B2]/50 transition-all hover:scale-105 w-full sm:w-auto"
                 data-testid="hero-register-btn"
               >
                 Register Your Team
@@ -864,8 +864,8 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             {stats.map((stat, idx) => {
               const Icon = stat.icon;
               return (
-                <Card key={idx} className="bg-gradient-to-br from-[#0d1f35] to-[#122C4F] border-[#21A7A0]/50 p-6 text-center hover-lift hover:border-[#21A7A0] transition-all" data-testid={`stat-card-${idx}`}>
-                  <Icon className="w-10 h-10 text-[#21A7A0] mx-auto mb-4" />
+                <Card key={idx} className="bg-gradient-to-br from-[#0d1f35] to-[#122C4F] border-[#5B88B2]/50 p-6 text-center hover-lift hover:border-[#5B88B2] transition-all" data-testid={`stat-card-${idx}`}>
+                  <Icon className="w-10 h-10 text-[#5B88B2] mx-auto mb-4" />
                   <h3 className="text-4xl font-bold text-white mb-2">{stat.value}</h3>
                   <p className="text-gray-300 text-sm">{stat.label}</p>
                 </Card>
@@ -880,63 +880,63 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Why BOLT?</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] mx-auto"></div>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card 
-              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#21A7A0]/40 p-8 hover-lift hover:border-[#21A7A0] transition-all cursor-pointer group" 
+              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#5B88B2]/40 p-8 hover-lift hover:border-[#5B88B2] transition-all cursor-pointer group" 
               data-testid="vision-card"
               onClick={() => setSelectedPopup('vision')}
             >
-              <Target className="w-12 h-12 text-[#21A7A0] mb-4 group-hover:scale-110 transition-transform" />
+              <Target className="w-12 h-12 text-[#5B88B2] mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-between">
                 Our Vision
-                <ChevronRight className="w-5 h-5 text-[#21A7A0] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ChevronRight className="w-5 h-5 text-[#5B88B2] opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 To be a flagship sports festival that reflects impactful performance, ambition, and community spirit. 
                 Fostering creativity, critical thinking, and real-world implementation through sports.
               </p>
-              <p className="text-[#21A7A0] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-[#5B88B2] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                 Click to read more →
               </p>
             </Card>
             
             <Card 
-              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#21A7A0]/40 p-8 hover-lift hover:border-[#21A7A0] transition-all cursor-pointer group" 
+              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#5B88B2]/40 p-8 hover-lift hover:border-[#5B88B2] transition-all cursor-pointer group" 
               data-testid="location-card"
               onClick={() => setSelectedPopup('location')}
             >
-              <MapPin className="w-12 h-12 text-[#21A7A0] mb-4 group-hover:scale-110 transition-transform" />
+              <MapPin className="w-12 h-12 text-[#5B88B2] mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-between">
                 Location
-                <ChevronRight className="w-5 h-5 text-[#21A7A0] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ChevronRight className="w-5 h-5 text-[#5B88B2] opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Krea University, Sri City - A 7,500-acre integrated business hub housing 185+ global companies. 
                 State-of-the-art sports facilities and world-class infrastructure.
               </p>
-              <p className="text-[#21A7A0] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-[#5B88B2] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                 Click to read more →
               </p>
             </Card>
             
             <Card 
-              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#21A7A0]/40 p-8 hover-lift hover:border-[#21A7A0] transition-all cursor-pointer group" 
+              className="bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-[#0a0a0a] border-[#5B88B2]/40 p-8 hover-lift hover:border-[#5B88B2] transition-all cursor-pointer group" 
               data-testid="experience-card"
               onClick={() => setSelectedPopup('experience')}
             >
-              <Award className="w-12 h-12 text-[#21A7A0] mb-4 group-hover:scale-110 transition-transform" />
+              <Award className="w-12 h-12 text-[#5B88B2] mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center justify-between">
                 The Experience
-                <ChevronRight className="w-5 h-5 text-[#21A7A0] opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ChevronRight className="w-5 h-5 text-[#5B88B2] opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Two days of intense competition, networking opportunities, cultural events, and memories that last a lifetime. 
                 Be part of history as we debut our first intercollegiate fest.
               </p>
-              <p className="text-[#21A7A0] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-[#5B88B2] text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                 Click to read more →
               </p>
             </Card>
@@ -949,7 +949,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Relive BOLT Moments</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">Glimpses of intense competition and unforgettable memories</p>
           </div>
 
@@ -965,7 +965,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Peak Performance</h3>
                 <p className="text-gray-300 text-sm">Athletes giving their best</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -979,7 +979,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Team Spirit</h3>
                 <p className="text-gray-300 text-sm">Unity and camaraderie</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -993,7 +993,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Fierce Competition</h3>
                 <p className="text-gray-300 text-sm">Where champions emerge</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1007,7 +1007,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Celebration</h3>
                 <p className="text-gray-300 text-sm">Moments of triumph and joy</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1021,7 +1021,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">World-Class Facilities</h3>
                 <p className="text-gray-300 text-sm">Indoor badminton courts</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1035,7 +1035,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Premium Venue</h3>
                 <p className="text-gray-300 text-sm">State-of-the-art infrastructure</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1049,7 +1049,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Beautiful Campus</h3>
                 <p className="text-gray-300 text-sm">Scenic sports grounds</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1063,7 +1063,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Open Air Arena</h3>
                 <p className="text-gray-300 text-sm">Perfect for outdoor sports</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
 
             <div className="relative overflow-hidden rounded-2xl group">
@@ -1077,7 +1077,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h3 className="text-xl font-bold mb-2">Cricket Stadium</h3>
                 <p className="text-gray-300 text-sm">Professional cricket grounds</p>
               </div>
-              <div className="absolute inset-0 border-2 border-[#21A7A0]/0 group-hover:border-[#21A7A0]/60 rounded-2xl transition-all duration-300"></div>
+              <div className="absolute inset-0 border-2 border-[#5B88B2]/0 group-hover:border-[#5B88B2]/60 rounded-2xl transition-all duration-300"></div>
             </div>
           </div>
         </div>
@@ -1088,7 +1088,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Six Sports Leagues</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">Compete in your favorite sport and showcase your talent</p>
           </div>
           
@@ -1096,13 +1096,13 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             {sports.map((sport, idx) => (
               <Card 
                 key={idx} 
-                className="sport-card bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-black border-[#21A7A0]/40 p-8 text-center cursor-pointer hover:border-[#21A7A0] hover:shadow-lg hover:shadow-[#21A7A0]/20 transition-all group"
+                className="sport-card bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-black border-[#5B88B2]/40 p-8 text-center cursor-pointer hover:border-[#5B88B2] hover:shadow-lg hover:shadow-[#5B88B2]/20 transition-all group"
                 data-testid={`sport-card-${sport.name.toLowerCase()}`}
                 onClick={() => handleSportClick(sport)}
               >
                 <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">{sport.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-2">{sport.name}</h3>
-                <div className="flex items-center justify-center text-[#21A7A0] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center justify-center text-[#5B88B2] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                   <ExternalLink className="w-4 h-4 mr-1" />
                   View Rules
                 </div>
@@ -1117,7 +1117,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Journey</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">From inception to intercollegiate excellence</p>
           </div>
           
@@ -1128,13 +1128,13 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               {timeline.map((item, idx) => (
                 <div key={idx} className={`flex items-center ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`} data-testid={`timeline-${item.year}`}>
                   <div className={`w-1/2 ${idx % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
-                    <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover-lift hover:border-[#21A7A0] transition-all inline-block">
-                      <span className="text-[#21A7A0] font-bold text-2xl">{item.year}</span>
+                    <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover-lift hover:border-[#5B88B2] transition-all inline-block">
+                      <span className="text-[#5B88B2] font-bold text-2xl">{item.year}</span>
                       <h3 className="text-2xl font-bold text-white mt-2 mb-3">{item.title}</h3>
                       <p className="text-gray-300">{item.desc}</p>
                     </Card>
                   </div>
-                  <div className="w-6 h-6 bg-[#21A7A0] rounded-full border-4 border-[#122C4F] z-10"></div>
+                  <div className="w-6 h-6 bg-[#5B88B2] rounded-full border-4 border-[#122C4F] z-10"></div>
                   <div className="w-1/2"></div>
                 </div>
               ))}
@@ -1146,8 +1146,8 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0] p-12 shadow-2xl shadow-[#21A7A0]/20">
-            <Trophy className="w-20 h-20 text-[#21A7A0] mx-auto mb-6" />
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2] p-12 shadow-2xl shadow-[#5B88B2]/20">
+            <Trophy className="w-20 h-20 text-[#5B88B2] mx-auto mb-6" />
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to Compete?</h2>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
               Register your college team now and be part of the biggest intercollegiate sports festival in South India. 
@@ -1156,7 +1156,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             <Button 
               onClick={() => navigate('/register')}
               size="lg"
-              className="bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold text-xl px-12 py-7 hover:shadow-2xl hover:shadow-[#21A7A0]/50 transition-all hover:scale-105"
+              className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-xl px-12 py-7 hover:shadow-2xl hover:shadow-[#5B88B2]/50 transition-all hover:scale-105"
               data-testid="cta-register-btn"
             >
               Register Your Team Now
@@ -1167,7 +1167,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* Footer */}
-      <footer className="bg-black py-12 px-4 border-t border-[#21A7A0]/40">
+      <footer className="bg-black py-12 px-4 border-t border-[#5B88B2]/40">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <img 
@@ -1177,7 +1177,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             />
             <div>
               <h3 className="text-xl font-bold text-white">BOLT 2026</h3>
-              <p className="text-xs text-[#21A7A0]">Bigger. Better. Bolder.</p>
+              <p className="text-xs text-[#5B88B2]">Bigger. Better. Bolder.</p>
             </div>
           </div>
           <p className="text-gray-400 mb-4">Krea University's Flagship Sports Festival</p>
@@ -1187,7 +1187,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
 
       {/* Popup Dialog */}
       <Dialog open={selectedPopup !== null} onOpenChange={() => setSelectedPopup(null)}>
-        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#21A7A0]">
+        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#5B88B2]">
           <DialogHeader>
             <DialogTitle className="text-3xl font-bold text-white flex items-center justify-between">
               {selectedPopup && popupContent[selectedPopup]?.title}
@@ -1209,7 +1209,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
 
       {/* Sports Rules Dialog */}
       <Dialog open={selectedSport !== null} onOpenChange={() => setSelectedSport(null)}>
-        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#21A7A0]">
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#5B88B2]">
           <DialogHeader>
             <DialogTitle className="text-3xl font-bold text-white flex items-center justify-between">
               {selectedSport && sportRules[selectedSport]?.title}

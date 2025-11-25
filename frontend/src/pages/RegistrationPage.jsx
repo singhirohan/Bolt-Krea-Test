@@ -235,7 +235,7 @@ const RegistrationPage = () => {
           }
         },
         theme: {
-          color: '#21A7A0'
+          color: '#5B88B2'
         }
       };
 
@@ -257,7 +257,7 @@ const RegistrationPage = () => {
           <Button
             variant="ghost"
             onClick={() => navigate('/')}
-            className="text-[#FBF9E3] hover:text-[#21A7A0] mb-4"
+            className="text-[#FBF9E3] hover:text-[#5B88B2] mb-4"
             data-testid="back-to-home-btn"
           >
             <ArrowLeft className="mr-2 w-4 h-4" />
@@ -273,7 +273,7 @@ const RegistrationPage = () => {
             {[1, 2, 3, 4, 5].map(num => (
               <div key={num} className="flex flex-col items-center">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                  num <= step ? 'bg-[#21A7A0] text-[#122C4F]' : 'bg-white/20 text-white/50'
+                  num <= step ? 'bg-[#5B88B2] text-[#122C4F]' : 'bg-white/20 text-white/50'
                 }`}>
                   {num < step ? <Check className="w-5 h-5" /> : num}
                 </div>
@@ -289,7 +289,7 @@ const RegistrationPage = () => {
           </div>
           <div className="h-2 bg-white/20 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] transition-all duration-500"
+              className="h-full bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] transition-all duration-500"
               style={{ width: `${(step / 5) * 100}%` }}
             ></div>
           </div>
@@ -297,7 +297,7 @@ const RegistrationPage = () => {
 
         {/* Step 1: College Name */}
         {step === 1 && (
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-8 animate-fadeIn" data-testid="step-college">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-college">
             <h2 className="text-2xl font-bold text-white mb-6">Enter Your College Name</h2>
             <div className="space-y-4">
               <div>
@@ -308,12 +308,12 @@ const RegistrationPage = () => {
                   placeholder="Enter your college name"
                   value={formData.collegeName}
                   onChange={(e) => setFormData({ ...formData, collegeName: e.target.value })}
-                  className="bg-white/10 border-[#21A7A0]/30 text-white placeholder:text-white/40"
+                  className="bg-white/10 border-[#5B88B2]/30 text-white placeholder:text-white/40"
                 />
               </div>
               <Button
                 onClick={handleCollegeSubmit}
-                className="w-full bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold"
+                className="w-full bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold"
                 data-testid="college-next-btn"
               >
                 Continue
@@ -325,7 +325,7 @@ const RegistrationPage = () => {
 
         {/* Step 2: Sports Selection */}
         {step === 2 && (
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-8 animate-fadeIn" data-testid="step-sports">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-sports">
             <h2 className="text-2xl font-bold text-white mb-6">Select Sports (Multiple Allowed)</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               {SPORTS.map(sport => (
@@ -334,8 +334,8 @@ const RegistrationPage = () => {
                   onClick={() => handleSportToggle(sport)}
                   className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
                     formData.selectedSports.includes(sport)
-                      ? 'bg-[#21A7A0]/20 border-[#21A7A0]'
-                      : 'bg-white/5 border-white/20 hover:border-[#21A7A0]/50'
+                      ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                      : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
                   }`}
                   data-testid={`sport-select-${sport.toLowerCase()}`}
                 >
@@ -361,7 +361,7 @@ const RegistrationPage = () => {
               </Button>
               <Button
                 onClick={handleSportsSubmit}
-                className="flex-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold"
+                className="flex-1 bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold"
                 data-testid="sports-next-btn"
               >
                 Continue
@@ -375,13 +375,13 @@ const RegistrationPage = () => {
         {step === 3 && (
           <div className="space-y-6 animate-fadeIn">
             {formData.selectedSports.map((sport, sportIdx) => (
-              <Card key={sport} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
+              <Card key={sport} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
                 <h3 className="text-xl font-bold text-white mb-4">{sport} Team</h3>
                 <div className="space-y-4">
                   {formData.teams[sport]?.map((member, idx) => (
                     <div key={idx} className="bg-white/5 rounded-lg p-4 border border-white/10">
                       <div className="flex justify-between items-center mb-3">
-                        <span className="text-[#21A7A0] font-medium">
+                        <span className="text-[#5B88B2] font-medium">
                           Member {idx + 1} {idx < 2 && '(Contact Person)'}
                         </span>
                         {idx >= 2 && (
@@ -403,7 +403,7 @@ const RegistrationPage = () => {
                             placeholder="Full name"
                             value={member.name}
                             onChange={(e) => updateTeamMember(sport, idx, 'name', e.target.value)}
-                            className="bg-white/10 border-[#21A7A0]/30 text-white text-sm"
+                            className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
                             data-testid={`member-name-${sport.toLowerCase()}-${idx}`}
                           />
                         </div>
@@ -415,7 +415,7 @@ const RegistrationPage = () => {
                               placeholder="Email address"
                               value={member.email}
                               onChange={(e) => updateTeamMember(sport, idx, 'email', e.target.value)}
-                              className="bg-white/10 border-[#21A7A0]/30 text-white text-sm"
+                              className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
                               data-testid={`member-email-${sport.toLowerCase()}-${idx}`}
                             />
                           </div>
@@ -426,7 +426,7 @@ const RegistrationPage = () => {
                             placeholder="Phone number"
                             value={member.phone}
                             onChange={(e) => updateTeamMember(sport, idx, 'phone', e.target.value)}
-                            className="bg-white/10 border-[#21A7A0]/30 text-white text-sm"
+                            className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
                             data-testid={`member-phone-${sport.toLowerCase()}-${idx}`}
                           />
                         </div>
@@ -436,7 +436,7 @@ const RegistrationPage = () => {
                   <Button
                     onClick={() => addTeamMember(sport)}
                     variant="outline"
-                    className="w-full border-[#21A7A0] text-[#21A7A0] hover:bg-[#21A7A0]/10"
+                    className="w-full border-[#5B88B2] text-[#5B88B2] hover:bg-[#5B88B2]/10"
                     data-testid={`add-member-btn-${sport.toLowerCase()}`}
                   >
                     <Plus className="mr-2 w-4 h-4" />
@@ -457,7 +457,7 @@ const RegistrationPage = () => {
               </Button>
               <Button
                 onClick={handleTeamsSubmit}
-                className="flex-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold"
+                className="flex-1 bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold"
                 data-testid="teams-next-btn"
               >
                 Continue
@@ -469,7 +469,7 @@ const RegistrationPage = () => {
 
         {/* Step 4: Accommodation */}
         {step === 4 && (
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-8 animate-fadeIn" data-testid="step-accommodation">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-accommodation">
             <h2 className="text-2xl font-bold text-white mb-6">Accommodation</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-3">
@@ -494,7 +494,7 @@ const RegistrationPage = () => {
               </div>
 
               {formData.accommodation.required && (
-                <div className="space-y-6 bg-white/5 rounded-lg p-6 border border-[#21A7A0]/20">
+                <div className="space-y-6 bg-white/5 rounded-lg p-6 border border-[#5B88B2]/20">
                   <div>
                     <Label className="text-white font-medium mb-4 block">Select Accommodation Package *</Label>
                     <div className="grid md:grid-cols-2 gap-4">
@@ -506,8 +506,8 @@ const RegistrationPage = () => {
                         })}
                         className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
                           formData.accommodation.package === 'package1'
-                            ? 'bg-[#21A7A0]/20 border-[#21A7A0]'
-                            : 'bg-white/5 border-white/20 hover:border-[#21A7A0]/50'
+                            ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                            : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
                         }`}
                         data-testid="accommodation-package1"
                       >
@@ -515,7 +515,7 @@ const RegistrationPage = () => {
                           <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package1.name}</h4>
                           <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                             formData.accommodation.package === 'package1'
-                              ? 'border-[#21A7A0] bg-[#21A7A0]'
+                              ? 'border-[#5B88B2] bg-[#5B88B2]'
                               : 'border-white/40'
                           }`}>
                             {formData.accommodation.package === 'package1' && (
@@ -524,7 +524,7 @@ const RegistrationPage = () => {
                           </div>
                         </div>
                         <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package1.description}</p>
-                        <div className="flex items-center text-[#21A7A0] text-2xl font-bold">
+                        <div className="flex items-center text-[#5B88B2] text-2xl font-bold">
                           <IndianRupee className="w-5 h-5" />
                           {ACCOMMODATION_PACKAGES.package1.pricePerPerson}
                           <span className="text-sm text-gray-400 ml-2">per person</span>
@@ -539,8 +539,8 @@ const RegistrationPage = () => {
                         })}
                         className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
                           formData.accommodation.package === 'package2'
-                            ? 'bg-[#21A7A0]/20 border-[#21A7A0]'
-                            : 'bg-white/5 border-white/20 hover:border-[#21A7A0]/50'
+                            ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                            : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
                         }`}
                         data-testid="accommodation-package2"
                       >
@@ -548,7 +548,7 @@ const RegistrationPage = () => {
                           <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package2.name}</h4>
                           <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
                             formData.accommodation.package === 'package2'
-                              ? 'border-[#21A7A0] bg-[#21A7A0]'
+                              ? 'border-[#5B88B2] bg-[#5B88B2]'
                               : 'border-white/40'
                           }`}>
                             {formData.accommodation.package === 'package2' && (
@@ -557,7 +557,7 @@ const RegistrationPage = () => {
                           </div>
                         </div>
                         <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package2.description}</p>
-                        <div className="flex items-center text-[#21A7A0] text-2xl font-bold">
+                        <div className="flex items-center text-[#5B88B2] text-2xl font-bold">
                           <IndianRupee className="w-5 h-5" />
                           {ACCOMMODATION_PACKAGES.package2.pricePerPerson}
                           <span className="text-sm text-gray-400 ml-2">per person</span>
@@ -577,7 +577,7 @@ const RegistrationPage = () => {
                         ...formData,
                         accommodation: { ...formData.accommodation, numberOfPeople: parseInt(e.target.value) || 0 }
                       })}
-                      className="bg-white/10 border-[#21A7A0]/30 text-white"
+                      className="bg-white/10 border-[#5B88B2]/30 text-white"
                       data-testid="accommodation-people-input"
                     />
                   </div>
@@ -596,7 +596,7 @@ const RegistrationPage = () => {
               </Button>
               <Button
                 onClick={handleAccommodationSubmit}
-                className="flex-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold"
+                className="flex-1 bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold"
                 data-testid="accommodation-next-btn"
               >
                 Continue
@@ -608,7 +608,7 @@ const RegistrationPage = () => {
 
         {/* Step 5: Payment Summary */}
         {step === 5 && (
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-8 animate-fadeIn" data-testid="step-payment">
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-payment">
             <h2 className="text-2xl font-bold text-white mb-6">Payment Summary</h2>
             <div className="space-y-4 mb-6">
               <div className="bg-white/5 rounded-lg p-6 border border-white/10">
@@ -623,7 +623,7 @@ const RegistrationPage = () => {
                   ))}
                   {formData.accommodation.required && formData.accommodation.package && (
                     <div className="mt-3 pt-3 border-t border-white/10">
-                      <p className="font-medium text-[#21A7A0]">Accommodation:</p>
+                      <p className="font-medium text-[#5B88B2]">Accommodation:</p>
                       <p className="text-sm">{ACCOMMODATION_PACKAGES[formData.accommodation.package].name}</p>
                       <p className="text-sm">{formData.accommodation.numberOfPeople} people × ₹{ACCOMMODATION_PACKAGES[formData.accommodation.package].pricePerPerson}</p>
                     </div>
@@ -676,7 +676,7 @@ const RegistrationPage = () => {
                   <div className="border-t border-white/20 pt-3 mt-3">
                     <div className="flex justify-between items-center">
                       <span className="text-xl font-bold text-white">Total Amount</span>
-                      <span className="text-2xl font-bold text-[#21A7A0] flex items-center">
+                      <span className="text-2xl font-bold text-[#5B88B2] flex items-center">
                         <IndianRupee className="w-6 h-6" />
                         {calculateTotal().toLocaleString()}
                       </span>
@@ -698,7 +698,7 @@ const RegistrationPage = () => {
               </Button>
               <Button
                 onClick={handlePayment}
-                className="flex-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold text-lg py-6"
+                className="flex-1 bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-lg py-6"
                 data-testid="payment-submit-btn"
               >
                 Pay Now

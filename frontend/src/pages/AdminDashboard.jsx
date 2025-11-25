@@ -187,33 +187,33 @@ const AdminDashboard = () => {
 
         {/* Stats Cards */}
         <div className="grid md:grid-cols-4 gap-6 mb-8">
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover:border-[#21A7A0] transition-all" data-testid="stat-total-registrations">
-            <Users className="w-10 h-10 text-[#21A7A0] mb-3" />
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover:border-[#5B88B2] transition-all" data-testid="stat-total-registrations">
+            <Users className="w-10 h-10 text-[#5B88B2] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{filteredRegistrations.length}</h3>
             <p className="text-gray-300 text-sm">Total Registrations</p>
           </Card>
 
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover:border-[#21A7A0] transition-all" data-testid="stat-total-colleges">
-            <Trophy className="w-10 h-10 text-[#21A7A0] mb-3" />
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover:border-[#5B88B2] transition-all" data-testid="stat-total-colleges">
+            <Trophy className="w-10 h-10 text-[#5B88B2] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{stats.totalColleges}</h3>
             <p className="text-gray-300 text-sm">Colleges Registered</p>
           </Card>
 
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover:border-[#21A7A0] transition-all" data-testid="stat-total-participants">
-            <Users className="w-10 h-10 text-[#21A7A0] mb-3" />
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover:border-[#5B88B2] transition-all" data-testid="stat-total-participants">
+            <Users className="w-10 h-10 text-[#5B88B2] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">{stats.totalParticipants}</h3>
             <p className="text-gray-300 text-sm">Total Participants</p>
           </Card>
 
-          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover:border-[#21A7A0] transition-all" data-testid="stat-total-revenue">
-            <IndianRupee className="w-10 h-10 text-[#21A7A0] mb-3" />
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover:border-[#5B88B2] transition-all" data-testid="stat-total-revenue">
+            <IndianRupee className="w-10 h-10 text-[#5B88B2] mb-3" />
             <h3 className="text-3xl font-bold text-white mb-1">₹{stats.totalRevenue.toLocaleString()}</h3>
             <p className="text-gray-300 text-sm">Total Revenue</p>
           </Card>
         </div>
 
         {/* Filters and Actions */}
-        <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 mb-6">
+        <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 mb-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#FBF9E3]/50" />
@@ -221,7 +221,7 @@ const AdminDashboard = () => {
                 placeholder="Search by college name..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 bg-white/10 border-[#21A7A0]/30 text-white placeholder:text-white/40"
+                className="pl-10 bg-white/10 border-[#5B88B2]/30 text-white placeholder:text-white/40"
                 data-testid="search-input"
               />
             </div>
@@ -230,7 +230,7 @@ const AdminDashboard = () => {
               <select
                 value={selectedSport}
                 onChange={(e) => setSelectedSport(e.target.value)}
-                className="bg-white/10 border border-[#21A7A0]/30 text-white rounded-md px-4 py-2"
+                className="bg-white/10 border border-[#5B88B2]/30 text-white rounded-md px-4 py-2"
                 data-testid="sport-filter"
               >
                 {allSports.map(sport => (
@@ -242,7 +242,7 @@ const AdminDashboard = () => {
 
               <Button
                 onClick={exportToCSV}
-                className="bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold"
+                className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold"
                 data-testid="export-btn"
               >
                 <Download className="mr-2 w-4 h-4" />
@@ -255,19 +255,19 @@ const AdminDashboard = () => {
         {/* Registrations List */}
         <div className="space-y-4">
           {filteredRegistrations.length === 0 ? (
-            <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-12 text-center">
+            <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-12 text-center">
               <p className="text-gray-400 text-lg">No registrations found</p>
             </Card>
           ) : (
             filteredRegistrations.map((reg, idx) => {
               const { dateStr, timeStr } = formatDateTime(reg.timestamp);
               return (
-                <Card key={reg.id} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-6 hover:border-[#21A7A0] hover:shadow-lg hover:shadow-[#21A7A0]/20 transition-all" data-testid={`registration-card-${idx}`}>
+                <Card key={reg.id} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover:border-[#5B88B2] hover:shadow-lg hover:shadow-[#5B88B2]/20 transition-all" data-testid={`registration-card-${idx}`}>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="flex-1">
                       <div className="flex items-center space-x-3 mb-3">
                         <h3 className="text-xl font-bold text-white">{reg.collegeName}</h3>
-                        <Badge className="bg-[#21A7A0]/20 text-[#21A7A0] border-[#21A7A0]/40">
+                        <Badge className="bg-[#5B88B2]/20 text-[#5B88B2] border-[#5B88B2]/40">
                           {reg.paymentStatus}
                         </Badge>
                       </div>
@@ -291,7 +291,7 @@ const AdminDashboard = () => {
                     </div>
 
                     <div className="text-right">
-                      <div className="flex items-center justify-end text-2xl font-bold text-[#21A7A0] mb-2">
+                      <div className="flex items-center justify-end text-2xl font-bold text-[#5B88B2] mb-2">
                         <IndianRupee className="w-5 h-5" />
                         {reg.totalAmount.toLocaleString()}
                       </div>
@@ -321,7 +321,7 @@ const AdminDashboard = () => {
                 {/* Teams Details */}
                 <div className="mt-4 pt-4 border-t border-white/10">
                   <details className="cursor-pointer">
-                    <summary className="text-[#21A7A0] font-medium hover:text-[#6F9BC2] transition-colors">
+                    <summary className="text-[#5B88B2] font-medium hover:text-[#6F9BC2] transition-colors">
                       View Team Details
                     </summary>
                     <div className="mt-3 space-y-3">
@@ -331,7 +331,7 @@ const AdminDashboard = () => {
                           <div className="grid md:grid-cols-2 gap-2 text-sm text-[#FBF9E3]/70">
                             {team.members.map((member, memberIdx) => (
                               <div key={memberIdx}>
-                                <span className="text-[#21A7A0]">#{memberIdx + 1}</span> {member.name}
+                                <span className="text-[#5B88B2]">#{memberIdx + 1}</span> {member.name}
                                 {member.email && ` - ${member.email}`}
                                 {member.phone && ` - ${member.phone}`}
                               </div>
