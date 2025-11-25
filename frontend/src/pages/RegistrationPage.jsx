@@ -47,8 +47,18 @@ const RegistrationPage = () => {
   });
 
   const handleCollegeSubmit = () => {
+    if (!formData.userEmail.trim()) {
+      toast.error('Please enter your email address');
+      return;
+    }
     if (!formData.collegeName.trim()) {
       toast.error('Please enter your college name');
+      return;
+    }
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.userEmail)) {
+      toast.error('Please enter a valid email address');
       return;
     }
     setStep(2);
