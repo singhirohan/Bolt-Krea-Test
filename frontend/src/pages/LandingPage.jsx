@@ -818,15 +818,15 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <span className="text-[#FBF9E3] font-medium">Krea University's Premier Sports Festival</span>
             </div>
             
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-6" style={{ transform: `translateY(${scrollY * 0.3}px)` }}>
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6" style={{ transform: `translateY(${scrollY * 0.3}px)` }}>
               BOLT <span className="text-[#FFC20A]">2026</span>
             </h1>
             
-            <p className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#FFC20A] via-[#FF8C00] to-[#FF6B35] bg-clip-text text-transparent mb-4">
+            <p className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#FFC20A] via-[#FF8C00] to-[#FF6B35] bg-clip-text text-transparent mb-3 sm:mb-4">
               Bigger. Better. Bolder.
             </p>
             
-            <p className="text-lg sm:text-xl text-[#FBF9E3]/80 max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-sm sm:text-lg lg:text-xl text-[#FBF9E3]/80 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
               Join us for the first-ever intercollegiate sports festival at Krea University. 
               Two days of intense competition, sportsmanship, and unforgettable memories.
             </p>
