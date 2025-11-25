@@ -735,6 +735,110 @@ const RegistrationPage = () => {
             </p>
           </Card>
         )}
+
+        {/* Step 6: Registration Confirmation */}
+        {step === 6 && (
+          <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-confirmation">
+            <div className="text-center mb-8">
+              <div className="w-20 h-20 bg-green-500/20 border-4 border-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Check className="w-10 h-10 text-green-500" />
+              </div>
+              <h2 className="text-3xl font-bold text-white mb-2">Registration Successful!</h2>
+              <p className="text-[#FBF9E3]/80">Your payment has been confirmed and registration details have been sent to:</p>
+              <p className="text-[#5B88B2] font-semibold text-lg mt-2">{formData.userEmail}</p>
+            </div>
+
+            {/* Registration Summary */}
+            <div className="bg-white/5 rounded-lg p-6 mb-6 border border-[#5B88B2]/30">
+              <h3 className="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">Registration Summary</h3>
+              
+              {/* College Info */}
+              <div className="mb-4">
+                <p className="text-[#FBF9E3]/60 text-sm">College Name</p>
+                <p className="text-white font-semibold">{formData.collegeName}</p>
+              </div>
+
+              {/* Sports & Teams */}
+              <div className="mb-4">
+                <p className="text-[#FBF9E3]/60 text-sm mb-2">Registered Sports</p>
+                {formData.selectedSports.map(sport => (
+                  <div key={sport} className="mb-3 bg-white/5 rounded p-3">
+                    <p className="text-[#5B88B2] font-bold mb-2">{sport}</p>
+                    <div className="space-y-2">
+                      {formData.teams[sport].map((member, idx) => (
+                        <div key={idx} className="text-sm">
+                          <p className="text-white">
+                            {idx + 1}. {member.name}
+                            {member.email && ` • ${member.email}`}
+                            {member.phone && ` • ${member.phone}`}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-[#FBF9E3]/60 text-xs mt-2">
+                      Team Size: {formData.teams[sport].length} members
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Accommodation */}
+              {formData.accommodation.required && formData.accommodation.package && (
+                <div className="mb-4">
+                  <p className="text-[#FBF9E3]/60 text-sm">Accommodation</p>
+                  <p className="text-white font-semibold">
+                    {ACCOMMODATION_PACKAGES[formData.accommodation.package].name} for {formData.accommodation.numberOfPeople} people
+                  </p>
+                </div>
+              )}
+
+              {/* Payment Details */}
+              <div className="border-t border-white/20 pt-4 mt-4">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-white">
+                    <span>Registration Fee</span>
+                    <span className="flex items-center">
+                      <IndianRupee className="w-4 h-4" />
+                      {getRegistrationFee().toLocaleString()}
+                    </span>
+                  </div>
+                  {formData.accommodation.required && (
+                    <div className="flex justify-between text-white">
+                      <span>Accommodation Fee</span>
+                      <span className="flex items-center">
+                        <IndianRupee className="w-4 h-4" />
+                        {getAccommodationFee().toLocaleString()}
+                      </span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-center font-bold text-lg pt-2 border-t border-white/20">
+                    <span className="text-white">Total Paid</span>
+                    <span className="text-[#5B88B2] flex items-center">
+                      <IndianRupee className="w-5 h-5" />
+                      {calculateTotal().toLocaleString()}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Email Confirmation Note */}
+            <div className="bg-[#5B88B2]/10 border border-[#5B88B2]/30 rounded-lg p-4 mb-6">
+              <p className="text-[#FBF9E3] text-sm">
+                📧 <strong>Email Confirmation:</strong> A detailed confirmation email with all the above information 
+                has been sent to <strong className="text-[#5B88B2]">{formData.userEmail}</strong>. 
+                Please check your inbox and spam folder.
+              </p>
+            </div>
+
+            <Button
+              onClick={() => navigate('/')}
+              className="w-full bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-lg py-6"
+            >
+              Back to Home
+            </Button>
+          </Card>
+        )}
       </div>
     </div>
   );
