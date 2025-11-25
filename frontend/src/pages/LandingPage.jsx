@@ -727,12 +727,12 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
   };
 
   const sports = [
-    { name: 'Cricket', icon: '🏏' },
-    { name: 'Basketball', icon: '🏀' },
-    { name: 'Football', icon: '⚽' },
-    { name: 'Badminton', icon: '🏸' },
-    { name: 'Tennis', icon: '🎾' },
-    { name: 'Volleyball', icon: '🏐' }
+    { name: 'Cricket', icon: Disc3, color: '#5B88B2' },
+    { name: 'Basketball', icon: Circle, color: '#FAD713' },
+    { name: 'Football', icon: Hexagon, color: '#5B88B2' },
+    { name: 'Badminton', icon: Triangle, color: '#FAD713' },
+    { name: 'Tennis', icon: Circle, color: '#5B88B2' },
+    { name: 'Volleyball', icon: Disc3, color: '#FAD713' }
   ];
 
   const handleSportClick = (sport) => {
