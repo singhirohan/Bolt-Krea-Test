@@ -777,16 +777,15 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 className="h-[200px] md:h-[200px] sm:h-32 h-20 w-auto"
               />
             </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium">About</a>
-              <a href="#sports" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium">Sports</a>
-              <a href="#history" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium">History</a>
+            <div className="flex items-center space-x-4 md:space-x-8">
+              <a href="#about" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium text-xs md:text-base">About</a>
+              <a href="#sports" className="text-[#FBF9E3] hover:text-[#FFC20A] transition-colors font-medium text-xs md:text-base">Sports</a>
               <Button 
                 onClick={() => navigate('/register')}
-                className="bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold hover:shadow-lg hover:shadow-[#FFC20A]/50 transition-all"
+                className="bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold hover:shadow-lg hover:shadow-[#FFC20A]/50 transition-all text-xs md:text-base px-3 py-2 md:px-4 md:py-2"
                 data-testid="nav-register-btn"
               >
-                Register Now
+                Register
               </Button>
             </div>
           </div>
