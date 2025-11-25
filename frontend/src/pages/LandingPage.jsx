@@ -1084,7 +1084,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* Sports Section */}
-      <section id="sports" className="py-20 px-4 bg-[#0a0a0a]">
+      <section id="sports" className="py-20 px-4 bg-[#0d1f35]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Six Sports Leagues</h2>
