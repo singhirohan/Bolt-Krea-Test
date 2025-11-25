@@ -332,17 +332,17 @@ The unique location of Krea University in Sri City offers participants not just 
             <p className="text-gray-400 text-lg">Glimpses of intense competition and unforgettable memories</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="relative overflow-hidden rounded-2xl group">
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/c1ewro74_Copy%20of%20DSC09593.JPG" 
                 alt="BOLT Sports Action" 
-                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">Peak Performance</h3>
-                <p className="text-gray-300">Athletes giving their best on the field</p>
+                <h3 className="text-xl font-bold mb-2">Peak Performance</h3>
+                <p className="text-gray-300 text-sm">Athletes giving their best</p>
               </div>
               <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
             </div>
@@ -351,12 +351,12 @@ The unique location of Krea University in Sri City offers participants not just 
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/wpwggyzw_DSC09591.JPG" 
                 alt="BOLT Team Spirit" 
-                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">Team Spirit</h3>
-                <p className="text-gray-300">Unity and camaraderie in action</p>
+                <h3 className="text-xl font-bold mb-2">Team Spirit</h3>
+                <p className="text-gray-300 text-sm">Unity and camaraderie</p>
               </div>
               <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
             </div>
@@ -365,12 +365,12 @@ The unique location of Krea University in Sri City offers participants not just 
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/d3z3ota2_DSC09604.JPG" 
                 alt="BOLT Competition" 
-                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">Fierce Competition</h3>
-                <p className="text-gray-300">Where champions emerge</p>
+                <h3 className="text-xl font-bold mb-2">Fierce Competition</h3>
+                <p className="text-gray-300 text-sm">Where champions emerge</p>
               </div>
               <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
             </div>
@@ -379,12 +379,40 @@ The unique location of Krea University in Sri City offers participants not just 
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/0t4oz4tt_DSC09654.JPG" 
                 alt="BOLT Victory" 
-                className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">Celebration</h3>
-                <p className="text-gray-300">Moments of triumph and joy</p>
+                <h3 className="text-xl font-bold mb-2">Celebration</h3>
+                <p className="text-gray-300 text-sm">Moments of triumph and joy</p>
+              </div>
+              <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/1xwsojdc_WhatsApp%20Image%202025-11-25%20at%2015.21.54.jpeg" 
+                alt="BOLT Badminton Arena" 
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-xl font-bold mb-2">World-Class Facilities</h3>
+                <p className="text-gray-300 text-sm">Indoor badminton courts</p>
+              </div>
+              <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4uxuglo1_WhatsApp%20Image%202025-11-25%20at%2015.21.54%20%281%29.jpeg" 
+                alt="BOLT Sports Complex" 
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-xl font-bold mb-2">Premium Venue</h3>
+                <p className="text-gray-300 text-sm">State-of-the-art infrastructure</p>
               </div>
               <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
             </div>
