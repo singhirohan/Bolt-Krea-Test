@@ -949,7 +949,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Relive BOLT Moments</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">Glimpses of intense competition and unforgettable memories</p>
           </div>
 
@@ -1088,7 +1088,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Six Sports Leagues</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">Compete in your favorite sport and showcase your talent</p>
           </div>
           
@@ -1117,7 +1117,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Journey</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg">From inception to intercollegiate excellence</p>
           </div>
           
