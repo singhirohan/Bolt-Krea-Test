@@ -185,6 +185,65 @@ const RegistrationPage = () => {
     return 0;
   };
 
+  const handleFileSelect = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Validate file type
+      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp', 'application/pdf'];
+      if (!allowedTypes.includes(file.type)) {
+        toast.error('Please upload a valid image file (JPG, PNG, GIF, WEBP) or PDF');
+        return;
+      }
+      
+      // Validate file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        toast.error('File size must be less than 5MB');
+        return;
+      }
+      
+      setPaymentScreenshot(file);
+      toast.success('File selected: ' + file.name);
+    }
+  };
+
+  const handleUploadScreenshot = async () => {
+    if (!paymentScreenshot) {
+      toast.error('Please select a file first');
+      return;
+    }
+
+    if (!registrationId) {
+      toast.error('Registration ID not found');
+      return;
+    }
+
+    setUploadStatus('uploading');
+    
+    try {
+      const formData = new FormData();
+      formData.append('file', paymentScreenshot);
+
+      const response = await axios.post(
+        `${API}/registrations/${registrationId}/upload-payment-screenshot`,
+        formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
+
+      if (response.data.success) {
+        setUploadStatus('success');
+        toast.success('Payment screenshot uploaded successfully!');
+      }
+    } catch (error) {
+      console.error('Upload error:', error);
+      setUploadStatus('error');
+      toast.error(error.response?.data?.detail || 'Failed to upload screenshot. Please try again.');
+    }
+  };
+
   const handlePayment = async () => {
     try {
       const totalAmount = calculateTotal();
