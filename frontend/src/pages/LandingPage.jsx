@@ -444,6 +444,20 @@ The unique location of Krea University in Sri City offers participants not just 
               </div>
               <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
             </div>
+
+            <div className="relative overflow-hidden rounded-2xl group">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/d9rgwqxa_WhatsApp%20Image%202025-11-25%20at%2015.28.36.jpeg" 
+                alt="BOLT Cricket Ground" 
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-xl font-bold mb-2">Cricket Stadium</h3>
+                <p className="text-gray-300 text-sm">Professional cricket grounds</p>
+              </div>
+              <div className="absolute inset-0 border-2 border-[#FFC20A]/0 group-hover:border-[#FFC20A]/60 rounded-2xl transition-all duration-300"></div>
+            </div>
           </div>
         </div>
       </section>
