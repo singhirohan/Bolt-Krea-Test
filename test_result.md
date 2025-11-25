@@ -231,11 +231,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Email field in registration model"
-    - "Registration creation with email"
-    - "Registration retrieval with email"
-    - "Get all registrations with email"
-    - "Mock email confirmation logging"
+    - "Complete registration flow with SendGrid email integration"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
