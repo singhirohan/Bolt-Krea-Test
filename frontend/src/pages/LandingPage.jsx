@@ -958,7 +958,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/c1ewro74_Copy%20of%20DSC09593.JPG" 
                 alt="BOLT Sports Action" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -972,7 +972,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/wpwggyzw_DSC09591.JPG" 
                 alt="BOLT Team Spirit" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -986,7 +986,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/d3z3ota2_DSC09604.JPG" 
                 alt="BOLT Competition" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1000,7 +1000,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/0t4oz4tt_DSC09654.JPG" 
                 alt="BOLT Victory" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1014,7 +1014,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/1xwsojdc_WhatsApp%20Image%202025-11-25%20at%2015.21.54.jpeg" 
                 alt="BOLT Badminton Arena" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1028,7 +1028,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4uxuglo1_WhatsApp%20Image%202025-11-25%20at%2015.21.54%20%281%29.jpeg" 
                 alt="BOLT Sports Complex" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1042,7 +1042,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/ywgxrieh_WhatsApp%20Image%202025-11-25%20at%2015.25.02.jpeg" 
                 alt="BOLT Campus View" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1056,7 +1056,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/0230xrpg_WhatsApp%20Image%202025-11-25%20at%2015.25.03.jpeg" 
                 alt="BOLT Training Grounds" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -1070,7 +1070,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <img 
                 src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/d9rgwqxa_WhatsApp%20Image%202025-11-25%20at%2015.28.36.jpeg" 
                 alt="BOLT Cricket Ground" 
-                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
