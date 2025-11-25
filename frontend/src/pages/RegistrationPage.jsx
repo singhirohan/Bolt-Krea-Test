@@ -276,7 +276,8 @@ const RegistrationPage = () => {
             Back to Home
           </Button>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-2">Team Registration</h1>
-          <p className="text-[#FBF9E3]/70">Step {step} of 5</p>
+          {step <= 5 && <p className="text-[#FBF9E3]/70">Step {step} of 5</p>}
+          {step === 6 && <p className="text-green-500 font-semibold">✓ Registration Complete</p>}
         </div>
 
         {/* Progress Bar */}
