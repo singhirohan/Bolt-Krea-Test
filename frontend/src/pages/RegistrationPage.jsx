@@ -619,6 +619,13 @@ const RegistrationPage = () => {
                       <span className="font-medium">{sport}:</span> {members.length} members
                     </p>
                   ))}
+                  {formData.accommodation.required && formData.accommodation.package && (
+                    <div className="mt-3 pt-3 border-t border-white/10">
+                      <p className="font-medium text-[#FFC20A]">Accommodation:</p>
+                      <p className="text-sm">{ACCOMMODATION_PACKAGES[formData.accommodation.package].name}</p>
+                      <p className="text-sm">{formData.accommodation.numberOfPeople} people × ₹{ACCOMMODATION_PACKAGES[formData.accommodation.package].pricePerPerson}</p>
+                    </div>
+                  )}
                 </div>
               </div>
 
