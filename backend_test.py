@@ -133,7 +133,7 @@ class BoltAPITester:
         return False
 
     def test_get_all_registrations(self):
-        """Test getting all registrations"""
+        """Test getting all registrations and verify userEmail field"""
         success, response = self.run_test(
             "Get All Registrations",
             "GET",
@@ -143,6 +143,17 @@ class BoltAPITester:
         
         if success and isinstance(response, list):
             print(f"   Found {len(response)} registrations")
+            # Check if any registration has userEmail field
+            email_found = False
+            for reg in response:
+                if reg.get('userEmail'):
+                    email_found = True
+                    print(f"   ✅ Found registration with userEmail: {reg.get('userEmail')}")
+                    break
+            
+            if not email_found and len(response) > 0:
+                print(f"   ⚠️  No registrations found with userEmail field")
+            
             return True
         return False
 
