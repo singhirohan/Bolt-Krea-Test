@@ -1179,41 +1179,41 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0a1929] py-16 px-4 border-t border-[#5B88B2]/40">
+      <footer className="bg-[#0a1929] py-8 px-4 border-t border-[#5B88B2]/40">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-4">
             {/* Brand Section */}
             <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
+              <div className="flex items-center justify-center md:justify-start mb-2">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
                   alt="BOLT Logo" 
                   className="w-[300px] h-auto"
                 />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">BOLT 2026</h3>
-              <p className="text-[#5B88B2] font-semibold mb-2">Bigger. Better. Bolder.</p>
-              <p className="text-gray-400 text-sm">Krea University's Flagship Sports Festival</p>
+              <h3 className="text-lg font-bold text-white mb-1">BOLT 2026</h3>
+              <p className="text-[#5B88B2] font-semibold text-sm mb-1">Bigger. Better. Bolder.</p>
+              <p className="text-gray-400 text-xs">Krea University's Flagship Sports Festival</p>
             </div>
 
             {/* Contact Information */}
             <div className="text-center md:text-left">
-              <h4 className="text-lg font-bold text-white mb-4 flex items-center justify-center md:justify-start">
-                <MapPin className="w-5 h-5 text-[#5B88B2] mr-2" />
+              <h4 className="text-base font-bold text-white mb-2 flex items-center justify-center md:justify-start">
+                <MapPin className="w-4 h-4 text-[#5B88B2] mr-2" />
                 Contact Us
               </h4>
-              <div className="space-y-3 text-sm">
+              <div className="space-y-2 text-xs">
                 <div className="flex items-start justify-center md:justify-start">
-                  <MapPin className="w-4 h-4 text-[#FAD713] mr-2 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 text-left">
+                  <MapPin className="w-3 h-3 text-[#FAD713] mr-2 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-300 text-left leading-tight">
                     Krea University, 5655, Central Expy,<br />
                     Appaiahpalem, Sri City,<br />
                     Andhra Pradesh 524401
                   </p>
                 </div>
-                <div className="flex items-center justify-center md:justify-start">
-                  <Mail className="w-4 h-4 text-[#FAD713] mr-2 flex-shrink-0" />
-                  <div className="text-left">
+                <div className="flex items-start justify-center md:justify-start">
+                  <Mail className="w-3 h-3 text-[#FAD713] mr-2 mt-0.5 flex-shrink-0" />
+                  <div className="text-left leading-tight">
                     <p className="text-gray-300">Krea Sports: <a href="mailto:sias.sports@krea.ac.in" className="text-[#5B88B2] hover:text-[#6F9BC2]">sias.sports@krea.ac.in</a></p>
                     <p className="text-gray-300">BOLT: <a href="mailto:bolt.sports@krea.edu.in" className="text-[#5B88B2] hover:text-[#6F9BC2]">bolt.sports@krea.edu.in</a></p>
                   </div>
@@ -1223,19 +1223,19 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
 
             {/* Social Links */}
             <div className="text-center md:text-left">
-              <h4 className="text-lg font-bold text-white mb-4 flex items-center justify-center md:justify-start">
-                <LinkIcon className="w-5 h-5 text-[#5B88B2] mr-2" />
+              <h4 className="text-base font-bold text-white mb-2 flex items-center justify-center md:justify-start">
+                <LinkIcon className="w-4 h-4 text-[#5B88B2] mr-2" />
                 Follow Us
               </h4>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 <a 
                   href="https://linktr.ee/SIAS_Sports" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center md:justify-start text-gray-300 hover:text-[#5B88B2] transition-colors"
                 >
-                  <LinkIcon className="w-4 h-4 mr-2" />
-                  <span className="text-sm">Linktree - SIAS Sports</span>
+                  <LinkIcon className="w-3 h-3 mr-2" />
+                  <span className="text-xs">Linktree - SIAS Sports</span>
                 </a>
                 <a 
                   href="https://www.instagram.com/krea_sports?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
@@ -1243,8 +1243,8 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                   rel="noopener noreferrer"
                   className="flex items-center justify-center md:justify-start text-gray-300 hover:text-[#5B88B2] transition-colors"
                 >
-                  <Instagram className="w-4 h-4 mr-2" />
-                  <span className="text-sm">@krea_sports</span>
+                  <Instagram className="w-3 h-3 mr-2" />
+                  <span className="text-xs">@krea_sports</span>
                 </a>
                 <a 
                   href="https://www.instagram.com/krea.bolt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
@@ -1252,16 +1252,16 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                   rel="noopener noreferrer"
                   className="flex items-center justify-center md:justify-start text-gray-300 hover:text-[#5B88B2] transition-colors"
                 >
-                  <Instagram className="w-4 h-4 mr-2" />
-                  <span className="text-sm">@krea.bolt</span>
+                  <Instagram className="w-3 h-3 mr-2" />
+                  <span className="text-xs">@krea.bolt</span>
                 </a>
               </div>
             </div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-[#5B88B2]/20 pt-6 text-center">
-            <p className="text-gray-500 text-sm">© 2026 BOLT - All Rights Reserved | Organized by SIAS Sports Club</p>
+          <div className="border-t border-[#5B88B2]/20 pt-3 text-center">
+            <p className="text-gray-500 text-xs">© 2026 BOLT - All Rights Reserved | Organized by SIAS Sports Club</p>
           </div>
         </div>
       </footer>
