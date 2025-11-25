@@ -211,7 +211,11 @@ const RegistrationPage = () => {
               collegeName: formData.collegeName,
               sports: formData.selectedSports,
               teams: teamsArray,
-              accommodation: formData.accommodation,
+              accommodation: {
+                required: formData.accommodation.required,
+                package: formData.accommodation.package,
+                numberOfPeople: formData.accommodation.numberOfPeople
+              },
               totalAmount: totalAmount,
               registrationFee: getRegistrationFee(),
               accommodationFee: getAccommodationFee(),
