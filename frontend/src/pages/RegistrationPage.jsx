@@ -492,51 +492,91 @@ const RegistrationPage = () => {
               </div>
 
               {formData.accommodation.required && (
-                <div className="space-y-4 bg-white/5 rounded-lg p-6 border border-[#FFC20A]/20">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label className="text-[#FBF9E3] mb-2">Number of People *</Label>
-                      <Input
-                        type="number"
-                        min="1"
-                        placeholder="Enter number"
-                        value={formData.accommodation.numberOfPeople || ''}
-                        onChange={(e) => setFormData({
+                <div className="space-y-6 bg-white/5 rounded-lg p-6 border border-[#FFC20A]/20">
+                  <div>
+                    <Label className="text-white font-medium mb-4 block">Select Accommodation Package *</Label>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {/* Package 1 */}
+                      <div
+                        onClick={() => setFormData({
                           ...formData,
-                          accommodation: { ...formData.accommodation, numberOfPeople: parseInt(e.target.value) || 0 }
+                          accommodation: { ...formData.accommodation, package: 'package1' }
                         })}
-                        className="bg-white/10 border-[#FFC20A]/30 text-white"
-                        data-testid="accommodation-people-input"
-                      />
-                    </div>
-                    <div>
-                      <Label className="text-[#FBF9E3] mb-2">Number of Nights *</Label>
-                      <Input
-                        type="number"
-                        min="1"
-                        max="5"
-                        placeholder="Enter nights"
-                        value={formData.accommodation.numberOfNights || ''}
-                        onChange={(e) => setFormData({
+                        className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
+                          formData.accommodation.package === 'package1'
+                            ? 'bg-[#FFC20A]/20 border-[#FFC20A]'
+                            : 'bg-white/5 border-white/20 hover:border-[#FFC20A]/50'
+                        }`}
+                        data-testid="accommodation-package1"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package1.name}</h4>
+                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                            formData.accommodation.package === 'package1'
+                              ? 'border-[#FFC20A] bg-[#FFC20A]'
+                              : 'border-white/40'
+                          }`}>
+                            {formData.accommodation.package === 'package1' && (
+                              <Check className="w-3 h-3 text-black" />
+                            )}
+                          </div>
+                        </div>
+                        <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package1.description}</p>
+                        <div className="flex items-center text-[#FFC20A] text-2xl font-bold">
+                          <IndianRupee className="w-5 h-5" />
+                          {ACCOMMODATION_PACKAGES.package1.pricePerPerson}
+                          <span className="text-sm text-gray-400 ml-2">per person</span>
+                        </div>
+                      </div>
+
+                      {/* Package 2 */}
+                      <div
+                        onClick={() => setFormData({
                           ...formData,
-                          accommodation: { ...formData.accommodation, numberOfNights: parseInt(e.target.value) || 0 }
+                          accommodation: { ...formData.accommodation, package: 'package2' }
                         })}
-                        className="bg-white/10 border-[#FFC20A]/30 text-white"
-                        data-testid="accommodation-nights-input"
-                      />
+                        className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
+                          formData.accommodation.package === 'package2'
+                            ? 'bg-[#FFC20A]/20 border-[#FFC20A]'
+                            : 'bg-white/5 border-white/20 hover:border-[#FFC20A]/50'
+                        }`}
+                        data-testid="accommodation-package2"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package2.name}</h4>
+                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                            formData.accommodation.package === 'package2'
+                              ? 'border-[#FFC20A] bg-[#FFC20A]'
+                              : 'border-white/40'
+                          }`}>
+                            {formData.accommodation.package === 'package2' && (
+                              <Check className="w-3 h-3 text-black" />
+                            )}
+                          </div>
+                        </div>
+                        <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package2.description}</p>
+                        <div className="flex items-center text-[#FFC20A] text-2xl font-bold">
+                          <IndianRupee className="w-5 h-5" />
+                          {ACCOMMODATION_PACKAGES.package2.pricePerPerson}
+                          <span className="text-sm text-gray-400 ml-2">per person</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
                   <div>
-                    <Label className="text-[#FBF9E3] mb-2">Preferences (Optional)</Label>
+                    <Label className="text-white mb-2">Number of People Requiring Accommodation *</Label>
                     <Input
-                      placeholder="Any special requests or preferences"
-                      value={formData.accommodation.preferences}
+                      type="number"
+                      min="1"
+                      placeholder="Enter number of people"
+                      value={formData.accommodation.numberOfPeople || ''}
                       onChange={(e) => setFormData({
                         ...formData,
-                        accommodation: { ...formData.accommodation, preferences: e.target.value }
+                        accommodation: { ...formData.accommodation, numberOfPeople: parseInt(e.target.value) || 0 }
                       })}
                       className="bg-white/10 border-[#FFC20A]/30 text-white"
-                      data-testid="accommodation-preferences-input"
+                      data-testid="accommodation-people-input"
                     />
                   </div>
                 </div>
