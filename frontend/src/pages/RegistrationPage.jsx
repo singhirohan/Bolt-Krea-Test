@@ -40,9 +40,8 @@ const RegistrationPage = () => {
     teams: {},
     accommodation: {
       required: false,
-      numberOfPeople: 0,
-      numberOfNights: 0,
-      preferences: ''
+      package: null, // 'package1' or 'package2'
+      numberOfPeople: 0
     }
   });
 
