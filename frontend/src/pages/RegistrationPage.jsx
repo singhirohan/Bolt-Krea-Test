@@ -131,8 +131,8 @@ const RegistrationPage = () => {
 
   const handleAccommodationSubmit = () => {
     if (formData.accommodation.required) {
-      if (!formData.accommodation.numberOfPeople || !formData.accommodation.numberOfNights) {
-        toast.error('Please fill accommodation details');
+      if (!formData.accommodation.package || !formData.accommodation.numberOfPeople) {
+        toast.error('Please select accommodation package and number of people');
         return;
       }
     }
