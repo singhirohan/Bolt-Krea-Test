@@ -1108,7 +1108,7 @@ We'll update this section with complete rules, match formats, team composition, 
               </Button>
             </DialogTitle>
           </DialogHeader>
-          <DialogDescription className="text-gray-300 text-base leading-relaxed whitespace-pre-line mt-4">
+          <DialogDescription className="text-gray-300 text-base leading-relaxed whitespace-pre-line mt-4 sport-rules-content">
             {selectedSport && sportRules[selectedSport]?.content}
           </DialogDescription>
         </DialogContent>
