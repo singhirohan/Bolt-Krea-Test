@@ -173,6 +173,52 @@ async def verify_payment(payment_data: Dict):
         "message": "Payment verified successfully"
     }
 
+@api_router.post("/registrations/{registration_id}/upload-payment-screenshot")
+async def upload_payment_screenshot(registration_id: str, file: UploadFile = File(...)):
+    """
+    Upload payment screenshot for a registration
+    """
+    # Check if registration exists
+    registration = await db.registrations.find_one({"id": registration_id}, {"_id": 0})
+    if not registration:
+        raise HTTPException(status_code=404, detail="Registration not found")
+    
+    # Validate file type (allow images only)
+    allowed_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.pdf'}
+    file_extension = Path(file.filename).suffix.lower()
+    
+    if file_extension not in allowed_extensions:
+        raise HTTPException(
+            status_code=400, 
+            detail=f"Invalid file type. Allowed types: {', '.join(allowed_extensions)}"
+        )
+    
+    # Create unique filename
+    unique_filename = f"{registration_id}_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}{file_extension}"
+    file_path = Path("/app/backend/uploads") / unique_filename
+    
+    # Save file
+    try:
+        with file_path.open("wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+        
+        # Update registration with payment screenshot filename
+        await db.registrations.update_one(
+            {"id": registration_id},
+            {"$set": {"paymentScreenshot": unique_filename, "paymentScreenshotUploadedAt": datetime.now(timezone.utc).isoformat()}}
+        )
+        
+        logging.info(f"Payment screenshot uploaded for registration {registration_id}: {unique_filename}")
+        
+        return {
+            "success": True,
+            "filename": unique_filename,
+            "message": "Payment screenshot uploaded successfully"
+        }
+    except Exception as e:
+        logging.error(f"Error uploading payment screenshot: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to upload file")
+
 @api_router.delete("/registrations/{registration_id}")
 async def delete_registration(registration_id: str):
     result = await db.registrations.delete_one({"id": registration_id})
