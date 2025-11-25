@@ -323,6 +323,55 @@ const AdminDashboard = () => {
                     </div>
                   </div>
 
+                {/* Payment Screenshot Status */}
+                <div className="mt-4 pt-4 border-t border-white/10">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2">
+                      <FileImage className="w-4 h-4 text-[#FFC20A]" />
+                      <span className="text-[#FBF9E3]/80 text-sm font-medium">Payment Screenshot:</span>
+                    </div>
+                    {reg.paymentScreenshot ? (
+                      <div className="flex items-center space-x-2">
+                        <Badge className="bg-green-500/20 text-green-500 border-green-500/40 flex items-center space-x-1">
+                          <CheckCircle className="w-3 h-3" />
+                          <span>Uploaded</span>
+                        </Badge>
+                        <Button
+                          onClick={() => window.open(`${API}/payment-screenshots/${reg.paymentScreenshot}`, '_blank')}
+                          size="sm"
+                          className="bg-[#5B88B2]/20 text-[#5B88B2] hover:bg-[#5B88B2]/30 border border-[#5B88B2]/40"
+                        >
+                          <Eye className="w-3 h-3 mr-1" />
+                          View
+                        </Button>
+                        <Button
+                          onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = `${API}/payment-screenshots/${reg.paymentScreenshot}`;
+                            link.download = reg.paymentScreenshot;
+                            link.click();
+                          }}
+                          size="sm"
+                          className="bg-[#FFC20A]/20 text-[#FFC20A] hover:bg-[#FFC20A]/30 border border-[#FFC20A]/40"
+                        >
+                          <Download className="w-3 h-3 mr-1" />
+                          Download
+                        </Button>
+                      </div>
+                    ) : (
+                      <Badge className="bg-red-500/20 text-red-400 border-red-500/40 flex items-center space-x-1">
+                        <XCircle className="w-3 h-3" />
+                        <span>Not Uploaded</span>
+                      </Badge>
+                    )}
+                  </div>
+                  {reg.paymentScreenshot && reg.paymentScreenshotUploadedAt && (
+                    <div className="mt-2 text-xs text-[#FBF9E3]/50">
+                      Uploaded: {new Date(reg.paymentScreenshotUploadedAt).toLocaleString('en-IN')}
+                    </div>
+                  )}
+                </div>
+
                 {/* Teams Details */}
                 <div className="mt-4 pt-4 border-t border-white/10">
                   <details className="cursor-pointer">
