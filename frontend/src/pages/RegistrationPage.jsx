@@ -217,6 +217,7 @@ const RegistrationPage = () => {
             }));
 
             const registrationData = {
+              userEmail: formData.userEmail,
               collegeName: formData.collegeName,
               sports: formData.selectedSports,
               teams: teamsArray,
@@ -234,10 +235,10 @@ const RegistrationPage = () => {
 
             const regResponse = await axios.post(`${API}/registrations`, registrationData);
             
-            toast.success('Registration successful! Confirmation email sent.');
-            setTimeout(() => {
-              navigate('/', { state: { registrationId: regResponse.data.id } });
-            }, 2000);
+            // Show success step with registration details
+            setStep(6);
+            
+            toast.success('Registration successful! Confirmation will be sent to ' + formData.userEmail);
           }
         },
         modal: {
