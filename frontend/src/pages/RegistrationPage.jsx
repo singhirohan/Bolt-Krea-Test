@@ -34,6 +34,11 @@ const ACCOMMODATION_PACKAGES = {
 const RegistrationPage = () => {
   const navigate = useNavigate();
   const [step, setStep] = useState(1);
+  const [registrationId, setRegistrationId] = useState(null);
+  const [paymentScreenshot, setPaymentScreenshot] = useState(null);
+  const [uploadStatus, setUploadStatus] = useState('idle'); // 'idle', 'uploading', 'success', 'error'
+  const fileInputRef = useRef(null);
+  
   const [formData, setFormData] = useState({
     userEmail: '', // Email for sending registration details
     collegeName: '',
