@@ -220,6 +220,17 @@ The unique location of Krea University in Sri City offers participants not just 
                 Register Your Team
                 <ChevronRight className="ml-2 w-5 h-5" />
               </Button>
+              
+              <Button 
+                onClick={handleDownloadBrochure}
+                size="lg"
+                variant="outline"
+                className="border-2 border-[#FFC20A] text-[#FFC20A] bg-transparent hover:bg-[#FFC20A] hover:text-[#122C4F] font-bold text-lg px-8 py-6 transition-all hover:scale-105"
+                data-testid="hero-download-btn"
+              >
+                <Download className="mr-2 w-5 h-5" />
+                Download Brochure
+              </Button>
             </div>
           </div>
         </div>
