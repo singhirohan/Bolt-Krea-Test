@@ -1188,7 +1188,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <img 
                   src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
                   alt="BOLT Logo" 
-                  className="h-16 w-auto"
+                  className="w-[300px] h-auto"
                 />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">BOLT 2026</h3>
