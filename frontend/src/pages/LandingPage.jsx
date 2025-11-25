@@ -117,6 +117,17 @@ The unique location of Krea University in Sri City offers participants not just 
     alert(`${sport.name} rules PDF will be available soon. PDF path: ${sport.pdf}`);
   };
 
+  const handleDownloadBrochure = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = 'https://customer-assets.emergentagent.com/job_2abd8f8e-7c46-461a-adbb-3d9bafd57d8a/artifacts/0yrlx0bk_Sponsorship%20Deck%20Final.pdf';
+    link.download = 'BOLT_2026_Brochure.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const timeline = [
     { year: '2022', title: 'Inception', desc: '750+ participants across 20+ sports' },
     { year: '2023', title: 'Growth', desc: '270+ athletes, first sponsorships secured' },
