@@ -219,6 +219,28 @@ async def upload_payment_screenshot(registration_id: str, file: UploadFile = Fil
         logging.error(f"Error uploading payment screenshot: {str(e)}")
         raise HTTPException(status_code=500, detail="Failed to upload file")
 
+@api_router.get("/payment-screenshots/{filename}")
+async def get_payment_screenshot(filename: str):
+    """
+    Retrieve payment screenshot file
+    """
+    from fastapi.responses import FileResponse
+    
+    file_path = Path("/app/backend/uploads") / filename
+    
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail="Screenshot not found")
+    
+    # Validate filename to prevent directory traversal
+    if ".." in filename or "/" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+    
+    return FileResponse(
+        path=file_path,
+        media_type="application/octet-stream",
+        filename=filename
+    )
+
 @api_router.delete("/registrations/{registration_id}")
 async def delete_registration(registration_id: str):
     result = await db.registrations.delete_one({"id": registration_id})
