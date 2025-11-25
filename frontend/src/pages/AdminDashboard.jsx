@@ -273,6 +273,11 @@ const AdminDashboard = () => {
                       </div>
                       
                       <div className="grid md:grid-cols-2 gap-3 text-[#FBF9E3]/80 text-sm">
+                        {reg.userEmail && (
+                          <div className="md:col-span-2">
+                            <span className="font-medium">Contact Email:</span> <span className="text-[#5B88B2]">{reg.userEmail}</span>
+                          </div>
+                        )}
                         <div>
                           <span className="font-medium">Sports:</span> {reg.sports.join(', ')}
                         </div>
