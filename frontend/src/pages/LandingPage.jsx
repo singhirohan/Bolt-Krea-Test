@@ -104,17 +104,18 @@ The unique location of Krea University in Sri City offers participants not just 
   };
 
   const sports = [
-    { name: 'Cricket', icon: '🏏', pdf: '/cricket-rules.pdf' },
-    { name: 'Basketball', icon: '🏀', pdf: '/basketball-rules.pdf' },
-    { name: 'Football', icon: '⚽', pdf: '/football-rules.pdf' },
-    { name: 'Badminton', icon: '🏸', pdf: '/badminton-rules.pdf' },
-    { name: 'Tennis', icon: '🎾', pdf: '/tennis-rules.pdf' },
-    { name: 'Volleyball', icon: '🏐', pdf: '/volleyball-rules.pdf' }
+    { name: 'Cricket', icon: '🏏' },
+    { name: 'Basketball', icon: '🏀' },
+    { name: 'Football', icon: '⚽' },
+    { name: 'Badminton', icon: '🏸' },
+    { name: 'Tennis', icon: '🎾' },
+    { name: 'Volleyball', icon: '🏐' }
   ];
 
+  const [selectedSport, setSelectedSport] = useState(null);
+
   const handleSportClick = (sport) => {
-    // For now, show alert. You can replace with actual PDF links
-    alert(`${sport.name} rules PDF will be available soon. PDF path: ${sport.pdf}`);
+    setSelectedSport(sport.name);
   };
 
   const handleDownloadBrochure = () => {
