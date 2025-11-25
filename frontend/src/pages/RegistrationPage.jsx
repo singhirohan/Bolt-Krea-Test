@@ -306,11 +306,24 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Step 1: College Name */}
+        {/* Step 1: Email & College Name */}
         {step === 1 && (
           <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-college">
-            <h2 className="text-2xl font-bold text-white mb-6">Enter Your College Name</h2>
+            <h2 className="text-2xl font-bold text-white mb-6">Registration Details</h2>
             <div className="space-y-4">
+              <div>
+                <Label htmlFor="userEmail" className="text-[#FBF9E3] mb-2">Your Email Address *</Label>
+                <Input
+                  id="userEmail"
+                  type="email"
+                  data-testid="user-email-input"
+                  placeholder="Enter your email for registration confirmation"
+                  value={formData.userEmail}
+                  onChange={(e) => setFormData({ ...formData, userEmail: e.target.value })}
+                  className="bg-white/10 border-[#5B88B2]/30 text-white placeholder:text-white/40"
+                />
+                <p className="text-[#FBF9E3]/60 text-sm mt-1">All registration details will be sent to this email</p>
+              </div>
               <div>
                 <Label htmlFor="collegeName" className="text-[#FBF9E3] mb-2">College/University Name *</Label>
                 <Input
