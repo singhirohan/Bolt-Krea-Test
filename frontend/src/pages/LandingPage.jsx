@@ -114,7 +114,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • League Phase: Each team plays 2 games within their pool
 • Top 2 teams from each pool advance to semifinals
 
-⏱️ **MATCH FORMAT**
+**MATCH FORMAT**
 
 **League Phase**
 • Duration: 4 quarters × 8 minutes each
@@ -126,7 +126,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Half-time: 15 minutes
 • Overtime: 5-minute periods if tied (continues until winner)
 
-🏀 **TEAM COMPOSITION**
+**TEAM COMPOSITION**
 
 • Players on Court: 5 players
 • Maximum Roster: 12 players per team
@@ -137,7 +137,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Ball: Size 7 (men's), Size 6 (women's) - FIBA approved
 • Jerseys must have visible numbers
 
-⚖️ **SCORING & STANDINGS**
+**SCORING & STANDINGS**
 
 **League Phase Points**
 • Win: 2 points
@@ -150,13 +150,13 @@ The unique location of Krea University in Sri City offers participants not just 
 3. Total points scored
 4. Random draw
 
-⏰ **TIMEOUTS & REGULATIONS**
+**TIMEOUTS & REGULATIONS**
 
 • Timeouts: 2 per half (60 seconds each) + 1 timeout per half (30 seconds)
 • Overtime: 1 timeout per team per OT period
 • Maximum game time: 75 minutes (including all breaks)
 
-🎯 **KEY RULES**
+**KEY RULES**
 
 • All games follow current FIBA Official Basketball Rules
 • 3 referees + 1 scorekeeper per game
@@ -164,7 +164,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Late arrival (>10 mins): Automatic forfeit
 • Rolling substitutions allowed
 
-📅 **TOURNAMENT SCHEDULE**
+**TOURNAMENT SCHEDULE**
 
 • Duration: 2 days
 • At least 1-hour gap between team's matches
@@ -177,7 +177,7 @@ The unique location of Krea University in Sri City offers participants not just 
       title: "Cricket Tournament Rules",
       content: `**TOURNAMENT FORMAT**
 
-📊 **Structure**
+**Structure**
 • Format: 2 groups with 3 teams each
 • Group Stage: 12 overs per side
 • Finals: 20 overs per side
@@ -187,7 +187,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Each team plays 2 league matches within their group
 • Top team from each group qualifies for finals
 
-🏏 **MATCH SPECIFICATIONS**
+**MATCH SPECIFICATIONS**
 
 **Group Stage**
 • Overs: 12 per side
@@ -200,7 +200,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Overs: 20 per side
 • White ball used for all matches
 
-👥 **TEAM COMPOSITION**
+**TEAM COMPOSITION**
 
 • Playing XI: 11 players on field
 • Squad Size: 15 players maximum
@@ -208,7 +208,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Impact Player: Allowed (as per IPL regulations)
 • Substitutes: Only for injuries (umpire verified)
 
-⚖️ **BOWLING & FIELDING**
+**BOWLING & FIELDING**
 
 **Bowling Restrictions**
 • Group Stage: Max 3 overs per bowler
@@ -222,7 +222,7 @@ The unique location of Krea University in Sri City offers participants not just 
 • Every No Ball = Free Hit
 • Tied Matches = Super Over (repeat if necessary)
 
-👕 **PLAYER REGULATIONS**
+**PLAYER REGULATIONS**
 
 **Attire & Equipment**
 • Colored jerseys mandatory for all teams
@@ -230,20 +230,20 @@ The unique location of Krea University in Sri City offers participants not just 
 • Metal spikes strictly prohibited
 • MCC Laws of Cricket apply
 
-⏰ **TIMING & ATTENDANCE**
+**TIMING & ATTENDANCE**
 
 • Toss: 15 minutes before match start
 • Teams must report 30 minutes prior to match
 • Late arrival (>15 mins): Walkover to opposition
 
-🎯 **CONDUCT & DISCIPLINE**
+**CONDUCT & DISCIPLINE**
 
 • Umpire's decision is FINAL
 • Misbehavior with umpire = Disqualification
 • All BOLT committee decisions are final
 • Respect officials and follow code of conduct
 
-📞 **CONTACT**
+**CONTACT**
 Hrishikesh Rao
 📱 73977 68077
 ✉️ adigehrishikesh_rao.sias24@krea.ac.in`
@@ -252,7 +252,7 @@ Hrishikesh Rao
       title: "Football Tournament Rules",
       content: `**TOURNAMENT FORMAT**
 
-📊 **Men's Tournament**
+**Men's Tournament**
 • Teams: 7 teams
 • Team Size: 9-a-side (8 outfield + 1 goalkeeper)
 • Maximum Roster: 14 players
@@ -274,7 +274,7 @@ Hrishikesh Rao
 • Group B: 3 teams
 • Semifinals + 3rd Place Match + Final
 
-⚖️ **SCORING SYSTEM**
+**SCORING SYSTEM**
 
 **Group Stage Points**
 • Win: 3 points
@@ -287,7 +287,7 @@ Hrishikesh Rao
 3. Head-to-Head result
 4. Penalty shootout
 
-⏰ **EXTRA TIME & PENALTIES**
+**EXTRA TIME & PENALTIES**
 
 **Group Stage**
 • No extra time
@@ -297,13 +297,13 @@ Hrishikesh Rao
 • If tied: 5 minutes extra time
 • Still tied: Penalty shootout (best of 5)
 
-🔄 **SUBSTITUTIONS**
+**SUBSTITUTIONS**
 
 • Type: Rolling substitutions
 • Maximum: 5 per team per match
 • Players can be substituted multiple times
 
-⚠️ **DISCIPLINE**
+**DISCIPLINE**
 
 **Yellow Card**
 • Warning for misconduct
@@ -314,13 +314,13 @@ Hrishikesh Rao
 • Minimum 1 match suspension
 • Additional sanctions possible for serious misconduct
 
-⏱️ **TIMING & ATTENDANCE**
+**TIMING & ATTENDANCE**
 
 • Report: 15 minutes before kick-off
 • Grace Period: 5 minutes
 • Late arrival: Automatic forfeit
 
-🎯 **GAMEPLAY RULES**
+**GAMEPLAY RULES**
 
 **Men's**
 • Follows official FIFA Laws
@@ -333,7 +333,7 @@ Hrishikesh Rao
 • 40-minute matches
 • Small-sided game adaptations
 
-📅 **TOURNAMENT STRUCTURE**
+**TOURNAMENT STRUCTURE**
 
 **Men's - Total: 12 matches**
 • Group Stage: 9 matches
@@ -353,7 +353,7 @@ Hrishikesh Rao
       title: "Tennis Tournament Rules",
       content: `**TOURNAMENT FORMAT**
 
-🎾 **Match Structure**
+**Match Structure**
 • Each tie consists of 5 matches
 • Best-of-five format: Win 3 matches to win the tie
 
@@ -364,7 +364,7 @@ Hrishikesh Rao
 4. Women's Doubles
 5. Mixed Doubles
 
-🎯 **MATCH FORMAT**
+**MATCH FORMAT**
 
 **Set Rules**
 • Full set format
@@ -375,7 +375,7 @@ Hrishikesh Rao
 • Singles: Standard 2-point deuce
 • Doubles: 1-point deuce (ITF "No-Ad" format)
 
-👥 **TEAM COMPOSITION**
+**TEAM COMPOSITION**
 
 **Minimum Requirements**
 • 6 players minimum: 3 men + 3 women
@@ -391,7 +391,7 @@ Hrishikesh Rao
 **Forfeit**
 • Unable to field player = Forfeit that match
 
-👕 **EQUIPMENT & ATTIRE**
+**EQUIPMENT & ATTIRE**
 
 **Required**
 • Non-marking shoes mandatory
@@ -402,13 +402,13 @@ Hrishikesh Rao
 **Provided**
 • Official match balls by organizers
 
-⏰ **TIMING & ATTENDANCE**
+**TIMING & ATTENDANCE**
 
 • Report to match desk: 15 minutes before scheduled time
 • Warm-up: 5 minutes per match
 • Late arrival (>10 mins): Automatic forfeit
 
-🎯 **SCORING & ADVANCEMENT**
+**SCORING & ADVANCEMENT**
 
 **Points System**
 • Match win: 1 point toward team tally
@@ -418,7 +418,7 @@ Hrishikesh Rao
 1. Sets won-loss differential
 2. Games won-loss differential
 
-⚖️ **CONDUCT & OFFICIATING**
+**CONDUCT & OFFICIATING**
 
 **Officials**
 • Qualified umpire/referee for all matches
@@ -430,7 +430,7 @@ Hrishikesh Rao
 • Dissent
 → Can result in warnings, point penalties, or disqualification
 
-🔄 **COACHING & SUBSTITUTIONS**
+**COACHING & SUBSTITUTIONS**
 
 **Coaching Rules**
 • No coaching during points
@@ -441,14 +441,14 @@ Hrishikesh Rao
 • Only for legitimate medical/logistical reasons
 • Must report to umpire and tournament desk
 
-⚠️ **SAFETY & FAIR PLAY**
+**SAFETY & FAIR PLAY**
 
 • Players participate at own risk
 • Responsible for own hydration and fitness
 • Respect opponents, referees, and equipment
 • Committee reserves right to amend/postpone matches for weather/unforeseen circumstances
 
-📅 **TOURNAMENT PROGRESSION**
+**TOURNAMENT PROGRESSION**
 
 • Group stage matches
 • Top teams advance to knockout rounds
@@ -458,7 +458,7 @@ Hrishikesh Rao
       title: "Volleyball Tournament Rules",
       content: `**TOURNAMENT FORMAT**
 
-🏐 **Structure**
+**Structure**
 • Teams: 6 teams (5 External + Krea University)
 • Format: League Stage → Knockout Stage
 • Venue: Volleyball Court, Krea University
@@ -469,7 +469,7 @@ Hrishikesh Rao
 • Top 4 teams qualify for semifinals
 • Semifinals → Final
 
-🎯 **MATCH FORMAT**
+**MATCH FORMAT**
 
 **Set Structure**
 • Best of 3 sets
@@ -481,7 +481,7 @@ Hrishikesh Rao
 **Duration**
 • Approximate: 60 minutes per match
 
-👥 **TEAM COMPOSITION**
+**TEAM COMPOSITION**
 
 • On Court: 6 players at all times
 • Roster: Minimum 8, Maximum 12 players
@@ -493,7 +493,7 @@ Hrishikesh Rao
 • No jewelry or unsafe accessories
 • Team jerseys required
 
-⚖️ **SCORING SYSTEM**
+**SCORING SYSTEM**
 
 **League Stage**
 • Win: 2 points
@@ -509,7 +509,7 @@ Hrishikesh Rao
 • SF2: Rank 2 vs Rank 3
 • Winners → Final
 
-⏰ **GAME REGULATIONS**
+**GAME REGULATIONS**
 
 **Substitutions**
 • 6 substitutions allowed per set
@@ -523,7 +523,7 @@ Hrishikesh Rao
 • Net touch = Fault
 • Standard volleyball rules apply
 
-🔴 **DISCIPLINE & CONDUCT**
+**DISCIPLINE & CONDUCT**
 
 **Penalties**
 1. Verbal warning (first offense)
@@ -534,14 +534,14 @@ Hrishikesh Rao
 • Qualified referees for all matches
 • Line judges for semifinals and finals
 
-⚠️ **PROTESTS & DISPUTES**
+**PROTESTS & DISPUTES**
 
 • Must file within 10 minutes after match
 • Must be in writing
 • Signed by team captain
 • Tournament Committee decision is FINAL
 
-📦 **EQUIPMENT**
+**EQUIPMENT**
 
 **Provided by Organizers**
 • Volleyballs
@@ -554,14 +554,14 @@ Hrishikesh Rao
 • Appropriate shoes (non-marking)
 • Personal equipment
 
-🏥 **SAFETY**
+**SAFETY**
 
 • Uphold sportsmanship and fair play
 • Warm up before matches mandatory
 • Medical assistance available
 • Organizers not responsible for injuries or lost items
 
-📅 **TENTATIVE SCHEDULE**
+**TENTATIVE SCHEDULE**
 
 **Day 1 - League Stage**
 • 8:00 AM - 2:00 PM: 9 League matches
@@ -576,7 +576,7 @@ Hrishikesh Rao
 • 2:15 PM: Final Match
 • 3:45 PM: Closing & Prize Distribution
 
-📞 **CONTACT**
+**CONTACT**
 Maya & Ram
 📱 70228 93499
 ✉️ maya_achaia.sias24@krea.ac.in`
@@ -585,7 +585,7 @@ Maya & Ram
       title: "Badminton Tournament Rules",
       content: `**TOURNAMENT INFORMATION**
 
-🏸 **Coming Soon**
+**Coming Soon**
 
 Badminton tournament rules and regulations will be announced shortly. Stay tuned for updates!
 
