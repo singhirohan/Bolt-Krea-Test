@@ -1093,6 +1093,28 @@ We'll update this section with complete rules, match formats, team composition, 
           </DialogDescription>
         </DialogContent>
       </Dialog>
+
+      {/* Sports Rules Dialog */}
+      <Dialog open={selectedSport !== null} onOpenChange={() => setSelectedSport(null)}>
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/20 to-black border-[#FFC20A]">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-white flex items-center justify-between">
+              {selectedSport && sportRules[selectedSport]?.title}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setSelectedSport(null)}
+                className="text-gray-400 hover:text-white"
+              >
+                <X className="w-5 h-5" />
+              </Button>
+            </DialogTitle>
+          </DialogHeader>
+          <DialogDescription className="text-gray-300 text-base leading-relaxed whitespace-pre-line mt-4">
+            {selectedSport && sportRules[selectedSport]?.content}
+          </DialogDescription>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
