@@ -67,6 +67,8 @@ class Registration(BaseModel):
     accommodationFee: float
     paymentId: Optional[str] = None
     paymentStatus: str
+    paymentScreenshot: Optional[str] = None
+    paymentScreenshotUploadedAt: Optional[str] = None
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 class AdminLogin(BaseModel):
