@@ -831,25 +831,25 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               Two days of intense competition, sportsmanship, and unforgettable memories.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full px-4">
               <Button 
                 onClick={() => navigate('/register')}
                 size="lg"
-                className="bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold text-lg px-8 py-6 hover:shadow-2xl hover:shadow-[#FFC20A]/50 transition-all hover:scale-105"
+                className="bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 hover:shadow-2xl hover:shadow-[#FFC20A]/50 transition-all hover:scale-105 w-full sm:w-auto"
                 data-testid="hero-register-btn"
               >
                 Register Your Team
-                <ChevronRight className="ml-2 w-5 h-5" />
+                <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
               
               <Button 
                 onClick={handleDownloadBrochure}
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#FFC20A] text-[#FFC20A] bg-transparent hover:bg-[#FFC20A] hover:text-[#122C4F] font-bold text-lg px-8 py-6 transition-all hover:scale-105"
+                className="border-2 border-[#FFC20A] text-[#FFC20A] bg-transparent hover:bg-[#FFC20A] hover:text-[#122C4F] font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 transition-all hover:scale-105 w-full sm:w-auto"
                 data-testid="hero-download-btn"
               >
-                <Download className="mr-2 w-5 h-5" />
+                <Download className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
                 Download Brochure
               </Button>
             </div>
