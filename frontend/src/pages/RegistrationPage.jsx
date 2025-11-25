@@ -240,6 +240,9 @@ const RegistrationPage = () => {
 
             const regResponse = await axios.post(`${API}/registrations`, registrationData);
             
+            // Store registration ID for file upload
+            setRegistrationId(regResponse.data.id);
+            
             // Show success step with registration details
             setStep(6);
             
