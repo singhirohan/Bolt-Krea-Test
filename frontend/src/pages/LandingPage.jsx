@@ -209,16 +209,6 @@ The unique location of Krea University in Sri City offers participants not just 
                 Register Your Team
                 <ChevronRight className="ml-2 w-5 h-5" />
               </Button>
-              
-              <Button 
-                onClick={() => navigate('/admin')}
-                size="lg"
-                variant="outline"
-                className="border-2 border-[#FBF9E3] text-[#FBF9E3] bg-transparent hover:bg-[#FBF9E3] hover:text-[#122C4F] font-bold text-lg px-8 py-6 transition-all"
-                data-testid="hero-admin-btn"
-              >
-                Admin Portal
-              </Button>
             </div>
           </div>
         </div>
