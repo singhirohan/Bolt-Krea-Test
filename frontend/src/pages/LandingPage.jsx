@@ -103,6 +103,512 @@ Set in a serene, eco-friendly environment, our campus combines academic excellen
 The unique location of Krea University in Sri City offers participants not just a venue, but an experience of being part of a global community dedicated to excellence.`
     }
   };
+  const sportRules = {
+    Basketball: {
+      title: "Basketball Tournament Rules",
+      content: `**TOURNAMENT FORMAT**
+
+📊 **Teams & Structure**
+• Total Teams: 6 teams divided into 2 pools (Pool A & Pool B)
+• Each pool: 3 teams
+• League Phase: Each team plays 2 games within their pool
+• Top 2 teams from each pool advance to semifinals
+
+⏱️ **MATCH FORMAT**
+
+**League Phase**
+• Duration: 4 quarters × 8 minutes each
+• Half-time: 10 minutes
+• Breaks: 2 minutes between Q1-Q2 and Q3-Q4
+
+**Knockout Phase** (Semifinals & Final)
+• Duration: 4 quarters × 10 minutes each
+• Half-time: 15 minutes
+• Overtime: 5-minute periods if tied (continues until winner)
+
+🏀 **TEAM COMPOSITION**
+
+• Players on Court: 5 players
+• Maximum Roster: 12 players per team
+• Minimum to Start: 5 players (or forfeit with 0-20 score)
+• Shot Clock: 24 seconds (resets to 14s on offensive rebound)
+
+**Equipment**
+• Ball: Size 7 (men's), Size 6 (women's) - FIBA approved
+• Jerseys must have visible numbers
+
+⚖️ **SCORING & STANDINGS**
+
+**League Phase Points**
+• Win: 2 points
+• Loss: 1 point
+• Forfeit: 0 points (opponent gets 20-0 win)
+
+**Tiebreakers**
+1. Head-to-head record
+2. Point differential
+3. Total points scored
+4. Random draw
+
+⏰ **TIMEOUTS & REGULATIONS**
+
+• Timeouts: 2 per half (60 seconds each) + 1 timeout per half (30 seconds)
+• Overtime: 1 timeout per team per OT period
+• Maximum game time: 75 minutes (including all breaks)
+
+🎯 **KEY RULES**
+
+• All games follow current FIBA Official Basketball Rules
+• 3 referees + 1 scorekeeper per game
+• Teams must report 10 minutes before scheduled start
+• Late arrival (>10 mins): Automatic forfeit
+• Rolling substitutions allowed
+
+📅 **TOURNAMENT SCHEDULE**
+
+• Duration: 2 days
+• At least 1-hour gap between team's matches
+• Day 1: League phase (6 games)
+• Day 2: Semifinals + Championship (3 games total)
+
+**Total Matches: 9 games**`
+    },
+    Cricket: {
+      title: "Cricket Tournament Rules",
+      content: `**TOURNAMENT FORMAT**
+
+📊 **Structure**
+• Format: 2 groups with 3 teams each
+• Group Stage: 12 overs per side
+• Finals: 20 overs per side
+• Venue: Sri City Cricket Ground
+
+**Match Schedule**
+• Each team plays 2 league matches within their group
+• Top team from each group qualifies for finals
+
+🏏 **MATCH SPECIFICATIONS**
+
+**Group Stage**
+• Overs: 12 per side
+• Time Limit: Must complete in 45 minutes
+• Penalties:
+  - Time > 45 mins: One fielder inside 30-yard circle
+  - Time > 50 mins: 10-run penalty to opposition
+
+**Finals**
+• Overs: 20 per side
+• White ball used for all matches
+
+👥 **TEAM COMPOSITION**
+
+• Playing XI: 11 players on field
+• Squad Size: 15 players maximum
+• Age Limit: 27 years or below
+• Impact Player: Allowed (as per IPL regulations)
+• Substitutes: Only for injuries (umpire verified)
+
+⚖️ **BOWLING & FIELDING**
+
+**Bowling Restrictions**
+• Group Stage: Max 3 overs per bowler
+• Finals: Max 4 overs per bowler
+
+**Powerplay**
+• Group Stage: First 4 overs - max 2 fielders outside circle
+• Finals: First 6 overs - max 2 fielders outside circle
+
+**Special Rules**
+• Every No Ball = Free Hit
+• Tied Matches = Super Over (repeat if necessary)
+
+👕 **PLAYER REGULATIONS**
+
+**Attire & Equipment**
+• Colored jerseys mandatory for all teams
+• Only rubber studs allowed
+• Metal spikes strictly prohibited
+• MCC Laws of Cricket apply
+
+⏰ **TIMING & ATTENDANCE**
+
+• Toss: 15 minutes before match start
+• Teams must report 30 minutes prior to match
+• Late arrival (>15 mins): Walkover to opposition
+
+🎯 **CONDUCT & DISCIPLINE**
+
+• Umpire's decision is FINAL
+• Misbehavior with umpire = Disqualification
+• All BOLT committee decisions are final
+• Respect officials and follow code of conduct
+
+📞 **CONTACT**
+Hrishikesh Rao
+📱 73977 68077
+✉️ adigehrishikesh_rao.sias24@krea.ac.in`
+    },
+    Football: {
+      title: "Football Tournament Rules",
+      content: `**TOURNAMENT FORMAT**
+
+📊 **Men's Tournament**
+• Teams: 7 teams
+• Team Size: 9-a-side (8 outfield + 1 goalkeeper)
+• Maximum Roster: 14 players
+• Duration: 50 minutes (25 mins per half, 5-min halftime)
+
+**Groups**
+• Group A: 4 teams
+• Group B: 3 teams
+• Top 2 from each group → Semifinals → Final
+
+**Women's Tournament**
+• Teams: 6 teams
+• Team Size: 9-a-side (8 outfield + 1 goalkeeper)
+• Maximum Roster: 14 players
+• Duration: 40 minutes (20 mins per half, 8-min halftime)
+
+**Groups**
+• Group A: 3 teams
+• Group B: 3 teams
+• Semifinals + 3rd Place Match + Final
+
+⚖️ **SCORING SYSTEM**
+
+**Group Stage Points**
+• Win: 3 points
+• Draw: 1 point
+• Loss: 0 points
+
+**Tiebreakers (in order)**
+1. Goal Difference
+2. Goals Scored
+3. Head-to-Head result
+4. Penalty shootout
+
+⏰ **EXTRA TIME & PENALTIES**
+
+**Group Stage**
+• No extra time
+• Match ends at full time
+
+**Knockout Stage** (Semifinals & Final)
+• If tied: 5 minutes extra time
+• Still tied: Penalty shootout (best of 5)
+
+🔄 **SUBSTITUTIONS**
+
+• Type: Rolling substitutions
+• Maximum: 5 per team per match
+• Players can be substituted multiple times
+
+⚠️ **DISCIPLINE**
+
+**Yellow Card**
+• Warning for misconduct
+• 2 Yellows in one match = Red card + Next match suspension
+
+**Red Card**
+• Immediate ejection
+• Minimum 1 match suspension
+• Additional sanctions possible for serious misconduct
+
+⏱️ **TIMING & ATTENDANCE**
+
+• Report: 15 minutes before kick-off
+• Grace Period: 5 minutes
+• Late arrival: Automatic forfeit
+
+🎯 **GAMEPLAY RULES**
+
+**Men's**
+• Follows official FIFA Laws
+• Standard offside rules apply
+• 50-minute matches
+
+**Women's**
+• Follows FIFA Laws with modifications
+• NO OFFSIDE RULE
+• 40-minute matches
+• Small-sided game adaptations
+
+📅 **TOURNAMENT STRUCTURE**
+
+**Men's - Total: 12 matches**
+• Group Stage: 9 matches
+• Knockouts: 2 semifinals + 1 final
+
+**Women's - Total: 10 matches**
+• Group Stage: 6 matches
+• Knockouts: 2 semifinals + 3rd place + final
+
+**General Rules**
+• 2-day tournament
+• Schedule released in advance
+• All changes only by Organizing Committee
+• Disciplinary matters handled by committee`
+    },
+    Tennis: {
+      title: "Tennis Tournament Rules",
+      content: `**TOURNAMENT FORMAT**
+
+🎾 **Match Structure**
+• Each tie consists of 5 matches
+• Best-of-five format: Win 3 matches to win the tie
+
+**Match Types per Tie**
+1. Men's Singles
+2. Men's Doubles
+3. Women's Singles
+4. Women's Doubles
+5. Mixed Doubles
+
+🎯 **MATCH FORMAT**
+
+**Set Rules**
+• Full set format
+• Tiebreaker at 6-6 to decide set
+• All matches follow official ITF rules
+
+**Deuce System**
+• Singles: Standard 2-point deuce
+• Doubles: 1-point deuce (ITF "No-Ad" format)
+
+👥 **TEAM COMPOSITION**
+
+**Minimum Requirements**
+• 6 players minimum: 3 men + 3 women
+• Maximum squad: 9 players (5 men + 4 women)
+
+**Player Participation Limits**
+• Each player: Maximum 2 matches per tie
+• Exception: Only 1 man and 1 woman can play 2 matches
+  - Example: Men's Doubles + Mixed Doubles
+  - Example: Women's Doubles + Mixed Doubles
+• All other players: Only 1 match per tie
+
+**Forfeit**
+• Unable to field player = Forfeit that match
+
+👕 **EQUIPMENT & ATTIRE**
+
+**Required**
+• Non-marking shoes mandatory
+• Appropriate tennis attire
+• Designated team colors
+• Teams bring own rackets
+
+**Provided**
+• Official match balls by organizers
+
+⏰ **TIMING & ATTENDANCE**
+
+• Report to match desk: 15 minutes before scheduled time
+• Warm-up: 5 minutes per match
+• Late arrival (>10 mins): Automatic forfeit
+
+🎯 **SCORING & ADVANCEMENT**
+
+**Points System**
+• Match win: 1 point toward team tally
+• Need 3 points to win the tie
+
+**Tiebreakers** (if teams tied on points)
+1. Sets won-loss differential
+2. Games won-loss differential
+
+⚖️ **CONDUCT & OFFICIATING**
+
+**Officials**
+• Qualified umpire/referee for all matches
+• Referee's decision is FINAL
+
+**Penalties for Misconduct**
+• Verbal abuse
+• Racquet abuse
+• Dissent
+→ Can result in warnings, point penalties, or disqualification
+
+🔄 **COACHING & SUBSTITUTIONS**
+
+**Coaching Rules**
+• No coaching during points
+• Limited coaching during changeovers (umpire's discretion)
+
+**Substitutions**
+• Only before match starts
+• Only for legitimate medical/logistical reasons
+• Must report to umpire and tournament desk
+
+⚠️ **SAFETY & FAIR PLAY**
+
+• Players participate at own risk
+• Responsible for own hydration and fitness
+• Respect opponents, referees, and equipment
+• Committee reserves right to amend/postpone matches for weather/unforeseen circumstances
+
+📅 **TOURNAMENT PROGRESSION**
+
+• Group stage matches
+• Top teams advance to knockout rounds
+• Matches scheduled with adequate rest between ties`
+    },
+    Volleyball: {
+      title: "Volleyball Tournament Rules",
+      content: `**TOURNAMENT FORMAT**
+
+🏐 **Structure**
+• Teams: 6 teams (5 External + Krea University)
+• Format: League Stage → Knockout Stage
+• Venue: Volleyball Court, Krea University
+• Categories: Men's & Women's
+
+**Advancement**
+• League: All teams play each other once
+• Top 4 teams qualify for semifinals
+• Semifinals → Final
+
+🎯 **MATCH FORMAT**
+
+**Set Structure**
+• Best of 3 sets
+• Set 1: 25 points
+• Set 2: 25 points
+• Set 3 (if needed): 15 points
+• Must win by 2-point margin
+
+**Duration**
+• Approximate: 60 minutes per match
+
+👥 **TEAM COMPOSITION**
+
+• On Court: 6 players at all times
+• Roster: Minimum 8, Maximum 12 players
+• Substitutes: Up to 6 players
+• Captain: Must be designated before match
+
+**Uniforms**
+• Visible numbers (1-12) mandatory
+• No jewelry or unsafe accessories
+• Team jerseys required
+
+⚖️ **SCORING SYSTEM**
+
+**League Stage**
+• Win: 2 points
+• Loss: 0 points
+
+**Tiebreakers** (in order)
+1. Set difference
+2. Point difference
+3. Head-to-head result
+
+**Knockout Stage**
+• SF1: Rank 1 vs Rank 4
+• SF2: Rank 2 vs Rank 3
+• Winners → Final
+
+⏰ **GAME REGULATIONS**
+
+**Substitutions**
+• 6 substitutions allowed per set
+
+**Timeouts**
+• 2 timeouts per set
+• Duration: 30 seconds each
+
+**Key Rules**
+• Maintain proper rotation and service order
+• Net touch = Fault
+• Standard volleyball rules apply
+
+🔴 **DISCIPLINE & CONDUCT**
+
+**Penalties**
+1. Verbal warning (first offense)
+2. Yellow card → Point to opponent
+3. Red card → Expulsion from set/match
+
+**Officiating**
+• Qualified referees for all matches
+• Line judges for semifinals and finals
+
+⚠️ **PROTESTS & DISPUTES**
+
+• Must file within 10 minutes after match
+• Must be in writing
+• Signed by team captain
+• Tournament Committee decision is FINAL
+
+📦 **EQUIPMENT**
+
+**Provided by Organizers**
+• Volleyballs
+• Nets
+• Court setup
+
+**Teams Must Bring**
+• Jerseys with numbers
+• Kneepads
+• Appropriate shoes (non-marking)
+• Personal equipment
+
+🏥 **SAFETY**
+
+• Uphold sportsmanship and fair play
+• Warm up before matches mandatory
+• Medical assistance available
+• Organizers not responsible for injuries or lost items
+
+📅 **TENTATIVE SCHEDULE**
+
+**Day 1 - League Stage**
+• 8:00 AM - 2:00 PM: 9 League matches
+• 2:00 PM - 3:00 PM: Lunch break
+• 3:00 PM - 5:00 PM: Reserve/Practice
+
+**Day 2 - Knockout**
+• 8:00 AM - 10:00 AM: Remaining league matches
+• 10:15 AM: Semifinal 1 (Rank 1 vs 4)
+• 11:45 AM: Semifinal 2 (Rank 2 vs 3)
+• 1:00 PM - 2:00 PM: Lunch break
+• 2:15 PM: Final Match
+• 3:45 PM: Closing & Prize Distribution
+
+📞 **CONTACT**
+Maya & Ram
+📱 70228 93499
+✉️ maya_achaia.sias24@krea.ac.in`
+    },
+    Badminton: {
+      title: "Badminton Tournament Rules",
+      content: `**TOURNAMENT INFORMATION**
+
+🏸 **Coming Soon**
+
+Badminton tournament rules and regulations will be announced shortly. Stay tuned for updates!
+
+**Expected Format**
+• Singles and Doubles matches
+• League + Knockout format
+• BWF standard rules
+
+**Team Registration**
+• Register your team during the registration process
+• Badminton is one of our 6 featured sports at BOLT 2026
+
+For updates and specific badminton rules, please contact the organizing committee or check back soon.
+
+**Key Highlights**
+• World-class indoor badminton courts
+• Professional lighting and facilities
+• Qualified referees and officials
+• Competitive matches across 2 days
+
+We'll update this section with complete rules, match formats, team composition, and tournament schedule soon!`
+    }
+  };
 
   const sports = [
     { name: 'Cricket', icon: '🏏' },
