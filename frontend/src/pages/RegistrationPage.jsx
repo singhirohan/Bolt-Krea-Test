@@ -14,7 +14,22 @@ const API = `${BACKEND_URL}/api`;
 
 const SPORTS = ['Cricket', 'Basketball', 'Football', 'Badminton', 'Tennis', 'Volleyball'];
 const REGISTRATION_FEE = 800; // per person
-const ACCOMMODATION_FEE = 1500; // per person per night
+
+// Accommodation packages
+const ACCOMMODATION_PACKAGES = {
+  package1: {
+    name: '2 Nights Package',
+    nights: 2,
+    pricePerPerson: 3000,
+    description: '2 nights accommodation with breakfast'
+  },
+  package2: {
+    name: '3 Nights Package',
+    nights: 3,
+    pricePerPerson: 4500,
+    description: '3 nights accommodation with breakfast'
+  }
+};
 
 const RegistrationPage = () => {
   const navigate = useNavigate();
