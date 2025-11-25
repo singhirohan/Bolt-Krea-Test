@@ -813,20 +813,20 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center animate-fadeIn">
-            <div className="inline-flex items-center space-x-2 bg-[#FFC20A]/20 border border-[#FFC20A]/40 rounded-full px-6 py-2 mb-8">
-              <Sparkles className="w-5 h-5 text-[#FFC20A]" />
-              <span className="text-[#FBF9E3] font-medium">Krea University's Premier Sports Festival</span>
+            <div className="inline-flex items-center space-x-2 bg-[#21A7A0]/20 border border-[#21A7A0]/50 rounded-full px-6 py-2 mb-8">
+              <Sparkles className="w-5 h-5 text-[#21A7A0]" />
+              <span className="text-[#FAF7DB] font-medium">Krea University's Premier Sports Festival</span>
             </div>
             
             <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-4 sm:mb-6" style={{ transform: `translateY(${scrollY * 0.3}px)` }}>
-              BOLT <span className="text-[#FFC20A]">2026</span>
+              BOLT <span className="text-[#21A7A0]">2026</span>
             </h1>
             
-            <p className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#FFC20A] via-[#FF8C00] to-[#FF6B35] bg-clip-text text-transparent mb-3 sm:mb-4">
+            <p className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] bg-clip-text text-transparent mb-3 sm:mb-4">
               Bigger. Better. Bolder.
             </p>
             
-            <p className="text-sm sm:text-lg lg:text-xl text-[#FBF9E3]/80 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
+            <p className="text-sm sm:text-lg lg:text-xl text-[#FAF7DB]/90 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4">
               Join us for the first-ever intercollegiate sports festival at Krea University. 
               Two days of intense competition, sportsmanship, and unforgettable memories.
             </p>
