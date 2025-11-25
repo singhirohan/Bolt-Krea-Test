@@ -9,6 +9,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
   const [selectedPopup, setSelectedPopup] = useState(null);
+  const [selectedSport, setSelectedSport] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
