@@ -92,8 +92,16 @@ async def create_registration(input: RegistrationCreate):
     
     _ = await db.registrations.insert_one(doc)
     
-    # Mock email confirmation
-    logging.info(f"[MOCKED] Email confirmation sent to: {registration_obj.userEmail} (College: {registration_obj.collegeName})")
+    # Send email confirmation using SendGrid
+    try:
+        email_sent = send_registration_confirmation_email(registration_obj.model_dump())
+        if email_sent:
+            logging.info(f"✅ Email confirmation sent to: {registration_obj.userEmail} (College: {registration_obj.collegeName})")
+        else:
+            logging.warning(f"⚠️ Failed to send email to: {registration_obj.userEmail}")
+    except Exception as e:
+        logging.error(f"❌ Error sending email: {str(e)}")
+        # Don't fail the registration if email fails
     
     return registration_obj
 
