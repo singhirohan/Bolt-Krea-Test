@@ -583,30 +583,146 @@ Maya & Ram
     },
     Badminton: {
       title: "Badminton Tournament Rules",
-      content: `**TOURNAMENT INFORMATION**
+      content: `**TOURNAMENT FORMAT**
 
-**Coming Soon**
+**Competition Structure**
+• Format: Knockout format
+• Duration: 2 days tournament
+• Day 1: First rounds and semi-finals
+• Day 2: Finals
+• Venue: Indoor Badminton Court, Krea University
 
-Badminton tournament rules and regulations will be announced shortly. Stay tuned for updates!
+**Tie Structure**
+• Each tie consists of 5 matches between two teams
+• Team winning 3 out of 5 matches wins the tie
+• If a team wins 3-0, remaining matches are not played
 
-**Expected Format**
-• Singles and Doubles matches
-• League + Knockout format
-• BWF standard rules
+**Match Categories (in any order)**
+1. Men's Singles
+2. Women's Singles
+3. Men's Doubles
+4. Women's Doubles
+5. Mixed Doubles
 
-**Team Registration**
-• Register your team during the registration process
-• Badminton is one of our 6 featured sports at BOLT 2026
+**TEAM COMPOSITION**
 
-For updates and specific badminton rules, please contact the organizing committee or check back soon.
+**Squad Size**
+• Minimum: 8 players
+• Maximum: 12 players (8 main + 4 substitutes)
+• Recommended subs: 2 girls and 2 boys
 
-**Key Highlights**
-• World-class indoor badminton courts
-• Professional lighting and facilities
-• Qualified referees and officials
-• Competitive matches across 2 days
+**Main Team Requirements**
+• 1 Men's Singles player
+• 1 Women's Singles player
+• 2 Men's Doubles players (1 pair)
+• 2 Women's Doubles players (1 pair)
+• 2 Mixed Doubles players (1 pair)
 
-We'll update this section with complete rules, match formats, team composition, and tournament schedule soon!`
+**Player Restrictions**
+• Each player can play maximum 1 match per tie
+• No player substitution once match begins
+• Line-ups must be submitted before each tie
+
+**MATCH FORMAT**
+
+**Scoring System**
+• Each match: Best of 3 games
+• Points per game: 15 points (rally scoring)
+• Shuttlecock: Yonex Mavis 350 (plastic shuttle)
+
+**Deuce Rules**
+• At 14-14: Deuce system until 21
+• At 20-20: Golden point (next point wins)
+
+**Match Points**
+• Win: +1 point for team
+• Loss: 0 points
+• Walkover: 15-0, 15-0 for opponent
+
+**BREAKS & TIMING**
+
+**In-Match Breaks**
+• 1-minute break when player reaches 8 points (each set)
+• 1-minute break between sets
+• 5-minute interval between matches
+
+**Warm-up**
+• Short breaks allowed between matches
+• Players must arrive 10 minutes before match time
+
+**KNOCKOUT STAGE**
+
+**Draw System**
+• Random draws before tournament
+• Elimination: Lose the tie = knocked out
+• No second chances
+
+**Walkover & Forfeiture**
+• Missing player: Opponent wins by walkover (15-0, 15-0)
+• Incomplete tie: Remaining matches forfeit
+
+**REGISTRATION & CAPTAINCY**
+
+**Team Captain**
+• 1 captain per team required
+• Submits line-ups before each tie
+• Represents team in all decisions
+
+**Team Finalization**
+• Teams must be finalized before tournament starts
+• Roster changes allowed only for injuries/emergencies
+• Requires approval from organizing committee
+
+**CODE OF CONDUCT**
+
+**Arrival & Punctuality**
+• Arrive at least 10 minutes before match
+• Late arrival (>5 minutes): Automatic walkover
+• Must warm up before match time
+
+**Footwear Requirements**
+• Non-marking shoes mandatory
+• Alternative: Play barefoot if non-marking unavailable
+• Outdoor shoes STRICTLY PROHIBITED
+
+**Penalties**
+• Yellow Card: Warning for misconduct
+• Red Card: Disqualification from current + next match
+• Time-wasting: Penalties at referee's discretion
+
+**Fair Play**
+• Uphold sportsmanship at all times
+• No arguing with referees
+• Referee's decision is FINAL
+• Violation leads to removal and suspension
+
+**Rescheduling Policy**
+• Not accommodated for player unavailability
+• Captains must utilize entire squad
+• Case-by-case basis only for emergencies
+
+**EQUIPMENT**
+
+**Provided by Organizers**
+• Shuttlecocks (Yonex Mavis 350)
+• Nets and court setup
+• Scoresheets
+
+**Teams Must Bring**
+• Jerseys with visible numbers
+• Personal racquets
+• Non-marking shoes
+• Towels and personal items
+
+**CONTACT INFORMATION**
+
+Sidharth Sarma P
+Phone: 9747705001
+Email: sidharth_sarma.sias23@krea.ac.in
+
+Deshika Lokesh
+Phone: 7676632163
+Email: deshika_mlokesh.sias24@krea.ac.in`
     }
   };
 
