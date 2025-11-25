@@ -1092,22 +1092,34 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             <p className="text-gray-400 text-lg">Compete in your favorite sport and showcase your talent</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {sports.map((sport, idx) => (
-              <Card 
-                key={idx} 
-                className="sport-card bg-gradient-to-br from-[#1a1a1a] via-[#122C4F]/10 to-black border-[#5B88B2]/40 p-8 text-center cursor-pointer hover:border-[#5B88B2] hover:shadow-lg hover:shadow-[#5B88B2]/20 transition-all group"
-                data-testid={`sport-card-${sport.name.toLowerCase()}`}
-                onClick={() => handleSportClick(sport)}
-              >
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">{sport.icon}</div>
-                <h3 className="text-2xl font-bold text-white mb-2">{sport.name}</h3>
-                <div className="flex items-center justify-center text-[#5B88B2] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ExternalLink className="w-4 h-4 mr-1" />
-                  View Rules
-                </div>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {sports.map((sport, idx) => {
+              const IconComponent = sport.icon;
+              return (
+                <Card 
+                  key={idx} 
+                  className="sport-card bg-gradient-to-br from-[#0d1f35] via-[#122C4F]/10 to-[#0a1929] border-[#5B88B2]/40 p-8 text-center cursor-pointer hover:border-[#5B88B2] hover:shadow-lg hover:shadow-[#5B88B2]/20 transition-all group relative overflow-hidden"
+                  data-testid={`sport-card-${sport.name.toLowerCase()}`}
+                  onClick={() => handleSportClick(sport)}
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+                    <IconComponent className="w-full h-full" style={{ color: sport.color }} />
+                  </div>
+                  <div className="relative z-10">
+                    <div className="mb-6 flex justify-center">
+                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#5B88B2]/20 to-[#FAD713]/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <IconComponent className="w-12 h-12" style={{ color: sport.color }} strokeWidth={1.5} />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{sport.name}</h3>
+                    <div className="flex items-center justify-center text-[#5B88B2] text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      View Rules
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
