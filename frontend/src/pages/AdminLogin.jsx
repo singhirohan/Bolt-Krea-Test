@@ -48,19 +48,19 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#122C4F] flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <Button
           variant="ghost"
           onClick={() => navigate('/')}
-          className="text-[#FBF9E3] hover:text-[#FFC20A] mb-6"
+          className="text-[#FBF9E3] hover:text-[#21A7A0] mb-6"
           data-testid="back-to-home-btn"
         >
           <ArrowLeft className="mr-2 w-4 h-4" />
           Back to Home
         </Button>
 
-        <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#FFC20A]/40 p-8">
+        <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#21A7A0]/40 p-8">
           <div className="text-center mb-8">
             <img 
               src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/4d9fmjxt_1.png" 
@@ -83,7 +83,7 @@ const AdminLogin = () => {
                 placeholder="Enter username"
                 value={credentials.username}
                 onChange={(e) => setCredentials({ ...credentials, username: e.target.value })}
-                className="bg-white/10 border-[#FFC20A]/30 text-white placeholder:text-white/40"
+                className="bg-white/10 border-[#21A7A0]/30 text-white placeholder:text-white/40"
                 data-testid="admin-username-input"
               />
             </div>
@@ -99,7 +99,7 @@ const AdminLogin = () => {
                 placeholder="Enter password"
                 value={credentials.password}
                 onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
-                className="bg-white/10 border-[#FFC20A]/30 text-white placeholder:text-white/40"
+                className="bg-white/10 border-[#21A7A0]/30 text-white placeholder:text-white/40"
                 data-testid="admin-password-input"
               />
             </div>
@@ -107,7 +107,7 @@ const AdminLogin = () => {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold text-lg py-6 hover:shadow-xl hover:shadow-[#FFC20A]/30 transition-all"
+              className="w-full bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-[#122C4F] font-bold text-lg py-6 hover:shadow-xl hover:shadow-[#21A7A0]/30 transition-all"
               data-testid="admin-login-btn"
             >
               {loading ? 'Signing in...' : 'Sign In'}
