@@ -108,7 +108,7 @@ The unique location of Krea University in Sri City offers participants not just 
       title: "Basketball Tournament Rules",
       content: `**TOURNAMENT FORMAT**
 
-📊 **Teams & Structure**
+**Teams & Structure**
 • Total Teams: 6 teams divided into 2 pools (Pool A & Pool B)
 • Each pool: 3 teams
 • League Phase: Each team plays 2 games within their pool
