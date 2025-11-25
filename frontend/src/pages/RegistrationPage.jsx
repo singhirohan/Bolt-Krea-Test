@@ -35,6 +35,7 @@ const RegistrationPage = () => {
   const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
+    userEmail: '', // Email for sending registration details
     collegeName: '',
     selectedSports: [],
     teams: {},
