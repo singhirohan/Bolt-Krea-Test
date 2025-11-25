@@ -92,7 +92,7 @@ async def create_registration(input: RegistrationCreate):
     _ = await db.registrations.insert_one(doc)
     
     # Mock email confirmation
-    logging.info(f"[MOCKED] Email confirmation sent to college: {registration_obj.collegeName}")
+    logging.info(f"[MOCKED] Email confirmation sent to: {registration_obj.userEmail} (College: {registration_obj.collegeName})")
     
     return registration_obj
 
