@@ -767,7 +767,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
   return (
     <div className="min-h-screen bg-black">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-black via-[#122C4F]/10 to-black backdrop-blur-lg border-b border-[#FFC20A]/30">
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[#122C4F] via-[#122C4F]/95 to-[#122C4F] backdrop-blur-lg border-b border-[#21A7A0]/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
