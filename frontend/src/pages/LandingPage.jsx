@@ -619,8 +619,6 @@ We'll update this section with complete rules, match formats, team composition, 
     { name: 'Volleyball', icon: '🏐' }
   ];
 
-  const [selectedSport, setSelectedSport] = useState(null);
-
   const handleSportClick = (sport) => {
     setSelectedSport(sport.name);
   };
