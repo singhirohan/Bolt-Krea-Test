@@ -148,9 +148,7 @@ const RegistrationPage = () => {
     });
     
     // Accommodation fees
-    if (formData.accommodation.required) {
-      total += formData.accommodation.numberOfPeople * formData.accommodation.numberOfNights * ACCOMMODATION_FEE;
-    }
+    total += getAccommodationFee();
     
     return total;
   };
