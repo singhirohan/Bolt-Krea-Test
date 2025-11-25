@@ -133,3 +133,21 @@ h1, h2, h3, h4, h5, h6 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.sport-rules-content {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.sport-rules-content strong {
+  color: #FFC20A;
+  font-weight: 600;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.sport-rules-content strong:first-child {
+  margin-top: 0;
+}
