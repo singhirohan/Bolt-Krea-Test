@@ -487,8 +487,8 @@ const RegistrationPage = () => {
                   <Label htmlFor="accommodation" className="text-white font-medium cursor-pointer">
                     I need accommodation
                   </Label>
-                  <p className="text-[#FBF9E3]/60 text-sm mt-1">
-                    ₹{ACCOMMODATION_FEE} per person per night
+                  <p className="text-gray-400 text-sm mt-1">
+                    Choose from our accommodation packages with breakfast included
                   </p>
                 </div>
               </div>
