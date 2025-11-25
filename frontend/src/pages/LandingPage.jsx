@@ -835,7 +835,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
               <Button 
                 onClick={() => navigate('/register')}
                 size="lg"
-                className="bg-gradient-to-r from-[#FFC20A] to-[#FF8C00] text-[#122C4F] font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 hover:shadow-2xl hover:shadow-[#FFC20A]/50 transition-all hover:scale-105 w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] text-white font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 hover:shadow-2xl hover:shadow-[#21A7A0]/50 transition-all hover:scale-105 w-full sm:w-auto"
                 data-testid="hero-register-btn"
               >
                 Register Your Team
@@ -846,7 +846,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 onClick={handleDownloadBrochure}
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#FFC20A] text-[#FFC20A] bg-transparent hover:bg-[#FFC20A] hover:text-[#122C4F] font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 transition-all hover:scale-105 w-full sm:w-auto"
+                className="border-2 border-[#FAD713] text-[#FAD713] bg-transparent hover:bg-[#FAD713] hover:text-[#122C4F] font-bold text-sm sm:text-lg px-6 py-5 sm:px-8 sm:py-6 transition-all hover:scale-105 w-full sm:w-auto"
                 data-testid="hero-download-btn"
               >
                 <Download className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
