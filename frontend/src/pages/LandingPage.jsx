@@ -1108,9 +1108,36 @@ We'll update this section with complete rules, match formats, team composition, 
               </Button>
             </DialogTitle>
           </DialogHeader>
-          <DialogDescription className="text-gray-300 text-base leading-relaxed whitespace-pre-line mt-4 sport-rules-content">
-            {selectedSport && sportRules[selectedSport]?.content}
-          </DialogDescription>
+          <div className="text-gray-300 text-base leading-relaxed mt-4 sport-rules-content">
+            {selectedSport && sportRules[selectedSport]?.content.split('\n').map((line, index) => {
+              // Convert **text** to bold
+              const boldRegex = /\*\*(.*?)\*\*/g;
+              const parts = [];
+              let lastIndex = 0;
+              let match;
+              
+              while ((match = boldRegex.exec(line)) !== null) {
+                // Add text before the match
+                if (match.index > lastIndex) {
+                  parts.push(line.substring(lastIndex, match.index));
+                }
+                // Add bold text
+                parts.push(<strong key={`bold-${index}-${match.index}`}>{match[1]}</strong>);
+                lastIndex = match.index + match[0].length;
+              }
+              
+              // Add remaining text
+              if (lastIndex < line.length) {
+                parts.push(line.substring(lastIndex));
+              }
+              
+              return (
+                <div key={index}>
+                  {parts.length > 0 ? parts : line}
+                </div>
+              );
+            })}
+          </div>
         </DialogContent>
       </Dialog>
     </div>
