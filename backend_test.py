@@ -86,42 +86,34 @@ class BoltAPITester:
         return False
 
     def test_create_registration(self):
-        """Test creating a new registration"""
+        """Test creating a new registration with email field"""
         registration_data = {
+            "userEmail": "test@example.com",
             "collegeName": "Test University",
-            "sports": ["Cricket", "Basketball"],
+            "sports": ["Cricket"],
             "teams": [
                 {
                     "sport": "Cricket",
                     "members": [
-                        {"name": "John Doe", "email": "john@test.com", "phone": "9876543210"},
-                        {"name": "Jane Smith", "email": "jane@test.com", "phone": "9876543211"},
-                        {"name": "Bob Wilson", "phone": "9876543212"}
-                    ]
-                },
-                {
-                    "sport": "Basketball",
-                    "members": [
-                        {"name": "Alice Brown", "email": "alice@test.com", "phone": "9876543213"},
-                        {"name": "Charlie Davis", "email": "charlie@test.com", "phone": "9876543214"}
+                        {"name": "John Doe", "email": "john@example.com", "phone": "9876543210"},
+                        {"name": "Jane Smith", "email": "jane@example.com", "phone": "9876543211"}
                     ]
                 }
             ],
             "accommodation": {
-                "required": True,
-                "numberOfPeople": 5,
-                "numberOfNights": 3,
-                "preferences": "Non-smoking rooms"
+                "required": False,
+                "package": None,
+                "numberOfPeople": 0
             },
-            "totalAmount": 26500,
-            "registrationFee": 4000,
-            "accommodationFee": 22500,
+            "totalAmount": 1600,
+            "registrationFee": 1600,
+            "accommodationFee": 0,
             "paymentId": "pay_test_123",
             "paymentStatus": "completed"
         }
 
         success, response = self.run_test(
-            "Create Registration",
+            "Create Registration with Email",
             "POST",
             "registrations",
             200,
@@ -131,7 +123,13 @@ class BoltAPITester:
         if success and response.get('id'):
             self.test_registration_id = response['id']
             print(f"   Registration created with ID: {self.test_registration_id}")
-            return True
+            # Verify userEmail is in response
+            if response.get('userEmail') == "test@example.com":
+                print(f"   ✅ userEmail field correctly stored: {response.get('userEmail')}")
+                return True
+            else:
+                print(f"   ❌ userEmail field missing or incorrect in response")
+                return False
         return False
 
     def test_get_all_registrations(self):
