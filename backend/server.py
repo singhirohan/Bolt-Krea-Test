@@ -40,6 +40,7 @@ class AccommodationDetails(BaseModel):
     numberOfPeople: Optional[int] = 0
 
 class RegistrationCreate(BaseModel):
+    userEmail: EmailStr
     collegeName: str
     sports: List[str]
     teams: List[SportTeam]
