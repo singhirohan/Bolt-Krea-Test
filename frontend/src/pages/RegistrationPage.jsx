@@ -634,23 +634,46 @@ const RegistrationPage = () => {
               <div className="bg-white/5 rounded-lg p-6 border border-white/10">
                 <h3 className="text-lg font-bold text-white mb-4">Fee Breakdown</h3>
                 <div className="space-y-3">
-                  <div className="flex justify-between text-[#FBF9E3]/80">
-                    <span>Registration Fee</span>
-                    <span className="font-medium flex items-center">
-                      <IndianRupee className="w-4 h-4" />
-                      {getRegistrationFee().toLocaleString()}
-                    </span>
-                  </div>
-                  {formData.accommodation.required && (
-                    <div className="flex justify-between text-[#FBF9E3]/80">
-                      <span>Accommodation Fee</span>
-                      <span className="font-medium flex items-center">
+                  {/* Registration Fee Breakdown */}
+                  <div>
+                    <div className="flex justify-between text-white font-medium mb-2">
+                      <span>Registration Fee</span>
+                      <span className="flex items-center">
                         <IndianRupee className="w-4 h-4" />
-                        {getAccommodationFee().toLocaleString()}
+                        {getRegistrationFee().toLocaleString()}
                       </span>
                     </div>
+                    <div className="ml-4 space-y-1">
+                      {Object.entries(formData.teams).map(([sport, members]) => (
+                        <div key={sport} className="flex justify-between text-sm text-gray-400">
+                          <span>{sport}</span>
+                          <span>{members.length} × ₹{REGISTRATION_FEE} = ₹{(members.length * REGISTRATION_FEE).toLocaleString()}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Accommodation Fee */}
+                  {formData.accommodation.required && formData.accommodation.package && (
+                    <div className="pt-3 border-t border-white/10">
+                      <div className="flex justify-between text-white font-medium mb-2">
+                        <span>Accommodation Fee</span>
+                        <span className="flex items-center">
+                          <IndianRupee className="w-4 h-4" />
+                          {getAccommodationFee().toLocaleString()}
+                        </span>
+                      </div>
+                      <div className="ml-4 space-y-1">
+                        <div className="flex justify-between text-sm text-gray-400">
+                          <span>{ACCOMMODATION_PACKAGES[formData.accommodation.package].name}</span>
+                          <span>{formData.accommodation.numberOfPeople} × ₹{ACCOMMODATION_PACKAGES[formData.accommodation.package].pricePerPerson.toLocaleString()} = ₹{getAccommodationFee().toLocaleString()}</span>
+                        </div>
+                      </div>
+                    </div>
                   )}
-                  <div className="border-t border-white/20 pt-3">
+
+                  {/* Total */}
+                  <div className="border-t border-white/20 pt-3 mt-3">
                     <div className="flex justify-between items-center">
                       <span className="text-xl font-bold text-white">Total Amount</span>
                       <span className="text-2xl font-bold text-[#FFC20A] flex items-center">
