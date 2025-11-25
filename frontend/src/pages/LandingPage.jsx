@@ -880,7 +880,7 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Why BOLT?</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] to-[#6F9BC2] mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#21A7A0] via-[#FAD713] to-[#6F9BC2] mx-auto"></div>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
