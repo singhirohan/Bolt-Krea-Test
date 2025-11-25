@@ -806,9 +806,9 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
         
         {/* Glow Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#FFC20A] rounded-full blur-3xl opacity-20"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#122C4F] rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#FF6B35] rounded-full blur-3xl opacity-15"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#21A7A0] rounded-full blur-3xl opacity-25"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#6F9BC2] rounded-full blur-3xl opacity-30"></div>
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#FAD713] rounded-full blur-3xl opacity-20"></div>
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
