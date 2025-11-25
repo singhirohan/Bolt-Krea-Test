@@ -899,6 +899,67 @@ const RegistrationPage = () => {
               </p>
             </div>
 
+            {/* Payment Screenshot Upload */}
+            <div className="bg-[#FFC20A]/10 border border-[#FFC20A]/30 rounded-lg p-6 mb-6">
+              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                <Upload className="w-5 h-5 mr-2 text-[#FFC20A]" />
+                Upload Payment Screenshot
+              </h3>
+              <p className="text-[#FBF9E3]/80 text-sm mb-4">
+                Please upload a screenshot of your payment confirmation for our records.
+              </p>
+              
+              {uploadStatus === 'success' ? (
+                <div className="bg-green-500/20 border border-green-500 rounded-lg p-4 flex items-center">
+                  <FileCheck className="w-6 h-6 text-green-500 mr-3" />
+                  <div>
+                    <p className="text-green-500 font-semibold">Screenshot Uploaded Successfully!</p>
+                    <p className="text-[#FBF9E3]/70 text-sm">Thank you for uploading your payment proof.</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div>
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*,.pdf"
+                      onChange={handleFileSelect}
+                      className="hidden"
+                      id="payment-screenshot-upload"
+                    />
+                    <Button
+                      onClick={() => fileInputRef.current?.click()}
+                      variant="outline"
+                      className="w-full border-[#5B88B2] text-[#FBF9E3] hover:bg-[#5B88B2]/20"
+                      disabled={uploadStatus === 'uploading'}
+                    >
+                      <Upload className="w-4 h-4 mr-2" />
+                      {paymentScreenshot ? `Selected: ${paymentScreenshot.name}` : 'Choose File'}
+                    </Button>
+                  </div>
+                  
+                  {paymentScreenshot && (
+                    <Button
+                      onClick={handleUploadScreenshot}
+                      className="w-full bg-gradient-to-r from-[#FFC20A] to-[#FAD713] text-[#122C4F] font-bold"
+                      disabled={uploadStatus === 'uploading'}
+                    >
+                      {uploadStatus === 'uploading' ? 'Uploading...' : 'Upload Screenshot'}
+                    </Button>
+                  )}
+                  
+                  {uploadStatus === 'error' && (
+                    <p className="text-red-500 text-sm">Upload failed. Please try again.</p>
+                  )}
+                  
+                  <p className="text-[#FBF9E3]/60 text-xs">
+                    Supported formats: JPG, PNG, GIF, WEBP, PDF (Max 5MB)
+                  </p>
+                </div>
+              )}
+            </div>
+
             <Button
               onClick={() => navigate('/')}
               className="w-full bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-lg py-6"
