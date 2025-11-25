@@ -164,8 +164,9 @@ const RegistrationPage = () => {
   };
 
   const getAccommodationFee = () => {
-    if (formData.accommodation.required) {
-      return formData.accommodation.numberOfPeople * formData.accommodation.numberOfNights * ACCOMMODATION_FEE;
+    if (formData.accommodation.required && formData.accommodation.package) {
+      const selectedPackage = ACCOMMODATION_PACKAGES[formData.accommodation.package];
+      return formData.accommodation.numberOfPeople * selectedPackage.pricePerPerson;
     }
     return 0;
   };
