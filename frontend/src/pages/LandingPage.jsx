@@ -1168,11 +1168,11 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
             <Button 
               onClick={() => navigate('/register')}
               size="lg"
-              className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-xl px-12 py-7 hover:shadow-2xl hover:shadow-[#5B88B2]/50 transition-all hover:scale-105"
+              className="bg-gradient-to-r from-[#5B88B2] to-[#6F9BC2] text-[#122C4F] font-bold text-base sm:text-lg md:text-xl px-6 py-5 sm:px-10 sm:py-6 md:px-12 md:py-7 hover:shadow-2xl hover:shadow-[#5B88B2]/50 transition-all hover:scale-105 w-full sm:w-auto"
               data-testid="cta-register-btn"
             >
               Register Your Team Now
-              <ChevronRight className="ml-2 w-6 h-6" />
+              <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
             </Button>
           </Card>
         </div>
