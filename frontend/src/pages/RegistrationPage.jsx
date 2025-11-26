@@ -467,6 +467,19 @@ const RegistrationPage = () => {
         {/* Step 3: Team Members */}
         {step === 3 && (
           <div className="space-y-6 animate-fadeIn">
+            {/* Registration Fee Notice */}
+            <div className="bg-[#FFC20A]/10 border border-[#FFC20A]/30 rounded-lg p-4">
+              <div className="flex items-center space-x-2">
+                <IndianRupee className="w-5 h-5 text-[#FFC20A]" />
+                <p className="text-[#FBF9E3] font-semibold">
+                  Registration Fee: <span className="text-[#FFC20A]">₹800 per person</span>
+                </p>
+              </div>
+              <p className="text-[#FBF9E3]/70 text-sm mt-2">
+                Each team member will be charged ₹800 as registration fee. Add all team members below.
+              </p>
+            </div>
+
             {formData.selectedSports.map((sport, sportIdx) => (
               <Card key={sport} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
                 <h3 className="text-xl font-bold text-white mb-4">{sport} Team</h3>
