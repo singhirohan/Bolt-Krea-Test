@@ -578,24 +578,67 @@ const RegistrationPage = () => {
           <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-8 animate-fadeIn" data-testid="step-accommodation">
             <h2 className="text-2xl font-bold text-white mb-6">Accommodation</h2>
             <div className="space-y-6">
-              <div className="flex items-start space-x-3">
-                <Checkbox
-                  id="accommodation"
-                  checked={formData.accommodation.required}
-                  onCheckedChange={(checked) => setFormData({
-                    ...formData,
-                    accommodation: { ...formData.accommodation, required: checked }
-                  })}
-                  className="mt-1"
-                  data-testid="accommodation-checkbox"
-                />
-                <div>
-                  <Label htmlFor="accommodation" className="text-white font-medium cursor-pointer">
-                    I need accommodation
-                  </Label>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Choose from our accommodation packages with breakfast included
-                  </p>
+              <Label className="text-white font-medium text-lg mb-4 block">Do you need accommodation?</Label>
+              
+              {/* Yes Option */}
+              <div
+                onClick={() => setFormData({
+                  ...formData,
+                  accommodation: { ...formData.accommodation, required: true }
+                })}
+                className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                  formData.accommodation.required
+                    ? 'bg-[#5B88B2]/20 border-[#5B88B2] shadow-lg'
+                    : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                }`}
+                data-testid="accommodation-yes"
+              >
+                <div className="flex items-start space-x-4">
+                  <Checkbox
+                    id="accommodation-yes"
+                    checked={formData.accommodation.required}
+                    onCheckedChange={() => {}}
+                    className="mt-1 pointer-events-none"
+                  />
+                  <div className="flex-1">
+                    <Label htmlFor="accommodation-yes" className="text-white font-semibold text-base cursor-pointer">
+                      Yes, I need accommodation
+                    </Label>
+                    <p className="text-gray-300 text-sm mt-1">
+                      Choose from our accommodation packages with breakfast included
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* No Option */}
+              <div
+                onClick={() => setFormData({
+                  ...formData,
+                  accommodation: { required: false, package: null, numberOfPeople: 0 }
+                })}
+                className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                  !formData.accommodation.required
+                    ? 'bg-[#5B88B2]/20 border-[#5B88B2] shadow-lg'
+                    : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                }`}
+                data-testid="accommodation-no"
+              >
+                <div className="flex items-start space-x-4">
+                  <Checkbox
+                    id="accommodation-no"
+                    checked={!formData.accommodation.required}
+                    onCheckedChange={() => {}}
+                    className="mt-1 pointer-events-none"
+                  />
+                  <div className="flex-1">
+                    <Label htmlFor="accommodation-no" className="text-white font-semibold text-base cursor-pointer">
+                      No, I don't need accommodation
+                    </Label>
+                    <p className="text-gray-300 text-sm mt-1">
+                      I will arrange my own accommodation
+                    </p>
+                  </div>
                 </div>
               </div>
 
