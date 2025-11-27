@@ -1155,20 +1155,26 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
           </div>
           
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#FFC20A] to-[#5B88B2]"></div>
+            {/* Timeline Line - Different positions for mobile/desktop */}
+            <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#FFC20A] to-[#5B88B2]"></div>
             
-            <div className="space-y-12">
+            <div className="space-y-8 md:space-y-12">
               {timeline.map((item, idx) => (
-                <div key={idx} className={`flex items-center ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`} data-testid={`timeline-${item.year}`}>
-                  <div className={`w-1/2 ${idx % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
-                    <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6 hover-lift hover:border-[#5B88B2] transition-all inline-block">
-                      <span className="text-[#5B88B2] font-bold text-2xl">{item.year}</span>
-                      <h3 className="text-2xl font-bold text-white mt-2 mb-3">{item.title}</h3>
-                      <p className="text-gray-300">{item.desc}</p>
+                <div key={idx} className={`flex items-center md:items-center ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-row`} data-testid={`timeline-${item.year}`}>
+                  {/* Mobile Layout: Card always on right */}
+                  <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${idx % 2 === 0 ? 'md:pr-8 lg:pr-12 md:text-right' : 'md:pl-8 lg:pl-12 md:text-left'}`}>
+                    <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-4 sm:p-6 hover-lift hover:border-[#5B88B2] transition-all md:inline-block w-full md:w-auto">
+                      <span className="text-[#5B88B2] font-bold text-xl sm:text-2xl">{item.year}</span>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mt-2 mb-2 md:mb-3">{item.title}</h3>
+                      <p className="text-gray-300 text-sm sm:text-base">{item.desc}</p>
                     </Card>
                   </div>
-                  <div className="w-6 h-6 bg-[#5B88B2] rounded-full border-4 border-[#122C4F] z-10"></div>
-                  <div className="w-1/2"></div>
+                  
+                  {/* Timeline Dot */}
+                  <div className="absolute left-4 md:relative md:left-0 w-6 h-6 md:w-6 md:h-6 bg-[#5B88B2] rounded-full border-4 border-[#122C4F] z-10 flex-shrink-0"></div>
+                  
+                  {/* Spacer for desktop zigzag */}
+                  <div className="hidden md:block md:w-1/2"></div>
                 </div>
               ))}
             </div>
