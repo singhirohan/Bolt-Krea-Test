@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Test the complete registration flow with the new email feature"
+user_problem_statement: "Test the updated accommodation step in the registration form to verify the 'No accommodation' option has been removed"
 
 backend:
   - task: "Email field in registration model"
