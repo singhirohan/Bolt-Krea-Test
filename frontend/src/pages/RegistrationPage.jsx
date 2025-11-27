@@ -45,7 +45,7 @@ const RegistrationPage = () => {
     selectedSports: [],
     teams: {},
     accommodation: {
-      required: false,
+      required: true, // Accommodation is now required for all
       package: null, // 'package1' or 'package2'
       numberOfPeople: 0
     }
