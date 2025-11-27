@@ -1170,8 +1170,13 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative py-20 px-4 bg-gradient-to-b from-[#122C4F] via-[#0d1f35] to-[#122C4F] overflow-hidden">
+        {/* Background Glow Effects */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#5B88B2] rounded-full blur-3xl opacity-15"></div>
+        </div>
+        
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <Card className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2] p-12 shadow-2xl shadow-[#5B88B2]/20">
             <Trophy className="w-20 h-20 text-[#5B88B2] mx-auto mb-6" />
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">Ready to Compete?</h2>
