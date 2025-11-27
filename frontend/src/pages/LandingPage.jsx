@@ -860,8 +860,8 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-16 px-4 -mt-16">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, idx) => {
               const Icon = stat.icon;
