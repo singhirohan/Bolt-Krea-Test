@@ -223,6 +223,18 @@ frontend:
           agent: "testing"
           comment: "✅ FULL FLOW TESTED: Complete registration flow tested successfully from start to finish. All steps work: 1) Email & college entry, 2) Cricket sport selection, 3) Team members (Test Player 1 & 2), 4) Skip accommodation, 5) Payment summary (₹1,600), 6) Mocked payment, 7) Confirmation page. SendGrid email integration confirmed working - backend logs show: 'Registration confirmation email sent successfully to testuser.bolt2026@gmail.com' with SendGrid Response Status: 202. Email sent to real test email address."
 
+  - task: "Updated accommodation step - removed 'No accommodation' option"
+    implemented: true
+    working: true
+    file: "frontend/src/pages/RegistrationPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "✅ ACCOMMODATION UPDATE FULLY TESTED: Successfully verified all requested changes in Step 4 (Accommodation): 1) Title correctly shows 'Select Accommodation Package', 2) 'No accommodation' option completely removed - no traces found, 3) Both accommodation packages (2 Nights ₹3000, 3 Nights ₹4500) are directly visible without checkbox, 4) Package selection works with proper styling, 5) Number of people input field functional, 6) Validation prevents progression without complete selection, 7) Payment summary correctly includes accommodation fee (₹9000 for 2 people × ₹4500), 8) Total amount calculation correct (₹10,600 = ₹1600 registration + ₹9000 accommodation). All requirements met perfectly."
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
