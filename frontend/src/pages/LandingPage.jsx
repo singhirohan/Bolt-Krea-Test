@@ -793,16 +793,17 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        {/* Background Image with Overlay */}
+      <section className="relative pt-32 pb-32 px-4 overflow-hidden">
+        {/* Background Image with Overlay - extends beyond section */}
         <div className="absolute inset-0 overflow-hidden">
-          <img 
-            src="https://customer-assets.emergentagent.com/job_bolt-sports-2026/artifacts/utpl1a33_2022-06-21.jpg" 
-            alt="BOLT Sports Field Background" 
-            className="w-full h-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
-          <div className="absolute inset-0 bg-[#122C4F]/25"></div>
+          <div className="absolute inset-0 -bottom-32" style={{ height: 'calc(100% + 8rem)' }}>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_bolt-sports-2026/artifacts/utpl1a33_2022-06-21.jpg" 
+              alt="BOLT Sports Field Background" 
+              className="w-full h-full object-cover opacity-50"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#122C4F]/30 via-[#122C4F]/50 to-[#122C4F]"></div>
         </div>
         
         {/* Glow Effects */}
