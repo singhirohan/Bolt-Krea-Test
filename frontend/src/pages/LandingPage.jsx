@@ -799,10 +799,10 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
           <img 
             src="https://customer-assets.emergentagent.com/job_bolt-sports-2026/artifacts/utpl1a33_2022-06-21.jpg" 
             alt="BOLT Sports Field Background" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black"></div>
-          <div className="absolute inset-0 bg-[#122C4F]/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-[#122C4F]/25"></div>
         </div>
         
         {/* Glow Effects */}
