@@ -795,20 +795,21 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="https://customer-assets.emergentagent.com/job_collegefest-bolt/artifacts/wpwggyzw_DSC09591.JPG" 
-            alt="BOLT Background" 
-            className="w-full h-full object-cover opacity-20"
+            src="https://customer-assets.emergentagent.com/job_bolt-sports-2026/artifacts/utpl1a33_2022-06-21.jpg" 
+            alt="BOLT Sports Field Background" 
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black"></div>
+          <div className="absolute inset-0 bg-[#122C4F]/40"></div>
         </div>
         
         {/* Glow Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#5B88B2] rounded-full blur-3xl opacity-25"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#6F9BC2] rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#FAD713] rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#5B88B2] rounded-full blur-3xl opacity-20"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#6F9BC2] rounded-full blur-3xl opacity-25"></div>
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#FAD713] rounded-full blur-3xl opacity-15"></div>
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
