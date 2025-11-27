@@ -947,8 +947,14 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 px-4 bg-black">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative py-20 px-4 bg-gradient-to-b from-[#122C4F] via-[#0d1f35] to-[#122C4F] overflow-hidden">
+        {/* Background Glow Effects */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-20 w-96 h-96 bg-[#5B88B2] rounded-full blur-3xl opacity-10"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#6F9BC2] rounded-full blur-3xl opacity-10"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fadeIn">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Relive BOLT Moments</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#5B88B2] via-[#FAD713] to-[#6F9BC2] mx-auto mb-6"></div>
