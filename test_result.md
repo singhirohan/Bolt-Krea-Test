@@ -243,7 +243,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Complete registration flow with SendGrid email integration"
+    - "Updated accommodation step - removed 'No accommodation' option"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
