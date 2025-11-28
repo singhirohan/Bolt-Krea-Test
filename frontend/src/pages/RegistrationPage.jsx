@@ -564,7 +564,7 @@ const RegistrationPage = () => {
                             />
                           </div>
                         </div>
-                        <div className="grid md:grid-cols-3 gap-3">
+                        <div className={`grid ${sport === 'Tennis' || sport === 'Badminton' ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-3`}>
                           <div>
                             <Label className="text-[#FBF9E3]/70 text-xs mb-1">Date of Birth *</Label>
                             <Input
@@ -586,20 +586,22 @@ const RegistrationPage = () => {
                               data-testid={`member-age-${sport.toLowerCase()}-${idx}`}
                             />
                           </div>
-                          <div>
-                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Gender *</Label>
-                            <select
-                              value={member.gender || ''}
-                              onChange={(e) => updateTeamMember(sport, idx, 'gender', e.target.value)}
-                              className="w-full bg-white/10 border border-[#5B88B2]/30 text-white text-sm rounded-md px-3 py-2"
-                              data-testid={`member-gender-${sport.toLowerCase()}-${idx}`}
-                            >
-                              <option value="">Select Gender</option>
-                              <option value="Male">Male</option>
-                              <option value="Female">Female</option>
-                              <option value="Other">Other</option>
-                            </select>
-                          </div>
+                          {(sport === 'Tennis' || sport === 'Badminton') && (
+                            <div>
+                              <Label className="text-[#FBF9E3]/70 text-xs mb-1">Gender *</Label>
+                              <select
+                                value={member.gender || ''}
+                                onChange={(e) => updateTeamMember(sport, idx, 'gender', e.target.value)}
+                                className="w-full bg-white/10 border border-[#5B88B2]/30 text-white text-sm rounded-md px-3 py-2"
+                                data-testid={`member-gender-${sport.toLowerCase()}-${idx}`}
+                              >
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                              </select>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
