@@ -17,17 +17,33 @@ const REGISTRATION_FEE = 800; // per person
 
 // Accommodation packages
 const ACCOMMODATION_PACKAGES = {
-  package1: {
-    name: '2 Nights Package',
+  standard_2nights: {
+    name: 'Standard - 2 Nights',
+    category: 'Standard',
     nights: 2,
     pricePerPerson: 3000,
-    description: '2 nights accommodation with breakfast'
+    description: '2 nights accommodation with breakfast included'
   },
-  package2: {
-    name: '3 Nights Package',
+  standard_3nights: {
+    name: 'Standard - 3 Nights',
+    category: 'Standard',
     nights: 3,
     pricePerPerson: 4500,
-    description: '3 nights accommodation with breakfast'
+    description: '3 nights accommodation with breakfast included'
+  },
+  deluxe_2nights: {
+    name: 'Deluxe - 2 Nights',
+    category: 'Deluxe',
+    nights: 2,
+    pricePerPerson: 4500,
+    description: '2 nights deluxe accommodation with breakfast included'
+  },
+  deluxe_3nights: {
+    name: 'Deluxe - 3 Nights',
+    category: 'Deluxe',
+    nights: 3,
+    pricePerPerson: 6000,
+    description: '3 nights deluxe accommodation with breakfast included'
   }
 };
 
