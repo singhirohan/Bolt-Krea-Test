@@ -751,10 +751,11 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
   };
 
   const timeline = [
-    { year: '2022', title: 'Inception', desc: '750+ participants across 20+ sports' },
-    { year: '2023', title: 'Growth', desc: '270+ athletes, first sponsorships secured' },
-    { year: '2024-25', title: 'Unity', desc: 'IFMR & SIAS schools united under BOLT' },
-    { year: '2026', title: 'Intercollegiate', desc: 'First inter-collegiate sports festival' }
+    { year: '2022', title: 'The Beginning', desc: '250+ participants, event happening for the first time' },
+    { year: '2023', title: 'Introducing Houses', desc: '500+ participants, house system introduced' },
+    { year: '2024', title: 'First Sponsor', desc: '600+ participants, first sponsor secured' },
+    { year: '2025', title: 'IFMR + SIAS Integration', desc: '800+ participants, first monetary and product sponsors secured' },
+    { year: '2026', title: 'Bigger Than Ever', desc: 'First intercollegiate sports fest' }
   ];
 
   const stats = [
