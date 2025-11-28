@@ -12,7 +12,19 @@ import axios from 'axios';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const SPORTS = ['Cricket', 'Basketball', 'Football', 'Badminton', 'Tennis', 'Volleyball'];
+const SPORTS = [
+  'Cricket (Men)',
+  'Basketball (Men)',
+  'Basketball (Women)',
+  'Football (Men)',
+  'Football (Women)',
+  'Badminton (Men)',
+  'Badminton (Women)',
+  'Tennis (Men)',
+  'Tennis (Women)',
+  'Volleyball (Men)',
+  'Volleyball (Women)'
+];
 const REGISTRATION_FEE = 800; // per person
 
 // Accommodation packages
