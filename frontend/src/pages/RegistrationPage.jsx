@@ -641,70 +641,147 @@ const RegistrationPage = () => {
                 <div className="space-y-6 bg-white/5 rounded-lg p-6 border border-[#5B88B2]/20">
                   <div>
                     <Label className="text-white font-medium mb-4 block">Select Accommodation Package *</Label>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {/* Package 1 */}
-                      <div
-                        onClick={() => setFormData({
-                          ...formData,
-                          accommodation: { ...formData.accommodation, package: 'package1' }
-                        })}
-                        className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
-                          formData.accommodation.package === 'package1'
-                            ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
-                            : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
-                        }`}
-                        data-testid="accommodation-package1"
-                      >
-                        <div className="flex items-start justify-between mb-3">
-                          <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package1.name}</h4>
-                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                            formData.accommodation.package === 'package1'
-                              ? 'border-[#5B88B2] bg-[#5B88B2]'
-                              : 'border-white/40'
-                          }`}>
-                            {formData.accommodation.package === 'package1' && (
-                              <Check className="w-3 h-3 text-black" />
-                            )}
+                    
+                    {/* Standard Packages */}
+                    <div className="mb-6">
+                      <h5 className="text-[#FFC20A] font-semibold mb-3 text-sm">Standard Accommodation</h5>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {/* Standard 2 Nights */}
+                        <div
+                          onClick={() => setFormData({
+                            ...formData,
+                            accommodation: { ...formData.accommodation, package: 'standard_2nights' }
+                          })}
+                          className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                            formData.accommodation.package === 'standard_2nights'
+                              ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                              : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                          }`}
+                          data-testid="accommodation-standard-2nights"
+                        >
+                          <div className="flex items-start justify-between mb-2">
+                            <h4 className="text-lg font-bold text-white">{ACCOMMODATION_PACKAGES.standard_2nights.name}</h4>
+                            <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                              formData.accommodation.package === 'standard_2nights'
+                                ? 'border-[#5B88B2] bg-[#5B88B2]'
+                                : 'border-white/40'
+                            }`}>
+                              {formData.accommodation.package === 'standard_2nights' && (
+                                <Check className="w-3 h-3 text-black" />
+                              )}
+                            </div>
+                          </div>
+                          <p className="text-gray-300 text-xs mb-3">{ACCOMMODATION_PACKAGES.standard_2nights.description}</p>
+                          <div className="flex items-center text-[#5B88B2] text-xl font-bold">
+                            <IndianRupee className="w-4 h-4" />
+                            {ACCOMMODATION_PACKAGES.standard_2nights.pricePerPerson}
+                            <span className="text-xs text-gray-400 ml-2">per person</span>
                           </div>
                         </div>
-                        <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package1.description}</p>
-                        <div className="flex items-center text-[#5B88B2] text-2xl font-bold">
-                          <IndianRupee className="w-5 h-5" />
-                          {ACCOMMODATION_PACKAGES.package1.pricePerPerson}
-                          <span className="text-sm text-gray-400 ml-2">per person</span>
+
+                        {/* Standard 3 Nights */}
+                        <div
+                          onClick={() => setFormData({
+                            ...formData,
+                            accommodation: { ...formData.accommodation, package: 'standard_3nights' }
+                          })}
+                          className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                            formData.accommodation.package === 'standard_3nights'
+                              ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                              : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                          }`}
+                          data-testid="accommodation-standard-3nights"
+                        >
+                          <div className="flex items-start justify-between mb-2">
+                            <h4 className="text-lg font-bold text-white">{ACCOMMODATION_PACKAGES.standard_3nights.name}</h4>
+                            <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                              formData.accommodation.package === 'standard_3nights'
+                                ? 'border-[#5B88B2] bg-[#5B88B2]'
+                                : 'border-white/40'
+                            }`}>
+                              {formData.accommodation.package === 'standard_3nights' && (
+                                <Check className="w-3 h-3 text-black" />
+                              )}
+                            </div>
+                          </div>
+                          <p className="text-gray-300 text-xs mb-3">{ACCOMMODATION_PACKAGES.standard_3nights.description}</p>
+                          <div className="flex items-center text-[#5B88B2] text-xl font-bold">
+                            <IndianRupee className="w-4 h-4" />
+                            {ACCOMMODATION_PACKAGES.standard_3nights.pricePerPerson}
+                            <span className="text-xs text-gray-400 ml-2">per person</span>
+                          </div>
                         </div>
                       </div>
+                    </div>
 
-                      {/* Package 2 */}
-                      <div
-                        onClick={() => setFormData({
-                          ...formData,
-                          accommodation: { ...formData.accommodation, package: 'package2' }
-                        })}
-                        className={`cursor-pointer p-6 rounded-lg border-2 transition-all ${
-                          formData.accommodation.package === 'package2'
-                            ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
-                            : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
-                        }`}
-                        data-testid="accommodation-package2"
-                      >
-                        <div className="flex items-start justify-between mb-3">
-                          <h4 className="text-xl font-bold text-white">{ACCOMMODATION_PACKAGES.package2.name}</h4>
-                          <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                            formData.accommodation.package === 'package2'
-                              ? 'border-[#5B88B2] bg-[#5B88B2]'
-                              : 'border-white/40'
-                          }`}>
-                            {formData.accommodation.package === 'package2' && (
-                              <Check className="w-3 h-3 text-black" />
-                            )}
+                    {/* Deluxe Packages */}
+                    <div>
+                      <h5 className="text-[#FFC20A] font-semibold mb-3 text-sm">Deluxe Accommodation</h5>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {/* Deluxe 2 Nights */}
+                        <div
+                          onClick={() => setFormData({
+                            ...formData,
+                            accommodation: { ...formData.accommodation, package: 'deluxe_2nights' }
+                          })}
+                          className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                            formData.accommodation.package === 'deluxe_2nights'
+                              ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                              : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                          }`}
+                          data-testid="accommodation-deluxe-2nights"
+                        >
+                          <div className="flex items-start justify-between mb-2">
+                            <h4 className="text-lg font-bold text-white">{ACCOMMODATION_PACKAGES.deluxe_2nights.name}</h4>
+                            <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                              formData.accommodation.package === 'deluxe_2nights'
+                                ? 'border-[#5B88B2] bg-[#5B88B2]'
+                                : 'border-white/40'
+                            }`}>
+                              {formData.accommodation.package === 'deluxe_2nights' && (
+                                <Check className="w-3 h-3 text-black" />
+                              )}
+                            </div>
+                          </div>
+                          <p className="text-gray-300 text-xs mb-3">{ACCOMMODATION_PACKAGES.deluxe_2nights.description}</p>
+                          <div className="flex items-center text-[#5B88B2] text-xl font-bold">
+                            <IndianRupee className="w-4 h-4" />
+                            {ACCOMMODATION_PACKAGES.deluxe_2nights.pricePerPerson}
+                            <span className="text-xs text-gray-400 ml-2">per person</span>
                           </div>
                         </div>
-                        <p className="text-gray-300 text-sm mb-3">{ACCOMMODATION_PACKAGES.package2.description}</p>
-                        <div className="flex items-center text-[#5B88B2] text-2xl font-bold">
-                          <IndianRupee className="w-5 h-5" />
-                          {ACCOMMODATION_PACKAGES.package2.pricePerPerson}
-                          <span className="text-sm text-gray-400 ml-2">per person</span>
+
+                        {/* Deluxe 3 Nights */}
+                        <div
+                          onClick={() => setFormData({
+                            ...formData,
+                            accommodation: { ...formData.accommodation, package: 'deluxe_3nights' }
+                          })}
+                          className={`cursor-pointer p-5 rounded-lg border-2 transition-all ${
+                            formData.accommodation.package === 'deluxe_3nights'
+                              ? 'bg-[#5B88B2]/20 border-[#5B88B2]'
+                              : 'bg-white/5 border-white/20 hover:border-[#5B88B2]/50'
+                          }`}
+                          data-testid="accommodation-deluxe-3nights"
+                        >
+                          <div className="flex items-start justify-between mb-2">
+                            <h4 className="text-lg font-bold text-white">{ACCOMMODATION_PACKAGES.deluxe_3nights.name}</h4>
+                            <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                              formData.accommodation.package === 'deluxe_3nights'
+                                ? 'border-[#5B88B2] bg-[#5B88B2]'
+                                : 'border-white/40'
+                            }`}>
+                              {formData.accommodation.package === 'deluxe_3nights' && (
+                                <Check className="w-3 h-3 text-black" />
+                              )}
+                            </div>
+                          </div>
+                          <p className="text-gray-300 text-xs mb-3">{ACCOMMODATION_PACKAGES.deluxe_3nights.description}</p>
+                          <div className="flex items-center text-[#5B88B2] text-xl font-bold">
+                            <IndianRupee className="w-4 h-4" />
+                            {ACCOMMODATION_PACKAGES.deluxe_3nights.pricePerPerson}
+                            <span className="text-xs text-gray-400 ml-2">per person</span>
+                          </div>
                         </div>
                       </div>
                     </div>
