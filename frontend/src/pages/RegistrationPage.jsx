@@ -480,7 +480,7 @@ const RegistrationPage = () => {
           </Card>
         )}
 
-        {/* Step 3: Team Members */}
+        {/* Step 3: Player Registration */}
         {step === 3 && (
           <div className="space-y-6 animate-fadeIn">
             {/* Registration Fee Notice */}
@@ -492,13 +492,13 @@ const RegistrationPage = () => {
                 </p>
               </div>
               <p className="text-[#FBF9E3]/70 text-sm mt-2">
-                Each team member will be charged ₹800 as registration fee. Add all team members below.
+                Each player will be charged ₹800 as registration fee. Add all players below.
               </p>
             </div>
 
             {formData.selectedSports.map((sport, sportIdx) => (
               <Card key={sport} className="bg-gradient-to-br from-[#1a1a1a] to-black border-[#5B88B2]/40 p-6" data-testid={`team-card-${sport.toLowerCase()}`}>
-                <h3 className="text-xl font-bold text-white mb-4">{sport} Team</h3>
+                <h3 className="text-xl font-bold text-white mb-4">{sport} - Player Registration</h3>
                 <div className="space-y-4">
                   {formData.teams[sport]?.map((member, idx) => (
                     <div key={idx} className="bg-white/5 rounded-lg p-4 border border-white/10">
