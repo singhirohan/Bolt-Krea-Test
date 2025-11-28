@@ -518,39 +518,78 @@ const RegistrationPage = () => {
                           </Button>
                         )}
                       </div>
-                      <div className="grid md:grid-cols-3 gap-3">
-                        <div>
-                          <Label className="text-[#FBF9E3]/70 text-xs mb-1">Name *</Label>
-                          <Input
-                            placeholder="Full name"
-                            value={member.name}
-                            onChange={(e) => updateTeamMember(sport, idx, 'name', e.target.value)}
-                            className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
-                            data-testid={`member-name-${sport.toLowerCase()}-${idx}`}
-                          />
-                        </div>
-                        {idx < 2 && (
+                      <div className="space-y-3">
+                        <div className="grid md:grid-cols-3 gap-3">
                           <div>
-                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Email *</Label>
+                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Name *</Label>
                             <Input
-                              type="email"
-                              placeholder="Email address"
-                              value={member.email}
-                              onChange={(e) => updateTeamMember(sport, idx, 'email', e.target.value)}
+                              placeholder="Full name"
+                              value={member.name}
+                              onChange={(e) => updateTeamMember(sport, idx, 'name', e.target.value)}
                               className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
-                              data-testid={`member-email-${sport.toLowerCase()}-${idx}`}
+                              data-testid={`member-name-${sport.toLowerCase()}-${idx}`}
                             />
                           </div>
-                        )}
-                        <div>
-                          <Label className="text-[#FBF9E3]/70 text-xs mb-1">Phone *</Label>
-                          <Input
-                            placeholder="Phone number"
-                            value={member.phone}
-                            onChange={(e) => updateTeamMember(sport, idx, 'phone', e.target.value)}
-                            className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
-                            data-testid={`member-phone-${sport.toLowerCase()}-${idx}`}
-                          />
+                          {idx < 2 && (
+                            <div>
+                              <Label className="text-[#FBF9E3]/70 text-xs mb-1">Email *</Label>
+                              <Input
+                                type="email"
+                                placeholder="Email address"
+                                value={member.email}
+                                onChange={(e) => updateTeamMember(sport, idx, 'email', e.target.value)}
+                                className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
+                                data-testid={`member-email-${sport.toLowerCase()}-${idx}`}
+                              />
+                            </div>
+                          )}
+                          <div>
+                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Phone *</Label>
+                            <Input
+                              placeholder="Phone number"
+                              value={member.phone}
+                              onChange={(e) => updateTeamMember(sport, idx, 'phone', e.target.value)}
+                              className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
+                              data-testid={`member-phone-${sport.toLowerCase()}-${idx}`}
+                            />
+                          </div>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-3">
+                          <div>
+                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Date of Birth *</Label>
+                            <Input
+                              type="date"
+                              value={member.dob || ''}
+                              onChange={(e) => updateTeamMember(sport, idx, 'dob', e.target.value)}
+                              className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
+                              data-testid={`member-dob-${sport.toLowerCase()}-${idx}`}
+                            />
+                          </div>
+                          <div>
+                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Age *</Label>
+                            <Input
+                              type="number"
+                              placeholder="Age"
+                              value={member.age || ''}
+                              onChange={(e) => updateTeamMember(sport, idx, 'age', e.target.value)}
+                              className="bg-white/10 border-[#5B88B2]/30 text-white text-sm"
+                              data-testid={`member-age-${sport.toLowerCase()}-${idx}`}
+                            />
+                          </div>
+                          <div>
+                            <Label className="text-[#FBF9E3]/70 text-xs mb-1">Gender *</Label>
+                            <select
+                              value={member.gender || ''}
+                              onChange={(e) => updateTeamMember(sport, idx, 'gender', e.target.value)}
+                              className="w-full bg-white/10 border border-[#5B88B2]/30 text-white text-sm rounded-md px-3 py-2"
+                              data-testid={`member-gender-${sport.toLowerCase()}-${idx}`}
+                            >
+                              <option value="">Select Gender</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Other">Other</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
