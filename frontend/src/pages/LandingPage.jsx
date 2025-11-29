@@ -1258,8 +1258,8 @@ Email: deshika_mlokesh.sias24@krea.ac.in`
                 <h5 className="text-sm font-bold text-white mb-2">Sports Heads</h5>
                 <div className="space-y-1 text-xs text-gray-300">
                   <p>Aavya: <a href="tel:+916302033924" className="text-[#5B88B2] hover:text-[#6F9BC2]">+91 6302 033 924</a></p>
-                  <p>Angel: <a href="tel:+916302033924" className="text-[#5B88B2] hover:text-[#6F9BC2]">+91 6302 033 924</a></p>
-                  <p>Shivansh: <a href="tel:+919901896803" className="text-[#5B88B2] hover:text-[#6F9BC2]">+91 99018 96803</a></p>
+                  <p>Angel: <a href="tel:+919901896803" className="text-[#5B88B2] hover:text-[#6F9BC2]">+91 99018 96803</a></p>
+                  <p>Shivansh: <a href="tel:+916302033924" className="text-[#5B88B2] hover:text-[#6F9BC2]">+91 6302 033 924</a></p>
                 </div>
               </div>
             </div>
